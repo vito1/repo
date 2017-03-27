@@ -1,0 +1,22 @@
+{
+  "name": "express.1",
+  "version": "1.0.0",
+  "description": "\"# repo\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vito1/repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vito1/repo/issues"
+  },
+  "homepage": "https://github.com/vito1/repo#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
