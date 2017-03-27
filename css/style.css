@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+*:after, *:before {
+	box-sizing: border-box;
+}
+.Flex {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	background-color: silver;
+}
+body {
+	padding:1em;
+	margin:0;
+}
+.Galerie {
+	border:1px solid black;	
+	display:flex;
+	flex-wrap: wrap;
+}
+.Galerie > * {
+	border:1px solid black;
+}
+.Short {
+	width:33%;
+}
+.Header {
+	height:5rem;
+}
+.HeroImage {
+	height:19rem;
+	margin:1rem 0;
+}
+.Footer {
+	height:10rem;
+	margin:1rem 0;
+}
