@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+}
+*:after, *:before {
+	box-sizing: inherit;
+}
+body {
+	font-family: sans-serif;
+}
+.Transition {
+	transition:color;
+	transition-duration:2s;
+	transition-timing-function: linear;
+}
+.Transition:hover {
+	color:silver;
+}
+.Animation {
+	animation-name: jump;
+	animation-duration: 5s;
+	animation-delay:3s;
+	animation-timing-function: ease;
+	animation-iteration-count: 4;
+	animation-fill-mode: backwards;
+	position: absolute;
+	animation-direction:reverse;
+}
+@keyframes jump {
+	from {
+		right:0;
+	}
+	to {
+		top:20px;
+	}
+}
+.Position {
+	position:absolute;
+	right:200px;
+	top:500px;
+}
+.ZIndex {
+	border:1px solid black;
+	position:relative;
+	height:5rem;
+}
+.Box {
+	border:1px solid black;
+	height:80px;
+	width:80px;
+	color:white;
+	position:absolute;
+}
+.Red {
+	left:50px;
+	z-index:2;
+	background-color: rgba(200,0,0,1);
+}
+.Green {
+	z-index:3;
+	top:20px;
+	background-color: rgba(0,200,0,1);
+}
+.Blue {
+	z-index:1;
+	background-color: rgba(0,0,200,1);
+}
+.Background {
+	height:492px;
+	border:1px solid black;
+	width:200px;
+	margin-top: 50px;
+	background-image: url("http://freedesignfile.com/upload/2012/06/0021d413_medium28.jpg");
+	background-size:200px;
+	background-clip: content-box;
+	padding:20px;
+	background-attachment: fixed;
+	border:4px dotted black;
+	box-shadow: 1px 1px 0 black(0,0,0,0.2);
+
+}
+.BorderImage {
+	height:200px;
+	width:200px;
+	border:20px solid transparent;
+	border-image-source: linear-gradient(to top, red, yellow);
+	border-image-slice:30;
+}
