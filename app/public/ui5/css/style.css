@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box;
+}
+*:after, *:before {
+	box-sizing: border-box;
+}
+body {
+	margin:0;
+	font-family: 'Open Sans';
+	display:flex;
+
+	height:100vh;
+	justify-content: center;
+}
+
+.Wrapper {
+	width:100%;
+	height:100vh;
+	background-color:silver;
+	background-image: url(http://s1.1zoom.me/big0/849/333787-svetik.jpg);
+	position: absolute;
+	z-index:-1;
+    filter:opacity(70%) contrast(140%) brightness(80%);
+	background-size:cover;
+
+}
+h2 {
+	margin:0;
+}
+.hidden {
+	display:none;
+}
+.BackgroundBox {
+	background-color:rgba(0,0,0,.6);
+	color:white;
+	width:85%;
+	align-self: center;
+	border-radius: 2px;
+	box-shadow:2px 2px 2px rgba(0,0,0,.2);
+	position: relative;
+}
+.SubHeader {
+	font-size:1.8rem;
+	width:220px;
+	font-weight: 100;
+	margin-left:3rem;
+	margin-top:4rem;
+	display:inline-block;
+}
+.RightSide {
+	display:inline-block;
+	width:40%;
+	position: absolute;
+	right:0rem;
+	margin-bottom:2rem;
+}
+.Text {
+	line-height: 1.2rem;
+	width:35%;
+	font-size:.7rem;
+	margin-left:3rem;
+	margin-bottom: 2.85rem;
+	display:block;
+	color:rgba(255,255,255,.6);
+}
+.RightSideText {
+	display:inline-block;
+	font-size: .7rem;
+
+	position: absolute;
+	right:2.5rem;
+	top:9rem;
+}
+.SignUpButton {
+	margin-left:3rem;
+	margin-bottom:6rem;
+	color:white;
+	text-decoration: none;
+	padding:.5rem 3rem;
+	text-transform: uppercase;
+	border-radius: 3px;
+	border:1px solid white;
+	display:inline-block;
+}
+.LogInButton {
+	display:right;
+	position: absolute;
+
+	margin-bottom:6rem;
+	color:white;
+	text-decoration: none;
+	padding:.5rem 3rem;
+	text-transform: uppercase;
+	border-radius: 3px;
+	top:15rem;
+	display:inline-block;
+	right: 9rem;
+	border:1px solid white;
+}
+.Form {
+	position: absolute;
+	align-self: center;
+	background: white;
+	border-radius: 2px;
+	box-shadow:2px 2px 2px rgba(0,0,0,.2);
+	left:10%;
+	animation-name: switch;
+	animation-duration: .8s;
+
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0, .2, .2, 1.5);
+}	
+.FormHeader {
+	color:rgb(255, 124, 124);
+	font-weight: 400;
+	margin:5rem 3rem 3.5rem 3rem;
+	text-transform: uppercase;
+}	
+.InputWrapper {
+	width:20rem;
+	margin: 1rem 3rem;
+	border-bottom:1px solid silver;
+	color: silver;
+	position: relative;
+	padding-bottom: .5rem;
+}
+::placeholder {
+	color:silver;
+	font-size: .9rem;
+	font-weight: 100;
+}
+.Input {
+	border:0;
+}
+.material-icons {
+	position: absolute;
+	right: 0;
+	font-size: .5rem;
+}
+.SignUpWrapper {
+	margin-bottom: 5rem;
+	margin-top:2.9rem;
+	text-align: right;
+	border:0;
+	position: relative;
+}
+.Submit {
+	padding:.5rem 2rem;
+	font-size:1.2rem;
+	text-transform: uppercase;
+	
+	font-weight:100;
+	background-color: rgb(255, 124, 124);
+	border:0;
+	border-radius: 2px;
+	color:white;
+}
+.Forgot {
+	color:silver;
+	text-decoration: none;
+	position: absolute;
+	left:0;
+	bottom: .5rem;
+	font-size: .8rem;
+}
+@keyframes switch {
+from {
+
+}
+
+to {
+	margin-left: 32%;
+}
+}
