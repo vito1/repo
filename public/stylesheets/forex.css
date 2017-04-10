@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box; }
+
+*:before, *:after {
+  box-sizing: border-box; }
+
+.Chart {
+  display: flex;
+  margin: 4rem;
+  align-items: flex-end;
+  position: relative; }
+
+.Bar {
+  flex: 1;
+  height: 50px;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #4286f4; }
+
+.Red {
+  background-color: red; }
+
+.Green {
+  background-color: green; }
+
+.Line {
+  background-color: silver;
+  position: absolute;
+  height: 2px;
+  width: 107%;
+  text-align: right; }
+
+.Resultat {
+  margin-left: 4rem; }
+
+.Button {
+  margin-left: 4rem; }

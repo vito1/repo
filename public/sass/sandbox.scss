@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+*:before, *:after {
+	box-sizing: border-box;
+}
+.bold {
+	text-decoration: underline;
+}
+.wide {
+	width:30%;
+}
+.Animation {
+	animation-name: shake;
+	animation-delay: 1s;
+	animation-direction: normal;
+	animation-fill-mode: none;
+	animation-iteration-count: 2;
+	animation-play-state: running;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+}
+@keyframes shake {
+	from {
+		margin-left: 200px;
+	}
+	to {
+		margin-left: 100px;
+	}
+}
