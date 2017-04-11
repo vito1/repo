@@ -19,7 +19,7 @@ var toDoApp = require ('./routes/todo')
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views/todo'));
+app.set('views', path.join(__dirname, 'views/forex'));
 app.set('view engine', 'hbs');
 
 // uncomment after placing your favicon in /public
