@@ -15,11 +15,11 @@ var sandbox = require ('./routes/sandbox');
 var animations = require('./routes/animations');
 var artplatformlogin = require('./routes/login3');
 var forexindex = require('./routes/forex')
-
+var toDoApp = require ('./routes/todo')
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views/forex'));
+app.set('views', path.join(__dirname, 'views/todo'));
 app.set('view engine', 'hbs');
 
 // uncomment after placing your favicon in /public
@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', forexindex);
+app.use('/', toDoApp);
 app.use('/users', users);
 app.use('/login', login);
 app.use('/login2', login2);
