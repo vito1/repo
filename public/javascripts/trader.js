@@ -6,16 +6,14 @@
 function findTrades() {	
 
 	if(data.set.includes(Math.round(findClosePoint()))) {
-		return "Closing point Reached" +
-		' Trade#1 High: ' + findMax() + ' TradePoint: ' + findTradePoint() + ' ClosePoint: ' + findClosePoint() +
-		' Ratio: ' + getRatio()
+		return  ' Trade#1 High: ' + findMax() + ' TradePoint: ' + findTradePoint() + ' ClosePoint: ' + findClosePoint() +
+		' P/L: ' + getRatio()
 	} else {
 		return "Closing point not reached"
 	}
 }
 //output: mockup data
 let data = {
-
 	set: [15,16,17,18,19,20,19,18,17,16,15,16,17,18,19,18,17,16,15,14,13,12,
 			15,16,17,18,19,20,19,18,17,16,15,16,17,18,19,18,17,16,15,14]
 }
@@ -23,7 +21,7 @@ let data = {
 //input high, low  - output Tradepoint 
 function findTradePoint() {
 	let high = findMax()
-	let low = findMin()
+	let low = data.set[findMin()]
 	
 	let TradePoint = high - ((high - low) * 0.236) 
 	return TradePoint
@@ -31,7 +29,7 @@ function findTradePoint() {
 //input high, low - output Close
 function findClosePoint() {
 	let high = findMax()
-	let low = findMin()
+	let low = data.set[findMin()]
 
 	let Close = high - ((high - low) * 1.382)
 	return Close
@@ -57,7 +55,7 @@ function findMin() {
 			low = data.set[i]
 		}
 	}
-	return low
+	return data.set.indexOf(low, timeFrameStart)
 }
 //input TradePoint, Close - output Ratio
 function getRatio() {
@@ -78,48 +76,100 @@ function adjustDataSet() {
 }
 
 
+// Visualisierung
+//Zeige eine Bar für jedes Element im data.set array bei Seitenaufruf
+window.onload = showBars
+function showBars() {
+	data.set.forEach(function (element) {
+	let bar = document.createElement("div")
+	bar.className += "Bar"
+	bar.innerHTML= element
+	let chart = document.getElementsByClassName('Chart')[0]
+	chart.appendChild(bar)
+	})
+}
 
+//Setze ein Bar auf die richtige Höhe auf Knopfdruck
+function setHeight() {
+	let i = 0;
+	data.set.forEach(function(element) {
+		let BarHeight = element * 10
+		let Bar = document.getElementsByClassName('Bar')[i]
+		Bar.style.cssText = "height: " + BarHeight + "px;" 
+		i += 1
+	})
 
-// Visualisierung 
+}	
 
-// input : data.set array  output: bars mit height
-let chart = document.getElementsByClassName('Chart')[0]
-for (let i = 0; i < data.set.length; i++) {
-	let div = document.createElement("div")
-	div.className = "Bar";
-	div.innerHTML = data.set[i]
-	let h = data.set[i] * 10
-	div.style.cssText = "height: " + h + "px";
-	chart.appendChild(div)
+let setHeightButton = document.getElementsByClassName('SetHeightButton')[0]
+setHeightButton.addEventListener("click", function() {
+	setHeight()
+})
+
+//Färbe das Maximum  auf Knopfdruck
+function colorMax() {
+	document.getElementsByClassName('Bar')[data.set.indexOf(findMax())].className += " Red";
 
 }
 
-// output: alle bar elemente in einem array
-let bararray = [ ]
-for (var i = 0; i <21; i++) {
-	var bar = document.getElementsByClassName('Bar')[i]
-	bararray.push(bar);
+let showMaxButton = document.getElementsByClassName('ShowMaxButton')[0]
+showMaxButton.addEventListener("click", function() {
+	colorMax()	
+})
+
+//Färbe Minimum auf Knopfdruck
+function colorMin() {
+	document.getElementsByClassName('Bar')[findMin()].className += " Green"
+
 }
+let showMinButton = document.getElementsByClassName('ShowMinButton')[0]
+showMinButton.addEventListener("click", function() {
+	colorMin()
+})
+
+//Zeige Triggerpoint auf Knopfdruck
+function showTrigger() {
+	let Trigger = document.getElementsByClassName('Trigger')[0]
+	Trigger.classList.remove("hidden")
+	Trigger.style.cssText = "bottom:" + ((findTradePoint()*10)-2) + "px";
+}
+let showTriggerButton = document.getElementsByClassName('ShowTriggerButton')[0]
+showTriggerButton.addEventListener("click", function() {
+	showTrigger()
+})
+
+//Zeige ClosePoint auf Knopfdruckl
+function showClose() {
+	let Close = document.getElementsByClassName('ClosePoint')[0]
+	Close.classList.remove('hidden')
+	Close.style.cssText = 'bottom: ' + ((findClosePoint()*10)-2) + "px"
+}
+let  showCloseButton = document.getElementsByClassName('ShowCloseButton')[0]
+showCloseButton.addEventListener("click", function() {
+	showClose()
+
+})
+// Zeige Traderesultat bei Knopfdruck und Trade im Graph
+function showTrades() {
+	document.getElementsByClassName('SVG')[0].classList.remove("hidden")
+	let resultat = document.getElementsByClassName('Resultat')[0]
+	resultat.innerHTML = findTrades()
+	let Bar = document.getElementsByClassName('Bar')
+	Bar[data.set.indexOf(findMax())].className += " Marked"
+	Bar[data.set.indexOf(Math.round(findClosePoint()))].className += " Marked"
+	let MaxOffsetLeft = Bar[data.set.indexOf(findMax())].offsetLeft
+	let MaxOffsetTop = Bar[data.set.indexOf(findMax())].offsetTop
+	document.getElementsByClassName('SVGLine')[0].setAttribute("x1", MaxOffsetLeft)
+	document.getElementsByClassName('SVGLine')[0].setAttribute("y1", MaxOffsetTop)
+	let CloseOffsetLeft = Bar[data.set.indexOf(Math.round(findClosePoint()))].offsetLeft
+	let CloseOffsetTop = Bar[data.set.indexOf(Math.round(findClosePoint()))].offsetTop
+
+	document.getElementsByClassName('SVGLine')[0].setAttribute("x2", CloseOffsetLeft)
+	document.getElementsByClassName('SVGLine')[0].setAttribute("y2", CloseOffsetTop)
 
 
-
-
-
-
-
-
-//Button zum FindTradeFunktion ausführe und alles einzeichnen
-let button = document.getElementsByClassName('Button')[0]
-button.addEventListener("click", function(event) {
-	// Resultat ausgeben
-	document.getElementsByClassName('Resultat')[0].innerHTML +=findTrades();
-	//Max markieren
-	bararray[data.set.indexOf(findMax())].className += " Red"
-	//Min markieren
-	bararray[data.set.indexOf(findMin(), 1)].className += " Green"
-	//Trigger Positionieren
-	document.getElementsByClassName('Trigger')[0].style.cssText = "bottom: " + ((findTradePoint()*10) - 2)  + "px";
-	//Closepoint markieren
-	document.getElementsByClassName('ClosePoint')[0].style.cssText = "bottom: " + ((findClosePoint()*10) - 2) +'px';
-
+}	
+let showTradesButton = document.getElementsByClassName('ShowTradesButton')[0]
+showTradesButton.addEventListener("click", function() {
+	showTrades()
 })

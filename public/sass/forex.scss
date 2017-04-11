@@ -4,17 +4,34 @@
 *:before, *:after {
 	box-sizing: border-box;
 }
+.hidden {
+	display: none;
+}
+.Navigation {
+	margin:0 4rem;
+}
+.Button {
+	color: black;
+}
 .Chart {
 	display:flex;
 	margin:4rem;
 	align-items: flex-end;
 	position: relative;
+	height: 300px;
 }
 .Bar {
 	flex:1;
-	height:50px;
-	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+	height:20px;
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.6);
 	background-color: rgb(66, 134, 244);
+	transition: all;
+	transition-duration: 2s;
+	transition-timing-function: ease;
+	
+}
+.Bar:hover {
+	filter: opacity(70%);
 }
 .Red {
 	background-color:red;
@@ -32,6 +49,28 @@
 .Resultat {
 	margin-left: 4rem;
 }
-.Button {
-	margin-left: 4rem;
+.Marked {
+	width: 50px;
+	position: relative;
+}
+.Marked:before {
+	content: " ";
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	border-top: 10px solid black;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-bottom: 0;
+	width: 100%;
+	background-color: black;
+}
+.SVG, {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+}
+#canvas {
+	position: absolute;
 }
