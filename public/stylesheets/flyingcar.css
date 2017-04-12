@@ -1,0 +1,130 @@
+:root {
+  --main-color: #4f487c;
+  --second-color: #ffba33; }
+
+* {
+  box-sizing: border-box; }
+
+*:before, *:after {
+  box-sizing: border-box; }
+
+.Background {
+  background-color: var(--main-color);
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden; }
+
+.Background:before {
+  content: " ";
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background-color: var(--second-color);
+  right: -10%;
+  transform: skewX(-5deg); }
+
+.FlyingCar {
+  position: absolute;
+  top: 45%;
+  left: -1%;
+  z-index: 3; }
+
+.FlyingCarAndGlobe {
+  position: absolute;
+  left: 14%;
+  min-width: 120px; }
+
+.Form {
+  margin: 7rem 9rem 12rem auto;
+  z-index: 3;
+  box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  position: relative;
+  font-family: sans-serif;
+  min-width: 350px;
+  border-radius: 2px; }
+
+.Form > * {
+  display: block; }
+
+.BackButton {
+  position: absolute;
+  top: -2.5rem;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  font-size: .8rem; }
+
+.FormHeading {
+  text-transform: uppercase;
+  color: var(--second-color);
+  font-size: .9rem;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin: 2rem 1rem; }
+
+.fa-sign-in {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin: 2rem 1rem; }
+
+.fa-sign-in:before {
+  margin-right: 10px;
+  color: silver; }
+
+.Label {
+  color: silver;
+  text-transform: uppercase;
+  font-size: .7rem;
+  margin-left: 2rem;
+  margin-top: 1rem; }
+
+.Input {
+  margin: .5rem 2rem;
+  width: 90%;
+  border: 0; }
+
+::placeholder {
+  color: black;
+  font-size: 1rem; }
+
+.SignUpButton {
+  background-color: var(--main-color);
+  width: 90%;
+  margin: 3rem auto 1rem;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: .8rem 0;
+  border-radius: 2px;
+  border: 0; }
+
+.SignUpFacebookButton {
+  width: 60%;
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  padding: .8rem;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none; }
+
+.AgreementText {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: .8rem;
+  position: absolute;
+  bottom: -8rem;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.TermsLink,
+.PrivacyLink {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none; }
