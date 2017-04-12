@@ -39,7 +39,7 @@ app.use('/login3', login3);
 app.use('/sandbox', sandbox);
 app.use('/animations', animations);
 app.use('/flyingcar', flyingCar)
-
+app.use('/forex', forexindex)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
