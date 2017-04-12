@@ -1,22 +1,24 @@
 'use strict';
 // input echtes Dataset in csv - output: number of trades, Wins, Loses, P/L ratio
 
-// input komplexeres Dataset - output:Trade#1high, Tradepoint, ClosePoint, Ratio
+// input komplexeres Dataset - output:Trade# high, Tradepoint, ClosePoint, Ratio
 
 function findTrades() {	
 
 	if(data.set.includes(Math.round(findClosePoint()))) {
-		return  ' Trade#1 High: ' + findMax() + ' TradePoint: ' + findTradePoint() + ' ClosePoint: ' + findClosePoint() +
+		return  ' Trade#1 High: ' + findMax() + ' Trigger: ' + findTradePoint() + ' ClosePoint: ' + findClosePoint() +
 		' P/L: ' + getRatio()
 	} else {
 		return "Closing point not reached"
 	}
+	adjustDataSet()
 }
 //output: mockup data
 let data = {
 	set: [15,16,17,18,19,20,19,18,17,16,15,16,17,18,19,18,17,16,15,14,13,12,
 			15,16,17,18,19,20,19,18,17,16,15,16,17,18,19,18,17,16,15,14]
-}
+
+} 
 
 //input high, low  - output Tradepoint 
 function findTradePoint() {
@@ -153,7 +155,7 @@ showCloseButton.addEventListener("click", function() {
 function showTrades() {
 	document.getElementsByClassName('SVG')[0].classList.remove("hidden")
 	let resultat = document.getElementsByClassName('Resultat')[0]
-	resultat.innerHTML = findTrades()
+	resultat.innerHTML += findTrades() + "<br>"
 	let Bar = document.getElementsByClassName('Bar')
 	Bar[data.set.indexOf(findMax())].className += " Marked"
 	Bar[data.set.indexOf(Math.round(findClosePoint()))].className += " Marked"

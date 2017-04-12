@@ -27,7 +27,8 @@
   background-color: #4286f4;
   transition: all;
   transition-duration: 2s;
-  transition-timing-function: ease; }
+  transition-timing-function: ease;
+  border: none; }
 
 .Bar:hover {
   filter: opacity(70%); }

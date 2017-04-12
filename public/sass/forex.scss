@@ -11,7 +11,7 @@
 	margin:0 4rem;
 }
 .Button {
-	color: black;
+	color: black; 
 }
 .Chart {
 	display:flex;
@@ -28,6 +28,7 @@
 	transition: all;
 	transition-duration: 2s;
 	transition-timing-function: ease;
+	border: none;
 	
 }
 .Bar:hover {
