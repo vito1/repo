@@ -1,0 +1,62 @@
+<h2> Talk by Rachel Andrew</h2>
+<h3>Inhalt</h3>
+	<ul>
+		<li>FlexBox and Grid share very common features, but they are for different scopes</li>
+		<li>Flex is for one dimensional layouts - when something is laid out as a row or a column</li>
+		<li>Grid is twodimensinal - rows and columns at the same time</li>
+	</ul>
+<p> Things layout with Flexbox, and you are letting them wrap. As the wrap on to the final line, the bottom one will spread ouf if it has got room, because that's how space distribution works in Flexbox. It work across the individual row</p>
+<div class="FlexBoxDistro">
+	<div class="FlexDistroItem">1</div>
+	<div class="FlexDistroItem">2</div>
+	<div class="FlexDistroItem">3</div>
+	<div class="FlexDistroItem">4</div>
+	<div class="FlexDistroItem">5</div>
+	<div class="FlexDistroItem">6</div>
+	<div class="FlexDistroItem">7</div>
+	<div class="FlexDistroItem">8</div>
+	<div class="FlexDistroItem">9</div>
+	<div class="FlexDistroItem">10</div>
+	<div class="FlexDistroItem">11</div>
+	<div class="FlexDistroItem">12</div>
+	<div class="FlexDistroItem">13</div>
+</div>
+<p> The same layout using grid, but, as it reflows, the things stay in their columns, they don't spread out accross the row, because we asked it to line them up in rows and columns</p>
+<p> You might get aroud that Flexbox issue by adding percentage widths to the flexitems, by breaking the flexibility, that is the point at which you might think I need Grid Layout here, not FlexBox, because I want to do this in two dimensions
+>Wie kann man das machen?
+>auf welche Eigenschaft bezieht sich minmax() 
+>Wofür ist minmax wenn bei minmax(50px, 100px) das minimun beachtet wird
+>Warum wird bei minmax(50px, 1fr) die Spalte maximal weit
+</p>
+<div class="GridDistro">
+	<div class="GridItem">1</div>
+	<div class="GridItem">2</div>
+	<div class="GridItem">3</div>
+	<div class="GridItem">4</div>
+	<div class="GridItem">5</div>
+	<div class="GridItem">6</div>
+	<div class="GridItem">7</div>
+	<div class="GridItem">8</div>
+	<div class="GridItem">9</div>
+	<div class="GridItem">10</div>
+	<div class="GridItem">11</div>
+	<div class="GridItem">12</div>
+	<div class="GridItem">13</div>
+</div>
+<ul>
+	<li> When you start constraining Flexbox, that often the case when you need Grid Layout and it's one of the reasons why it's been designed.</li>l
+	<li>Flexbox works from the content out, and Grid works layout in</li>
+	<li>fr represent a fraction of the avalable space in the container</li>
+	<li>If you have a collection of things and they might be different sizes and all you want is for the space between them to be worked out equally </li>
+	<li></li>
+	<li></li>
+
+</ul>
+<div class="GridExample2">
+	<div class="GridItem2">1</div>
+	<div class="GridItem2">2</div>
+	<div class="GridItem2">2</div>
+	<div class="GridItem2">2</div>
+	<div class="GridItem2">2</div>
+	<div class="GridItem2">2</div>
+	<div class="GridItem2">2</div>
