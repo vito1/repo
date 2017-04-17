@@ -17,6 +17,7 @@ var artplatformlogin = require('./routes/login3');
 var forexindex = require('./routes/forex')
 var toDoApp = require ('./routes/todo')
 var flyingCar = require('./routes/flyingcar')
+var talkbyra = require('./routes/talkbyra')
 var app = express();
 
 // view engine setup
@@ -40,6 +41,7 @@ app.use('/sandbox', sandbox);
 app.use('/animations', animations);
 app.use('/flyingcar', flyingCar)
 app.use('/forex', forexindex)
+app.use('/talkbyra', talkbyra)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
