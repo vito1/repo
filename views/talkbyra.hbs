@@ -1,0 +1,129 @@
+<h2>Grid - Talk by Rachel Andrew</h2>
+<h3>Fragen</h3>
+	<p class="Frage">Wie verhält sich ein Element, das eine Gridgap überstreckt</p>
+	<span class="Frage">Was machen Grid Methoden, wie dense packing mode ?</span>
+	<span class="Frage">Warum wird bei minmax(50px, 100px) das Maximum beachtet wird?</span>
+	<span class="Frage Alt">Wofür steht das zweite Argument in flex property?</span>
+	<span class="Frage Alt">Wie funktioniert der flex-shrink factor?</span>
+	<span class="Frage Alt">Wann werden flexitems auf unterschiedliche Zeilen verteil bei  flex-wrap: wrap?</span>	
+	<span class="Frage Alt">Was passiert wenn man Griditems automatisch auslegen lässt und ein Item höher ist als der Rest?</span>
+	<span class="Frage Alt">auf welche Eigenschaft bezieht sich minmax(), repeat() und autofill?</span>
+	<span class="Frage Alt">Wie kann man das zweite Beispiel mit flexbox nachbauen?</span>
+	<span class="Frage Alt">Warum wird bei grid-template-columns: minmax(50px, 1fr) die Spalte maximal weit?</span>
+	<span class="Frage Alt">Wie werden Sachen ausgelegt, wenn das grid implicit ist?</span>
+	<span class="Frage Alt">welchen werte nehmen die flex properties and wenn man flex:1 deklariert?</span>
+	<span class="Frage Alt">Wie kann ich das Beispiel nachbauen?</span>
+	<span class="Frage Alt">Warum sind elemente mit flex-basis: 0 nicht unsichtbar?</span>
+	<hr>
+<h3> Inhalt</h3>
+	<ul>
+		<li>FlexBox and Grid share very common features, but they are for different uses</li>
+		<li>Flex is for one-dimensional layouts - when something is laid out as a row or a column</li>
+		<li>Grid is two-dimensinal - rows and columns at the same time</li>
+	</ul>
+	<p> 
+		If things are laid out with Flexbox, and you are letting them wrap, the bottom one will spread ouf if it has got room, because space distribution works across the individual row in Flexbox.
+	</p>
+	<div class="FlexBoxDistro">
+		<div class="FlexDistroItem">1</div>
+		<div class="FlexDistroItem">2</div>
+		<div class="FlexDistroItem">3</div>
+		<div class="FlexDistroItem">4</div>
+		<div class="FlexDistroItem">5</div>
+		<div class="FlexDistroItem">6</div>
+		<div class="FlexDistroItem">7</div>
+		<div class="FlexDistroItem">8</div>
+		<div class="FlexDistroItem">9</div>
+		<div class="FlexDistroItem">10</div>
+		<div class="FlexDistroItem">11</div>
+		<div class="FlexDistroItem">12</div>
+		<div class="FlexDistroItem">13</div>
+	</div>
+<p> 
+	The same layout using grid, but, as it reflows, the things stay in their columns, they don't spread out accross the row, because we asked it to line them up in rows and columns
+</p>
+<div class="GridDistro">
+	<div class="GridItem">1</div>
+	<div class="GridItem">2</div>
+	<div class="GridItem">3</div>
+	<div class="GridItem">4</div>
+	<div class="GridItem">5</div>
+	<div class="GridItem">6</div>
+	<div class="GridItem">7</div>
+	<div class="GridItem">8</div>
+	<div class="GridItem">9</div>
+	<div class="GridItem">10</div>
+	<div class="GridItem">11</div>
+	<div class="GridItem">12</div>
+	<div class="GridItem">13</div>
+</div>
+<ul>
+	<li> When you start constraining Flexbox, that often the case when you need Grid Layout and it's one of the reasons why it's been designed.</li>
+	<li>Flexbox works content out - The content is dictating the layout, Flexbox is just managing the space distributution</li>
+	<li>Grid works layout in - grid is defined on the container and then we are putting things into it. Space distrubution works on the container, not on the individual rows</li>
+</ul>
+<p>A flexbox usecase: you have a collection of things and they might be different sizes and all you want is for the space between them to be worked out equally</p>
+<div class="FlexExample">
+	<div class="FlexItem">1</div>
+	<div class="FlexItem">2</div>
+	<div class="FlexItem">3</div>
+	<div class="FlexItem">4</div>
+	<div class="FlexItem">5</div>
+</div>
+<p>Three-column, track grid using the FR unit</p>
+<div class="GridExample2">
+	<div class="GridItem">1</div>
+	<div class="GridItem">2</div>
+	<div class="GridItem">2</div>
+	<div class="GridItem">2</div>
+	<div class="GridItem">2</div>
+	<div class="GridItem">2</div>
+	<div class="GridItem">2</div>
+</div>
+<ul>
+	<li>fr represent a fraction of the available space in the container</li>
+	<li>Grid allows you to layer items, or for two items to occupy the same space</li>
+	<li>Grid allows full control of negative space in your designs, if you want you can have space above items by putting it on row three and have nothing on row one or two</li>
+	<li>Grid has methods such as the dense packing mode to backfill gaps in a tight-packed grid</li>
+</ul>
+<p>Use Flexbox when...</p>
+<ul>
+	<li>Your content is a row or a column</li>
+	<li>You want the size of the items to dictate their layout</li>
+	<li>You want to distribute space</li>
+</ul>
+<p>Consider grid when..</p>
+<ul>
+	<li>You need to control rows and columns</li>
+	<li>You are adding widths to a flex item in order to make it line up with rows above</li>
+	<li>You want control of the layout from the parent</li>
+	<li>items need to occupy the same space or overlap</li>
+</ul>
+
+<p>Grid Example</p>
+<div class="listing">
+	<div class="box-feature">
+	 	<img class="box-image" src="http://placehold.it/900x450" alt="placeholder">
+
+		<h2 class="box-features-title">Featured Item</h2>
+		<div class="box-content"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p></div>
+	</div>
+	<div class="box-title">
+		<h2>This is a title</h2>
+	</div>
+</div>
+<p class="Frage">Warum ist grid-column: 1 /-1 unterschiedlich in den browsern implementier?</p>
+<ul>
+	<li>Gird lines respect writing mode. Column line 1 is on the left, and -1 on the right in a LTR language. The grid would flip if you were in a right-to-left language.</li>
+	<li> The Explicit Grid is created when you define the tracks with the grid-template-columns and grid-template-rows</li>
+	<li>If you place an item outside of that grid, or auto-placed content requires further row or column tracks these are added by grid as the implicit grid. Autogenerated tracks are growing to contain their content. But you can set their size as well with grid autorows and columns.You usually want your row to get taller based on whatever you put in</li>
+	<li>Grid can be used to layer items, if things are lower down in the source, they will end up on top and you can use z-index to change the stack order </li>
+</ul>
+<p class="Frage">Warum ist bei .box-features-title align-start flex declariert? </p>
+<p class="Frage">Können flex-start and flex-end auch für grid benutzt werden?</p>
+<ul>
+	<li>The grid can be redefined in the media queries. The number of tracks or where the things sit on the the grid</li>
+	<li></li>
+	<li></li>
+</ul>
