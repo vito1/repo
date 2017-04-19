@@ -10,6 +10,9 @@
 .Navigation {
   margin: 0 4rem; }
 
+.White {
+  color: white; }
+
 .Button {
   color: black; }
 
@@ -35,6 +38,9 @@
 
 .Red {
   background-color: red; }
+
+.Silver {
+  background-color: silver; }
 
 .Green {
   background-color: green; }

@@ -37,7 +37,7 @@ function findClosePoint() {
 	return Close
 
 }
-//input: dataset - output: high 
+//input: index - output: high 
 function findMax() {
 	let high = 0;
 	data.set.forEach(function(element) {
@@ -109,8 +109,8 @@ setHeightButton.addEventListener("click", function() {
 })
 
 //Färbe das Maximum  auf Knopfdruck
-function colorMax() {
-	document.getElementsByClassName('Bar')[data.set.indexOf(findMax())].className += " Red";
+function colorMax(index) {
+	document.getElementsByClassName("Bar")[index].className += " Red";
 
 }
 
@@ -175,3 +175,23 @@ let showTradesButton = document.getElementsByClassName('ShowTradesButton')[0]
 showTradesButton.addEventListener("click", function() {
 	showTrades()
 })
+
+
+window.setTimeout(setHeight, 1000)
+
+
+for(let i = 0; i < data.set.length; i++) {
+	window.setTimeout(move, (i*1000) + 100, i)
+	if 
+	window.setTimeout(remove, (i*1000) + 700, i)
+}
+
+
+
+function move(numb) {
+	document.getElementsByClassName("Bar")[numb].className +=  " Silver"
+}
+function remove(numb) {
+	document.getElementsByClassName("Bar")[numb].classList.remove("Silver")
+}
+
