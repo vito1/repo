@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box
+}
+*:before, *:after {
+	box-sizing: inherit
+}
+.Body {
+	padding: 2rem;
+}
+.Heading {
+	font-size: 1.5rem;
+}
+.SubHeading {
+	font-size: 1.3rem;
+}
+.Article {
+	width: 80%;
+	font-size: 1.1rem;
+}
+.Bold {
+	font-weight: 700;
+}
