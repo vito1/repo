@@ -73,6 +73,8 @@ body {
 	grid-row: 1;
 	background-color: indigo;
 	color: white;
+	align-self: start;
+
 }
 @media (min-width: 53.125em) {
 	.box-title {
@@ -86,16 +88,19 @@ body {
 
 	grid-column: 1 / 4;
 	grid-row: 1 / 2;
-	align-self: start;
 	} 
 }
 
-
 .box-feature {
+	grid-column: 1 / -1;
+	grid-row: 2;
+}
+@media (min-width: 75em) {
+	.box-feature {
 	grid-column: 4 / -1;
 	grid-row: 1 / 2;
 }
-
+}
 .box-feature {
 	display: grid;
 	grid-gap: 20px;
@@ -124,6 +129,7 @@ body {
 }
 .box-newer {
 	grid-column: 1 / -1;
+	align-self: start;
 }
 @media (min-width: 28em) {
 	.box-newer {
@@ -133,19 +139,23 @@ body {
 @media (min-width: 53em) {
 	.box-newer {
 	grid-column: auto / span 4;
-	align-self: start;
 	}
 }
 
 .NewItemHeading {
 	padding: 0 2rem;
 }
-.NewItemContent {
+.ItemContent {
 	padding: 2rem 1rem;
 }
 .box-media {
 	grid-row-end: span 2;
 	border: 1px solid silver;
+	padding: 1rem;
+	img {
+		max-width: 100%;
+
+	}
 }
 .box-newer:nth-child(odd) {
 	background-color: rgb(96, 199, 219);
