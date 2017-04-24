@@ -1,15 +1,17 @@
 <h2>Grid - Talk by Rachel Andrew <a href="https://www.youtube.com/watch?v=tjHOLtouElA&t=381s">link</a></h2>
 <h3>Fragen</h3>
-	<span class="Frage">Wie kann man em,rem berechnen?</span>
+
 	<span class="Frage">Warum springt ein Element nach oben bei dem Grid-Beispiel?</span>
 	<span class="Frage">Warum fließt ein Element mit align-self: stretch über die Grenzen</span>
 	<span class="Frage">Wie kann ich das Beispiel 1:1 nachbauen?</span>
-	x
+	<span class="Frage">Wie kann ich box-feature kleiner machen bei mittlerem Viewport?</span>
+	<span class="Frage Alt">Warum wird das Title-Element nicht 3 zeilen hoch, obwohl row: 1 / 3 delariert ist? </span>
+	<span class="Frage Alt">Wie kann man em, rem berechnen?</span>
 	<span class="Frage Alt">Warum ist grid-column: 1 /-1 unterschiedlich in den browsern implementiert?</span>
 	<span class="Frage Alt">Warum ist bei .box-features-title align-start flex declariert? </span>
 	<span class="Frage Alt">Können flex-start and flex-end auch für grid benutzt werden?</span>
-	<span class="Frage Alt">Was machen Grid Methoden, wie dense packing mode ?</span>
-	<span class="Frage Alt">Warum wird bei minmax(50px, 100px) das Maximum beachtet wird?</span>
+	<span class="Frage Alt">Was machen Grid Methoden, wie dense packing mode?</span>
+	<span class="Frage Alt">Warum wird bei minmax(50px, 100px) das Maximum beachtet ?</span>
 	<span class="Frage Alt">Wie verhält sich ein Element, das eine Gridgap überstreckt</span>
 	<span class="Frage Alt">Wofür steht das zweite Argument in flex property?</span>
 	<span class="Frage Alt">Wie funktioniert der flex-shrink factor?</span>
@@ -110,22 +112,28 @@
 
 <p>Grid Example</p>
 <div class="listing">
+	<div class="box-title">
+		<h1 class="NewItemHeading">This is a title</h1>
+		<p class="ItemContent">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+		</p>
+	</div>
 	<div class="box-feature">
 	 	<img class="box-image" src="http://placehold.it/900x450" alt="placeholder">
-
 		<h2 class="box-features-title">Featured Item</h2>
-		<div class="box-content"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
-		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p></div>
+		<div class="box-content">
+			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+		</div>
 	</div>
-	<div class="box-title">
-		<h2 class="NewItemHeading">This is a title</h2>
-		<p class="ItemContent">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-	</div>
+
 	<div class="box-newer">
 		<h2 class="NewItemHeading">New Item</h2>
-		<p class="ItemContent">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+		<p class="ItemContent">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+		</p>
 	</div>
-<!--<div class="box-newer">
+	<div class="box-newer">
 		<h2 class="NewItemHeading">New Item</h2>
 		<p class="ItemContent">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
 	</div>
@@ -169,7 +177,7 @@
 	<div class="box-older">
 		<h2 class="OldItemHeading">Old Item</h2>
 		<p class="ItemContent">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
-	</div>-->
+	</div>
 </div>
 <ul>
 	<li>Grid lines respect writing mode. Column line 1 is on the left, and -1 on the right in a LTR language. The grid would flip if you were in a RTL language.</li>
