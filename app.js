@@ -17,6 +17,7 @@ var artplatformlogin = require('./routes/login3');
 var forexindex = require('./routes/forex')
 var toDoApp = require ('./routes/todo')
 var flyingCar = require('./routes/flyingcar')
+var http = require('./routes/http')
 var historyoftech = require('./routes/historyoftech')
 var talkbyra = require('./routes/talkbyra')
 
@@ -43,8 +44,10 @@ app.use('/sandbox', sandbox);
 app.use('/animations', animations);
 app.use('/flyingcar', flyingCar)
 app.use('/forex', forexindex)
+app.use('/http', http)
 app.use('/historyoftech', historyoftech)
 app.use('/talkbyra', talkbyra)
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
