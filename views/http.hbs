@@ -1,0 +1,449 @@
+<h1>HTTP</h1><a href="http://odetocode.com/Articles/741.aspx">link</a>
+<h2 class="SubHeading">Fragen</h2>
+
+<hr>
+<section class="Intro">
+	<ul>
+		<li>HTTP is the protocol behind the World Wide Web, that allows a webserver to ship information around the world</li>
+		<li>A solid understanding of HTTP can help write better applications and web services. It can also help debug applications and services when things go wrong</li>
+	</ul>
+</section>
+<section class="ResourcesSection">
+	<h2 class="SubHeading">Resources</h2>
+	<ul>
+		<li>When typing http://food.com in the address bar the web browser understands the syntax and knows it needs to make an HTTP request to a server named food.com</li>
+	</ul>
+	<h2 class="SubHeading">Resource Locator</h2>
+	<ul>
+		<li>URL: scheme://host:port/path?query#frag</li>
+		<li>http://food.com is a URL - uniform resource locator, it represents a specific resource on the web</li>
+		<li>Resources are things you can interact with on the web - Images, pages, files, videos and Each resource has a URL so it can be located</li>
+		<li>Url can be broken into three parts: The URL scheme, describes how to access a resource</li>
+		<li>The host: tell the browser which computer on the internet is hosting the resource. The DNS will be used to translate the host into a network adress, to know wehre to send a request</li>
+		<li>The URL path. The host should recognize what resource is requested by this path and respond appropriately</li>
+		<li>Sometime a URL will point to a real resource on the host's file system. Otherwise some sort of application that is running on the host will take the request and build a resource using content from a database</li>
+		<li>Some resources will lead the browser to download additional resources</li>
+	</ul>
+	<h2 class="SubHeading">Porst, Query Strings, and Fragments</h2>
+	<ul>
+		<li>The host is using a port number to listen for HTTP requests. The default port number is port 80, only need to be specified if the server is listening on a port other than port 80</li>
+
+		<li>The query/ query string will contain information for the destination web site to use or interpret, the majority of query string used to pass name/value pairs in the form name1=value1&name2=value2</li>
+		<li>The part after the # sign is known as the fragment, the are not processed by the server, it is used on the client and it identifies a specific HTML element in a page by the ID</li>
+	</ul>
+	<h2 class="SubHeading">URL Encoding</h2>
+	<ul>
+		<li>There are unsafe characters for URLs- like space</li>
+		<li>All unsafe characters must be percent encoded (URL encoded). Dynamically created URLs should run through an encoding API</li>
+	</ul>
+	<h2 class="SubHeading">Resources and Media Types</h2>
+	<ul>
+		<li>HTTP enables us to create, delete and update resources</li>
+		<li>In order for a host to properly server a resource, and in order for a client to properly display a resource, the parties involved have to be specific and precise about the type of the resource</li>
+		<li>When a host responds to a HTTP request, it returns a resource and also specifies the content type of the resource</li>
+		<li>To specify the content types, HTTP relies on the Multipurpose Internet Mail Extensions(MIME) standards, to label the content in a way that the client browser will know what the content is.</li>
+		<li>When a client requests a HTML web page, the host can respond to the HTTP request with some HTML that it labels as "text/html". First part is the primary media type, second the media subtype</li>
+		<li>For a browser the file extension is the last place it will go to determine the actual content type</li>
+		<li>Client can play a role in what media type a host returns by taking part in a content type negotation. A resource identified by a single URL can have multiple representatations.In order for the server to select the right representation the content negotation mechanism described by the HTTP specification has to be used. When a client makes an HTTP request to a URL, the client can specify the media types it will accept. The media types are not only for the host to tag outgoing resources, but also for the clients to specify the media type the want to consume. But it's up to the host to try to fulfill the request.</li>
+		<li>Content negoation is part of what makes HTTP great. A piece of code written in JavaScript can make a request to the server and ask for a JSON representation</li>
+	</ul>
+</section>
+<section class="Messages">
+	<h2 class="SubHeading">Messages</h2>
+	<ul>
+		<li>Understanding what is inside a HTTP message is vitally important for developers who work on the web. You will build better applications by respond with the right types of messages, and also be able to spot problems and debug issues when applications aren't working</li>
+		<li>HTTP is a request and response protocol. A client sends a HTTP request message to a server using a carefully formatted message that the server will understand. A server responds by sending an HTTP response message that the client will understand. The request and the response are two different message types that are exchanged in a single HTTP transaction.</li>
+		<li>The HTTP standards define what goes into these request and response messages so that eveyone who speaks HTTP will understand each other.</li>
+	</ul>
+	<h2 class="SubHeading">Raw request and response</h2>
+	<ul>
+		<li>A web browser knows how to send an HTTP request by opening a network connection and writing out an HTTP message. It uses plain ASCII text and a format conforming to the HTTP specifications</li>
+		<li>Any application that can send data over a network can make a HTTP request. You can even make manual request using apps like Telnet</li>
+		<li>A telnet session start by typing "telnet www.odetocode.com 80" on the command line, it tells the operating system to launch the telnet application, and tells the telnet app to connect to www.odetocode.com on port 80</li>
+		<li>Then we can type out an HTTP request message like GET / HTTP/1.1 The first like tells the server we want to retrieve the resource located at / and we will be using the HTTP 1.1 standard</li>
+		<li>The next like is "Host: www.odetocode.com" The technical reason for requiring host information is to help servers that support multiple web sites. The information will help the webser direct the request to the proper web application</li>
+		<li>When the response says that the resource we wanted has moved to another location it's up to the client to parse this response message and send a new request.</li>
+		<li>These redirects are common in web programming.</li>
+	</ul>
+	<h2 class="SubHeading">HTTP Request Methods</h2>
+		<ul>
+			<li>Every request message must include one of the HTTP methods, these tell the server what the client wants to do with the resource</li>
+			<li>An HTTP GET wants to fetch and retrieve a resource</li>
+			<li>A list of commmon HTTP operators</li>
+		</ul>
+			<table>
+				<tr>
+					<td>Method</td><td>Description</td>
+				</tr>
+				<tr>
+					<td>GET</td><td>Retrieve a resource</td>
+				</tr>
+				<tr>
+					<td>PUT</td><td>Store a resource</td>
+				</tr>
+				<tr>
+					<td>DELETE</td><td>Remove a resource</td>
+				</tr>
+				<tr>
+					<td>POST</td><td>Update a resource</td>
+				</tr>
+				<tr>
+					<td>HEAD</td><td>Retrieve just the headers for a resource</td>
+				</tr>
+			</table>
+		<ul>
+			<li>A web browser issues a GET request when it wants to retrieve a resource, they are the most commmon type of request</li>
+			<li>A web browser sens a POST request when it has data to send to the server.</li>
+		</ul>
+		<h2 class="SubHeading">GET and Safety</h2>
+			<ul>
+				<li>Safe method don't do anything unsafe like destroy a resource, submit a credit card transaction or cancle an account. Get is one of the methods</li>
+				<li>An HTTP Post is not a safe method. A Post typically changes something on the server- it updates an account or submits an order. If the page you are looking at in a browser is the response to a POST request, the browser will warn us if we try to refresh the page</li>
+				<li>After a user clicks a button to POST information to a server, the server will process the information and respond with a HTTP redirect.</li>
+				<li>The POST/Redirect/GET pattern - After a user clicks a button to POST information to a server, the server will process the information and respond with an HTTP redirect. The redirect will tell the browser to GET some other resource. The browser will issue the GET request, and now th server can respond with a thank you for the order resource</li>
+			</ul>
+		<h2 class="SubHeading">Common Scenario - GET</h2>
+			<ul>
+				<li>You have a page and want the user to click a link to view the first article in this series, all you need is a hyperlink. When the user click of the hyperlink in a browser, the browser issues a GET request to the URL specified in the href attribute of the anchor tag. </li>
+			</ul>
+		<h2 class="SubHeading">Common Scenario - POST</h2>
+			<ul>
+				<li>
+					Imagine a page where the user has to fill out information to create an account. The user clicks on the submit button, the browser realizes the button is inside a form. The form tells the browser to use a POST request, and the path to POST into is specified by the action attribute
+				</li>
+				<li>
+					The form input are included in the HTTP message as name-value pairs. It's up the the application to take this request, parse those values, and create the user account. The application can respond in any number of ways, but there are three common responses.
+				</li>
+				<li>
+				1- Respond with HTML telling the user they created the account. Going so will leave th user viewing the result of a POST request. If they refresh the page, they will also resubmit the form. A refresh might try to sign them up a second time.
+				</li>
+				<li>
+					2 - Respond with a redirect instruction. The redirect will point the browser to a new URL. The browser will GET the new URL full of HTML cangratulating the user of their new account. 
+				</li>
+				<li>
+					3 - If the user didn't provide all the required information, the application might respond with an error, or redirect to an error page.
+				</li>
+			</ul>
+			<h2 class="SubHeading">Common Scenarios - Forms and GET Requests</h2>
+				<ul>
+					<li>
+						In a search scenario the method on the form is GET not POST. Because search is a safe oration. The browser will collect the inputs in the form and issue a GET request
+						Instead of putting the values into the body of the message, the inputs go into the query string portion of the URL,
+					</li>
+				</ul>
+			<h2 class="SubHeading">HTTP Request Headers</h2>
+				<ul>
+					<li>
+						A full HTTP request message consists of the following parts:
+					</li>
+					<li>[method][URL][version]</li>
+					<li>[headers]</li>
+					<li>[body]</li>
+					<li>The start line always contains the method, the URL, and the HTTP version.</li>
+					<li>The last section, the body section, can contain data, like the account sign-in parameters</li>
+					<li>The middle section, contains one or more HTTP headers(host is a required header in HTTP 1.1). Headers contain useful information that can help a server process a request. - Content negotiation. </li>
+					<li> There are numerous headers defined by the HTTP specification. Some of the headers are general headers that can appear in either a request or response message.</li>
+					<li>When header appear they must obey the standards</li>
+					<li>Some of the more popular request header appear in the table below</li>
+					<li>Some headers contain multiple values like the accept header</li>
+					<li>q appears in some of the headers. The q value is always a number from 0 to 1 and represent the relative "quality value" or "relative degreee of preference" for a particular value</li>
+				</ul>
+			<h2 class="SubHeading">The Response</h2>
+				<ul>
+					<li>
+						A HTTP reponse has a similar structure to an HTTP request
+					</li>
+					<li>[version][status][reason]</li>
+					<li>[headers]</li>
+					<li>[body]</li>
+					<li> the opening line of a response starts off with the HTTP version, and then the status code and reason</li>
+				</ul>
+			<h2 class="SubHeading">Response Status Code</h2>
+				<ul>
+					<li>Status code is a number defined by the HTTP specification and the numbers fall into 5 categories</li>
+				</ul>
+					<table>
+						<tr>
+							<td>Range</td><td>Category</td>
+						</tr>
+						<tr>
+							<td>100-199</td><td>Informational</td>
+						</tr>
+						<tr>
+							<td>200-299</td><td>Successful</td>
+						</tr>
+						<tr>
+							<td>300-309</td><td>Redirection</td>
+						</tr>
+						<tr>
+							<td>400-499</td><td>Client Error</td>
+						</tr>
+						<tr>
+							<td>500-599</td><td>Server Error</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>Code</td><td>Reason</td><td>Description</td>
+						</tr>
+						<tr>
+							<td>200</td><td>OK</td><td>Everything worked</td>
+						</tr>
+						<tr>
+							<td>301</td><td>Moved Permanently</td>
+							<td>The resource has moved to the URL specified in the Location header and the client never needs to check this URL again</td>
+						</tr>
+						<tr>	
+							<td>302</td><td>Moved Temporarily</td><td>The resource has moved to the URL specified in the Location header. In the future, the client can still request the URL because it's a temporary move</td>
+						</tr>
+						<tr>
+							<td>304</td><td>Not Modified</td><td>This is the server telling the client that the resource hasn't changed since last time they retrieved the resource, so they can just use a locally cashed copy</td>
+						</tr>
+						<tr>
+							<td>400</td><td>Bad Request</td><td>The server could not understand the request</td>
+						</tr>
+						<tr>
+							<td>401</td><td>Unauthorized</td><td>The client was not authorized to access the resource and might need to authenticate.</td>
+						</tr>
+						<tr>
+							<td>403</td><td>Forbidden</td><td>Server refuses access to the resource forn an unspecified reson</td>
+						</tr>
+						<tr>
+							<td>404</td><td>Not Found</td><td>Resource not found on the server</td>
+						</tr>
+						<tr>
+							<td>500</td><td>Internal Server Error</td><td>The server encountered an error in processing the request. Commonly happens because of programming error in a werb application</td>
+						</tr>
+						<tr>
+							<td>503</td><td>Service Unavailable</td><td>The server will currently not server the request. Can appear when a server is throttling requests</td>
+						</tr>
+						</table>
+						<ul>
+							<li>Response status codes are an important part of the HTTP message because they tell the client what happened, or in case of redirects, where to go next.
+							</li>
+						</ul>
+					<h2 class="SubHeading">HTTP Status Code Versus Your Application</h2>
+						<ul>
+							<li>from an application perspective a request can be a failure, but from an HTTP perspective the request was successfully processed</li>
+						</ul>
+					<h2 class="SubHeading">Response Headers</h2>
+						<ul>
+							<li>A response inlucdes headers to give a clinet more data it can use to precess the response</li>
+							<li>The response headers that appear will depend on the type of response. A redirection reponse need to include a location header, telling the client where to go next</li>
+							<li>A number of header are devoted to cashing and performace optimizations.</li>
+							<li>ETag, Expires and Last-Modified provide information abouth the cashability of a response</li>
+							<li>ETag is an identifier that will change when the underlying resources changes - comparing Etags is an efficient way to know if something needs o be refreshed. </li>
+							<li>An expires header tells a client how long to cashe a particular resource.</li>
+							<li>The Cashe-Control header in the response specifies how a response can be cached
+						</ul>
+						<ul>
+							<li>HTTP messages always come in pairs.</li>
+							<li>Fiddler can be used to inspect HTTP traffic on your machine</li>
+							<li>Messages are all about making sure both parties in a transaction understand what they are receiving</li>
+							<li>The first line of a HTTP message is always explicit about the intent. In a request message the first line includes the URL and HTTP method. In a response the first line include a status code indicating how the request was processed.</li>
+						</ul>
+	</section>
+	<section class="ConnectionsSection">
+	<h2 class="SubHeading">Connections</h2>
+		<ul>
+			<li> To understand how the information in these messages move through the network, when connections are opened and closed one has to understand the abstractions below HTTP</li>
+			<li>
+				Network communication protocols, like most business applications, consist of layers. Each layer in a communication stack is responsible for specific and limited number of responsibilites
+			</li>
+			<li>
+				HTTP is called an application layer protocol because it allows two applications to communication over the network. One of the applications can be a web browser, and the other a web server.
+			</li>
+			<li>
+				The HTTP specifications don't say anything about how the messages actually cross the network and reach the server. That's the job of lower layer protocols
+			</li>
+			<li>
+				The layer underneath HTTP is a transport layer protocol. Most HTTP traffic travels over TCP (Transmission Control Protocol) in this layer, althouh TCP isn't required by HTTP.
+			</li>
+			<li>
+				When a user types a URL into the browser, the browser opens a TCP socket by specifying the server address and port, then starts writing data into the socket. All the browser needs to worry about is writing the proper HTTP message into the socket. The TCP layer accepts the data and ensures the data get delivered to the server without getting lost or duplicated.
+			</li>
+			<li>
+				The TCP accepts the data and ensures the data get delivered to the server without getting lost or duplicated. TCP will automatically resend any information that might get lost in transit. 
+			</li>
+			<li>
+				The application doesn't have to worry about lost data, and this is why TCP is known as a reliable protocol. In addition to error detection, TCP also provides flow control, which ensures the sender does not send data too fast for the receiver or the network to process the data. This is important in the world of varied networks and devices.
+			</li>
+			<li>
+				TCP provides many vital services for the successful delivery of HTTP messages, but it does so in a transparent way. Most applications don't need to worry about TCP. And, TCP is just the first layer beneath HTTP. After TCP at the transport layer comes IP as a network layer protocol.
+			</li>
+			<li>
+				IP is short for Internet Protocol. While TCP is responsiple for error detection, flow control, and overall reliability, IP is responsible for taking pieces of information and moving them through the various switches, routers, gateways, repeaters and other devices that move information from one network to the next 
+			</li>
+			<li>
+				IP tries to deliver the data at the destination, but it doesn't guarantee delivery - that's TCP's job.
+			</li>
+			<li>
+				To deliver data IP requires computers to have an address, it is also reponsible for breaking data into packets. and sometimes fragmenting and reassembling these packets so they are optimized for a particular network segment.
+			</li>
+			<li>
+				When IP packets have to travel over a piece of wire, a fiber optic cable, a wireless network, or a satellite link it is the responsibility of the data link layer.
+			</li>
+			<li>
+				A common choice of technolofy at this point is Ethernet. In Ethernet packets become frames, and low level protocols like Ethernet are focused on 1s, 0s, and electricla signals.
+			</li>
+			<li>
+				Eventually the signal reaches the server and comes in through a network card where the process is reversed the data link layer delivers packets to the IP layer. The data link layer delivers packets to the IP layer, which hands over data to TCP, which can reassemble the data into the original HTTP message sent by the client and push it into the web server process
+			</li>
+		</ul>
+		<h2 class="SubHeading">Networking and Wireshark</h2>
+			<ul>
+				<li>A programm like wireshark can show you every bit of information flowing through your network interfaces</li>
+				<li>TCP Handshakes are the TCP messages required to establish a connection between client and server before the actual HTTP messages start flowing.</li>
+				<li>The important part is not how handshakes and TCP work at the lowest level, but that HTTP relies almost entirely on TCP to take care of all the hard work and TCP involves some overhead, like handshakes.</li>
+				<li> The performace characteristics of HTTP rely on the performace charasteristics of TCP</li>
+			</ul>
+		<h2 class="SubHeading">HTTP, TCP and the Evolution of the Web</h2>
+			<ul>
+				<li>
+					In the old days it was simple for a browser to establish a connection with a server, send a request, receive the reponse, and close the connection. It seemed wasteful to keep the connection open. If today's web browsers opened connections one at a time and waited for each resource to download before starting the next download, the web would feel very slow
+				</li>
+				<li>
+					The evolution from simple documents to complex pages has required some ingenuity in the practical use of HTTP
+				</li>
+			</ul>
+		<h2 class="SubHeading">Parallel Connections</h2>
+			<ul>
+				<li>
+					Most user agents will not make requests in a serial one-by-one fashion. Instead they open multiple, parallel connections to a server.
+				</li>
+				<li>
+					The number of parallel connections depends on the user agent and the agent's configuration.
+				</li>
+				<li>
+					To many connections can saturate and congest the network. Thus, having too many connections can hurt performace.
+				</li>
+			</ul>
+		<h2 class="SubHeading">Persistent Connections</h2>
+			<ul>
+				<li>
+					To reduce overhead and improve performace, the HTTP 1.1 specs suggests that implementations should implement persistent connectins, and make persistent connections the default type of connection. It stays open after the completion of one request-response transaction.
+				</li>
+				<li>
+					That leaves a user agent with an already open socket it can use to continue making requests to the server without the overhead of opening a new socket.
+				</li>
+				<li>
+					persistent connections reduce memory usage, reduce CPU usage, reduce network congestion, reduce latency, and generally improve the response time of a page.
+				</li>
+				<li>
+					Many servers are configured to limit the number of concurrent connections far below the point whre the server will fall over. It's a security measure to help prevent denial of server attacks.
+				</li>
+				<li>
+					Most servers are configured to close a persistent connection if it is idle for some period of time.
+				</li>
+				<li>
+					Web server software can be configured to not enable persistent connections. A server that does not allow persistent connections has to include a connection header in every HTTP response.
+				</li>
+			</ul>
+		<h2 class="SubHeading">Pipelined Connections</h2>
+		<ul>
+			<li>Parallel connections are both widely used and supported by clients and servers.
+					The HTTP specs allows for pipelined connections, which are not as widely supported by either servers or clients. In a pipelined connection a user agent can send multiple HTTP requests on a connection before waiting for the first response.
+			</li>
+		</ul>
+	</section>
+	<section class="ArchitectureSection">
+		<h2 class="SubHeading">Resources Redux</h2>
+		<ul>
+			<li>
+				The true essence of working with resources:
+			</li>
+			<li>
+				A URL can't specify the representation of a specific resource, and a resource can have multiple representations. On an application that allows content negotiation, the flexibility of resource can be seen in action
+			</li>
+			<li>
+				A URL also cant say what a user wants to do with a resource. It's the job of the HTTP request message to describe the intention of the user using one of the HTTP standard methods
+			</li>
+			<li>
+				When thinking about resources and URLs as we are in this article, you start to see the web as part of your application and as a flexible architectural layer you can build on.
+			</li>
+		</ul>
+		<h2 class="SubHeading">The Visible Protocol - HTTP</h2>
+		<ul>
+			<li>
+				URL and HTTP work very well together. The benefits of embracing HTTP include scalability, simplicity, reliability, and loose coupling. 
+				HTTP offers these benefits in part because you can think of a URL as a pointer, or a unit of indirection, between client and server application. The URL itself doesn't dictate a specific resource representation, technology implementation, or the client's intetion. Instead a client can express the desired intention and representation in a HTTP message
+			</li>
+			<li>
+				An HTTP message is, a simple plain text message. The request and the response are fully self-describing. A request includes the HTTP method, the path to the resource, and additional headers, providing information about the desired representation. A response includes a status code to indicate the result of the transaction, but also include header with cashe instructions, the content type of the resource, the length of the resource, and possibly other valuable metadata. 
+			</li>
+			<li>
+				Because all of the information required for a transaction is contained in the messages, and because the inforation is visible and ease to parse, HTTP applications can rely on a number of services that provide value as a message moves between the client application and the server application
+			</li>
+		</ul>
+		<h2 class="SubHeading">Adding Value</h2>
+			<ul>
+				<li>
+					An HTTP message moves from the memory space of a process on one machine to the memory space of a process on another machine. It can move through several pieces of software and hardware that inspect and possible modify the message.
+				</li>
+				<li>
+					A webserver will be one of the first recipients of an incoming HTTP request on a server machine. The web server can use the information in the message, like the host header, when deciding on which application needs to receive the message. The server can also perform additinal actions with the message, like logging the message to a local file. The applications of the server don't need to worry about lgging because the server is configured to log all messages.
+				</li>
+				<li>
+					Likewise, when an application creates an HTTP response message, the server has a changes to interact with the message on the way out. 
+				</li>
+				<li>
+					A server can know if a client supports gzip compression, because a client can advertise the fact through an accept encoding header in the HTTP request. Compression allows a server to take a 100kb resource and turn it into a 25kb. And this happens without the application itself worrying about compression
+				</li>
+				<li>
+					This type of processing can happen as the message moves across the network, too
+				</li>
+			</ul>
+			<h2 class="SubHeading">Proxies</h2>
+			<ul>
+				<li>
+					A proxy server is a server that sits between a client and a server. It is transparent end- users, so you think you are sending HTTP request messages directly to a server, but the messages are actually going to a proxy
+				</li>
+				<li>
+				 One popular use for proxy server, is to function as an access control device - capture all HTTP traffic leaving the office, and don't let HTTP request to certain servers reach the destination.
+				</li>
+				<li>
+					A proxy server could also inspect messages to remove confidential data, like the referer headers. 
+				</li>
+				<li>
+					Forward proxies are usually closer on the network to the client that the server and they usuallly require some configuration in the client software or web browser to work.
+				</li>
+				<li>
+					A reverse proxy server that is closer to the server than  the clien, is completely transparant to the client. A company might use a procy server for compression to take some of the load off the server where the application lives.
+				</li>
+				<li>
+					Procies can perform a wide range of services
+				</li>
+				<li>Load balancing proxies can take a message and forward it to one of severs that is currently processing the fewest number of requests</li>
+				<li>
+					SSL acceletation proxies can encrypt and decrypt HTTP messages, taking the encryption load off a web server.
+				</li>
+				<li>
+					Proxies can provide an additional layer on security by filtering out potentially dagerous HTTP messages. Messages that look like they might be trying to find a cross-site scripting vulnerability or launch a SQL injection attack
+				</li>
+				<li>
+					Cashing proxies will story copies of frequently access resources and responding to messages requestin those resources directly. </li>
+				<li>
+					There are many services you can layer into the network without impacting the application
+				</li>
+			</ul>
+			<h2 class="SubHeading">Cashing</h2>
+				<ul>
+					<li>
+						Cashing is a optimization to improve performace and scalability. When there are multiple requests for the same resource presentation, a server can send the same bytes over the network time and time again for each request.
+					</li>
+					<li>
+						Or a client can cashe the representation locally and reduce the amount of time and bandwidth required for a full retrieval.
+					</li>
+					<li>
+						Cashing can reduce latency, help prevent bottlenecks, and allow a web application to survive when evey used shows up at once to by the newest product or see the latest press release.
+					</li>
+					<li>
+						Cashing is a great example of how the metadata in the HTTP message headers facilitate additinal layers and services.
+					</li>
+					<li>
+						A public cashe is shared among multiple users. A public cashe generally resides on a proxy server. A public cashe on a forward proxy is generally cashing the resources that are popular in a community of users, like the users of a specific company, or the users of a specific internet service provider. A public cashe on a reverse proxy is generally cashing the resources that are popular on a specific website.
+					</li>
+					<li>
+						A private cashe is dedicated to a single user. 
+					</li>
+	</section>
