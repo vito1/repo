@@ -10,8 +10,11 @@
 .Navigation {
 	margin:0 4rem;
 }
+.White {
+	color: white;
+}
 .Button {
-	color: black; 
+	color: black;
 }
 .Chart {
 	display:flex;
@@ -29,13 +32,15 @@
 	transition-duration: 2s;
 	transition-timing-function: ease;
 	border: none;
-	
 }
 .Bar:hover {
 	filter: opacity(70%);
 }
 .Red {
 	background-color:red;
+}
+.Silver {
+	background-color: silver;
 }
 .Green {
 	background-color: green;
