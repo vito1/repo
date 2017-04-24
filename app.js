@@ -18,6 +18,8 @@ var forexindex = require('./routes/forex')
 var toDoApp = require ('./routes/todo')
 var flyingCar = require('./routes/flyingcar')
 var historyoftech = require('./routes/historyoftech')
+var talkbyra = require('./routes/talkbyra')
+
 var app = express();
 
 // view engine setup
@@ -42,6 +44,8 @@ app.use('/animations', animations);
 app.use('/flyingcar', flyingCar)
 app.use('/forex', forexindex)
 app.use('/historyoftech', historyoftech)
+app.use('/talkbyra', talkbyra)
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
