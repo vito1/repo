@@ -20,6 +20,10 @@ var flyingCar = require('./routes/flyingcar')
 var http = require('./routes/http')
 var historyoftech = require('./routes/historyoftech')
 var talkbyra = require('./routes/talkbyra')
+var cssgenerator = require('./routes/cssgenerator')
+var cssblank = require('./routes/cssblank')
+var jsgenerator = require('./routes/jsgenerator')
+var jsblank = require('./routes/jsblank')
 
 var app = express();
 
@@ -47,7 +51,10 @@ app.use('/forex', forexindex)
 app.use('/http', http)
 app.use('/historyoftech', historyoftech)
 app.use('/talkbyra', talkbyra)
-
+app.use('/cssgenerator', cssgenerator)
+app.use('/cssblank', cssblank)
+app.use('/jsgenerator', jsgenerator)
+app.use('/jsblank', jsblank)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

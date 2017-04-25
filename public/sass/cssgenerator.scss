@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+*:after, *:before {
+	box-sizing: inherit;
+}
+.Frage {
+	display: block;
+}
+.Box {
+	margin: 5px;
+	width: 50px;
+	height: 50px;
+	background-color: silver;
+	animation-name: a1;
+	animation-duration: 3s;
+}
+@keyframes a1 {
+	0% {
+    width: 100%; 
+  }
+  100% {
+    width:50px;
+  }
+}
+.Box1 {
+	width: 50px;
+	height: 50px;
+	background-color: silver;
+	animation-name: a2;
+	animation-duration: .8s;
+	margin: 5px;
+}
+@keyframes a2 {
+	0% {
+		margin-top: 5px;
+	}
+	50% {
+		margin-top: 40px;
+	}
+	100% {
+		margin-top: 5px;
+	}
+}
