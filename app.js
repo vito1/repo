@@ -24,6 +24,7 @@ var cssgenerator = require('./routes/cssgenerator')
 var cssblank = require('./routes/cssblank')
 var jsgenerator = require('./routes/jsgenerator')
 var jsblank = require('./routes/jsblank')
+var speakingjs = require('./routes/speakingjs')
 
 var app = express();
 
@@ -55,6 +56,7 @@ app.use('/cssgenerator', cssgenerator)
 app.use('/cssblank', cssblank)
 app.use('/jsgenerator', jsgenerator)
 app.use('/jsblank', jsblank)
+app.use('/speakingjs', speakingjs)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

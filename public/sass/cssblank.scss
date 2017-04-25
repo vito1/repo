@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+*:after, *:before {
+	box-sizing: inherit;
+}
+.listing {
+	
+
+}
+.box-title {
+	background-color: indigo;
+	color: white;	
+}
+.box-feature {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+.box-image {
+	grid-column: 1 / -1;
+	grid-row: 1 / 4;
+}
+.box-feature .Heading {
+	grid-column: 4 / -1;
+	grid-row: 1;
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+.box-feature .ContentBox {
+	grid-column: 4 / -1;
+	grid-row: 2;
+	background-color: black;
+	color: white;
+	padding: 10px;
+}

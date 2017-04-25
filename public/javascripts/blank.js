@@ -1,4 +1,5 @@
-console.log("echo")
-let fruits = ['Apple', 'Banana']
+'use strict'
+var obj = {}
+obj.foo = 'abc';
 
-document.getElementsByTagName("p")[0].innerHTML = fruits
+console.log(obj.foo.toUpperCase())
