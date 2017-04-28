@@ -1,7 +1,6 @@
 'use strict'
 
 let fruits = ["Strawberry", "Banana", "Mango"]
+document.getElementsByClassName("Input")[0].innerHTML += fruits
 
-document.getElementsByTagName("p")[0].innerHTML += fruits
-
-document.getElementsByTagName("p")[1].innerHTML += "Index of Banana is " + fruits.indexOf("Banana")
+document.getElementsByClassName("Output")[0].innerHTML += "Output Index of Banana is " + fruits.indexOf("Banana")
