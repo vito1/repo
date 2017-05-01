@@ -103,3 +103,25 @@
 		width: 50px;
 	}
 }
+/*Aufgabe 6*/
+.Box6 {
+	width: 50px;
+	height: 50px;
+	background-color: silver;
+	animation-name: animationSix;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-delay: 2s;
+	animation-fill-mode: backwards;
+	animation-timing-function: steps(4, end);
+}
+@keyframes animationSix {
+	0% {
+		width: 100%;		
+	}
+	50% {
+		
+	}
+	100% {
+	}
+}

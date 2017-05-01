@@ -1,6 +1,8 @@
 'use strict'
-
 let fruits = ["Strawberry", "Banana", "Mango"]
-document.getElementsByClassName("Input")[0].innerHTML += fruits
+let fruits2 = ["Apple", "Orange"]
 
-document.getElementsByClassName("Output")[0].innerHTML += "Output Index of Banana is " + fruits.indexOf("Banana")
+document.getElementsByClassName("Input")[0].innerHTML += fruits + " " + fruits2
+
+
+document.getElementsByClassName("Output")[0].innerHTML += fruits.concat(fruits2)
