@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+}
+*:before, *:after {
+	box-sizing: inherit;
+}
+.Example1 {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 100px);
+}
+.Box {
+	background-color: black;
+	color: white;
+	font-size: 2rem;
+	padding: 20px;
+	border-radius: 5px;
+}
+.Example2 {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 100px);
+}
+.Example2 > .Abox {
+	grid-column: 2;
+}
+.Example2 > .Bbox {
+	grid-column: 2;
+	grid-row: 2;
+}
+.Example2 > .Cbox {
+	grid-column: 3;
+	grid-row: 2;
+}
+.Example2 > .Dbox {
+	grid-column: 1;
+	grid-row:1;
+}
+.Example2 > .Ebox {
+	grid-column: 1;
+	grid-row: 2;
+}
+.Example2 > .Fbox {
+	grid-column: 3;
+	grid-row: 1;
+}
+.Example3 {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 100px);
+}
+.Example3 > .Abox {
+	grid-area: 1 / 2 / 2 / 3;
+}
+.Example3 > .Bbox {
+	grid-area: 2 / 2 / 2 / 3;
+}
+.Example3 > .Cbox {
+	grid-area: 2 / 3 / 2 / 3;
+}
+.Example3 > .Dbox {
+	grid-area: 1 / 1 / 1 / 1;
+}
+.Example3 > .Ebox {
+	grid-area: 2 / 1 / 2 / 1;
+}
+.Example > .Fbox {
+	grid-area: 1 / 3 / 1 / 3;
+}
+.Example4 {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 100px);
+}
+.Example4 > .Abox {
+	grid-column: span 2;
+}
+.Example4 > .Bbox {
+	grid-row: span 2;
+}

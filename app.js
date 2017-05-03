@@ -25,7 +25,7 @@ var cssblank = require('./routes/cssblank')
 var jsgenerator = require('./routes/jsgenerator')
 var jsblank = require('./routes/jsblank')
 var speakingjs = require('./routes/speakingjs')
-
+var gridexample = require('./routes/gridexample')
 var app = express();
 
 // view engine setup
@@ -57,7 +57,7 @@ app.use('/cssblank', cssblank)
 app.use('/jsgenerator', jsgenerator)
 app.use('/jsblank', jsblank)
 app.use('/speakingjs', speakingjs)
-
+app.use('/gridexample', gridexample)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
