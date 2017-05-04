@@ -1,7 +1,11 @@
 <h1>ES5 - Speaking JS</h1>
 <a href="http://speakingjs.com/es5/pr02.html#how_to_read">Link</a>
 <h2>Fragen</h2>
-<span class="Frage">Was ist der Unterschied zwischen var, let, const
+<span class="Frage">Was ist der unterschied zwischen postfix und prefix incrementors</span>
+<span class="Frage">Was bedeutet floating point?</span>
+<span class="Frage">Gibt es einen unterschied zwischen "invoke function" und "call function"</span>
+<span class="Frage">Wie funktieniert der || operator?</span>
+<span class="Frage">Was ist der Unterschied zwischen var, let, const</span>
 <span class="Frage">Wie funktionieren Regular Expressions</span>
 <span class="Frage">Was ist ein Object literal?</span>
 <span class="Frage">Wenn jede Property einen Key und Value hat, wie greift man darauf zu? Oder was sind zum Beispiel die Namen und Values von einem String?</span>
@@ -24,6 +28,11 @@
 	<li>All values in JavaScript have properties (except the non-values undefined and null). Each property has a key(name) and a value</li>
 	<li>Primative values are booleans, number, strings, null and undefined, all other values are objects. Each object has a unique identity and is only (strictly) equal to itself</li>
 	<li>Primatives are compared by value, are always immutable(properties can't be changed added or removed)</li>
+	<li>undefined and null are two "nonvalues" that denote missing information. undefined means "no value". null means "no object"</li>
+	<li>typeof value returns the type of a value</li>
+	<li>value instanceof Constr returns true if an object has been created by the constructor Constr</li>
+	<li> || returns true if either operand can be converted to true</li>
+	<li>functions become constructors - factories for objects - if invoked via the new operator. By convention, the names of consturctors start with capital letters. The constructor has two parts, first the function Constr() sets up the instance data. Second the property Constr.prototype contains an object with the methods. The former data is specific to each instance, while the latter data is shared among all instances</li>
 
 </ul>
 Aufgaben
@@ -32,3 +41,5 @@ Aufgaben
 <p>Calling a method of an object</p>
 <p>Comparing two strictly unequal values</p>
 <p>Read object's property</p>
+<p>Test the type of the value "abc"</p>
+<p>Create a object factory, create an object check if it has been created by the same constructor</p>

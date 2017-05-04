@@ -26,6 +26,7 @@ var jsgenerator = require('./routes/jsgenerator')
 var jsblank = require('./routes/jsblank')
 var speakingjs = require('./routes/speakingjs')
 var gridexample = require('./routes/gridexample')
+var animationglossar = require('./routes/animationglossar')
 var app = express();
 
 // view engine setup
@@ -40,7 +41,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', toDoApp);
+app.use('/', index);
 app.use('/users', users);
 app.use('/login', login);
 app.use('/login2', login2);
@@ -58,6 +59,7 @@ app.use('/jsgenerator', jsgenerator)
 app.use('/jsblank', jsblank)
 app.use('/speakingjs', speakingjs)
 app.use('/gridexample', gridexample)
+app.use('/animationglossar', animationglossar)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

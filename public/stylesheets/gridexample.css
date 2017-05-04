@@ -77,3 +77,75 @@
 
 .Example4 > .Bbox {
   grid-row: span 2; }
+
+.Example6 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: [col1-start] 100px [col2-start] 100px [col3-start] 100px [col3-end];
+  grid-template-rows: [row1-start] auto [row2-start] auto [row2-end]; }
+
+.Example6 > .Abox {
+  grid-column: col1-start / col3-start; }
+
+.Example6 > .Bbox {
+  grid-column: col3-start;
+  grid-row: row1-start / row2-end; }
+
+.Example7 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
+  grid-template-rows: [row] auto [row] auto [row]; }
+
+.Example7 > .Abox {
+  grid-column: col / span 2;
+  grid-row: row; }
+
+.Example7 > .Bbox {
+  grid-column: col 3 / span 2;
+  grid-row: row; }
+
+.Example7 > .Dbox {
+  grid-column: col 2 / span 3;
+  grid-row: row 2; }
+
+.Example7 > .Ebox {
+  grid-column: col / span 4; }
+
+.Example8 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, [col] 100px);
+  grid-template-rows: repeat(3, [row] auto); }
+
+.Example8 > .Abox {
+  grid-column: col / span 2;
+  grid-row: row; }
+
+.Example8 > .Bbox {
+  grid-column: col 3 / span 2;
+  grid-row: row; }
+
+.Example8 > .Dbox {
+  grid-column: col 2 / span 3;
+  grid-row: row 2; }
+
+.Example8 > .Ebox {
+  grid-column: col / span 4; }
+
+.Example9 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 100px);
+  grid-auto-columns: 100px;
+  grid-auto-rows: auto; }
+
+.Example9 > .Abox {
+  grid-column: span 2; }
+
+.Example9 > .Bbox {
+  grid-row: span 2; }
+
+.Example9 > .Ebox {
+  grid-row: 1 / 4;
+  grid-column: 4; }

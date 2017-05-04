@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+*:before, *:after {
+	box-sizing: inherit;
+}
+.Body {
+	margin: 0;
+	display: flex;
+}
+.Section {
+	border: 1px solid black;
+	flex: 1 1 200px;
+	padding: 10px;
+	border-right-width: 0;
+}
+h2 {
+	font-size: 1rem;
+}
+a {
+	text-decoration: none;
+	display: block;
+	color: black;
+	border-bottom: 1px solid silver;
+}
