@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+*:after, *:before {
+	box-sizing: inherit;
+}
+.Body {
+	font-family: 'Roboto';
+	margin: 0;
+}
+.Header {
+	background-color: rgba(0,0,200,1);
+	padding: 1rem;
+	box-shadow: 0 1px 4px rgba(0,0,0,.2);
+}
+.Heading {
+	margin: 0;
+	color: white;
+}
+.Main {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.Table {
+	border-radius: 2px;
+	border-collapse: collapse;
+	box-shadow: 0 1px 4px rgba(0,0,0,.15);
+}
+td {
+	border: 1px solid silver;
+	padding: 10px;
+	font-size: .8rem;	
+}
+td:first-child {
+	width: 40%;
+	border-radius: 2px;
+}
