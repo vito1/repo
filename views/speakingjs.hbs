@@ -1,6 +1,7 @@
 <h1>ES5 - Speaking JS</h1>
 <a href="http://speakingjs.com/es5/pr02.html#how_to_read">Link</a>
 <h2>Fragen</h2>
+<span class="Frage">Wie nutzt man functions die man als argumente bekommt?</span>
 <span class="Frage">Was ist der unterschied zwischen postfix und prefix incrementors</span>
 <span class="Frage">Was bedeutet floating point?</span>
 <span class="Frage">Gibt es einen unterschied zwischen "invoke function" und "call function"</span>
@@ -33,13 +34,21 @@
 	<li>value instanceof Constr returns true if an object has been created by the constructor Constr</li>
 	<li> || returns true if either operand can be converted to true</li>
 	<li>functions become constructors - factories for objects - if invoked via the new operator. By convention, the names of consturctors start with capital letters. The constructor has two parts, first the function Constr() sets up the instance data. Second the property Constr.prototype contains an object with the methods. The former data is specific to each instance, while the latter data is shared among all instances</li>
+	<li>The operand after case in a switch statement can be any expression, it is compared via the === with the paramenter in switch</li>
+	<li>Break; leaves a loop and continue; starts a new iteration</li> 
+	<li>A function expression produces a value and can be used to directly pass functions as arguments to other functions</li>
+	<li>"function expressions can be passed as arguments to other functions <br>someOtherFunction(function (p1, p2) { ... });"</li>
+	<li> Functions are first-class objects, that means you can create functions that accepts funtions as well as return functions. </li>
+	<li>Higher Order Functions are functions that accept a function and return a function</li>
 
 </ul>
 Aufgaben
 <p>If-else else statement as a statement or an expression </p>
-<p>A function expression</p>
+<p>define a function via expression</p>
 <p>Calling a method of an object</p>
 <p>Comparing two strictly unequal values</p>
 <p>Read object's property</p>
 <p>Test the type of the value "abc"</p>
 <p>Create a object factory, create an object check if it has been created by the same constructor</p>
+<p>Switch statement</p>
+<p></p>

@@ -149,3 +149,60 @@
 .Example9 > .Ebox {
   grid-row: 1 / 4;
   grid-column: 4; }
+
+.Example11 {
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  grid-template-areas: "..... header header" "sidebar content content";
+  grid-gap: 20px;
+  margin: 10px 0; }
+
+.Box {
+  height: 50px;
+  background-color: silver;
+  padding: 1rem;
+  border-radius: 5px; }
+
+.Example11 .Abox {
+  grid-area: header; }
+
+.Example11 .Bbox {
+  grid-area: sidebar; }
+
+.Example11 .Cbox {
+  grid-area: content; }
+
+/*Example12 */
+.Example12 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer"; }
+
+.Example12 .Abox {
+  grid-area: header; }
+
+.Example12 .Bbox {
+  grid-area: sidebar; }
+
+.Example12 .Cbox {
+  grid-area: content; }
+
+.Example12 .Dbox {
+  grid-area: sidebar2; }
+
+.Example12 .Ebox {
+  grid-area: footer; }
+
+@media (min-width: 500px) {
+  .Example12 {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "sidebar content" "sidebar2 sidebar2" "footer footer"; } }
+
+@media (min-width: 700px) {
+  .Example12 {
+    grid-template-columns: 20% auto 20%;
+    grid-template-areas: "header header header" "sidebar content sidebar2" "footer footer footer"; } }
+
+/*Example 13 */
+.Example13 {
+  display: grid; }
