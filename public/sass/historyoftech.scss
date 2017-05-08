@@ -7,24 +7,52 @@
 .Body {
 	padding: 2rem;
 }
-.Heading {
-	font-size: 1.5rem;
-}
 .SubHeading {
 	font-size: 1.1rem;
+}
+.Header {
+	display: flex;
+	align-items: center;
+}
+.Heading {
+	font-size: 1.5rem;
+	flex: 1;
 }
 .Article {
 	font-size: 1.1rem;
 }
 .Bold {
-	font-weight: 700;
+	font-weight: 600;
 }
 .Section {
-	border: 1px solid black;
-	margin: 20px;
-	padding: 10px;
+	margin: 20px 0;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 1rem;
+	border-radius: 2px;
+	box-shadow: 2px 1px 7px rgba(0,0,0,.25);
+	display: grid;
+	grid-template-columns: 20% 1fr;
+	grid-gap: 10px;
 }
 .SubHeading:first-child {
-	text-decoration: underline;
 	font-size: 1.3rem;
+}
+.Section h2 {
+	grid-row: 1;
+	grid-column: 2 / -1;
+}
+.SocialOrganizationSection {
+
+}
+.SocialOrganizationSection h2 {
+	grid-row: 1;
+	grid-column: 2 / -1;
+}
+.Content {
+	margin: 0;
+}
+.MetallurgySection {
+	display: grid;
+	grid-template-columns: 20% 1fr;
+	grid-gap: 10px;
 }
