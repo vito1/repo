@@ -1,81 +1,95 @@
-<h1>ES5 - Speaking JS</h1>
-<a href="http://speakingjs.com/es5/pr02.html#how_to_read">Link</a>
-<h2>Fragen</h2>
-<span class="Frage">Wie nutzt man functions die man als argumente bekommt?</span>
-<span class="Frage">Was ist der unterschied zwischen postfix und prefix incrementors</span>
-<span class="Frage">Was bedeutet floating point?</span>
-<span class="Frage">Gibt es einen unterschied zwischen "invoke function" und "call function"</span>
-<span class="Frage">Wie funktieniert der || operator?</span>
-<span class="Frage">Was ist der Unterschied zwischen var, let, const</span>
-<span class="Frage">Wie funktionieren Regular Expressions</span>
-<span class="Frage">Was ist ein Object literal?</span>
-<span class="Frage">Wenn jede Property einen Key und Value hat, wie greift man darauf zu? Oder was sind zum Beispiel die Namen und Values von einem String?</span>
-<span class="Frage">Was ist der Unterschied zwischen Paramenter und Argument?</span>
-<span class="Frage">Was ist der underschied zwischen == und ===?</span>
-<span class="Frage">Kann man sich das Object Array.prototype ansehen?</span>
-<h3>Intro</h3>
-<ul>
-	<li>JavaScript stores the methods of Array instaces in the object Array.prototype</li>
-</ul>
-<h3>Basic Javascript</h3>
-<ul>
-	<li>JavaScript often fails silently and converts values automatically, because initially it couldn't throw exceptions</li>
-	<li>JavaScript enables a programming style that is a mixture of funtional programming (higher-order functions; built-in map, reduce, etc) and object-oriented programming (pbjects, inheritance)</li>
-	<li>JavaScript has two major syntactic categories: statements and expressions: Statements do things and Expressions produce values. A function call is an expression</li>
-	<li>Statements cannot be used as function arguments</li>
-	<li>Expression produce values and can be written whereever a value is exprected - for example, as an argument in a function call or at the right side of an assignment</li>
-	<li>Variables are declared before they are used, they can be declared and assigned at the same time</li>
-	<li>Paramenters are part of the function declaration, arguments are passed with the function call</li>
-	<li>All values in JavaScript have properties (except the non-values undefined and null). Each property has a key(name) and a value</li>
-	<li>Primative values are booleans, number, strings, null and undefined, all other values are objects. Each object has a unique identity and is only (strictly) equal to itself</li>
-	<li>Primatives are compared by value, are always immutable(properties can't be changed added or removed)</li>
-	<li>undefined and null are two "nonvalues" that denote missing information. undefined means "no value". null means "no object"</li>
-	<li>typeof value returns the type of a value</li>
-	<li>value instanceof Constr returns true if an object has been created by the constructor Constr</li>
-	<li> || returns true if either operand can be converted to true</li>
-	<li>functions become constructors - factories for objects - if invoked via the new operator. By convention, the names of consturctors start with capital letters. The constructor has two parts, first the function Constr() sets up the instance data. Second the property Constr.prototype contains an object with the methods. The former data is specific to each instance, while the latter data is shared among all instances</li>
-	<li>The operand after case in a switch statement can be any expression, it is compared via the === with the paramenter in switch</li>
-	<li>Break; leaves a loop and continue; starts a new iteration</li> 
-	<li>A function expression produces a value and can be used to directly pass functions as arguments to other functions</li>
-	<li>"function expressions can be passed as arguments to other functions <br>someOtherFunction(function (p1, p2) { ... });"</li>
-	<li> Functions are first-class objects, that means you can create functions that accepts funtions as well as return functions. </li>
-	<li>Higher Order Functions are functions that accept a function and return a function</li>
-	<li>Function declarations are moved to the beginning of the current scope</li>
-	<li>Variable declarions are hoisted - assignments peformed by them are not</li>
-	<li>You can call any function in JavaScript with an arbitrary amount of arguments, all parameters are available via the special variable arguments</li>
-	<li>var scope is always the complete function</li>
-	<li>a closure is a function plus the connection to the variables of its surrounding scopes</li>
-	<li>An IIFE is a function expression that is called immediately after you define it. Inside the function, a new scope exists, preventing a variable from becoming global</li>
-	<li>If you want to use other keys than identifiers you have to quote them in a object literal and use square brackets to get and set the property. Square brackets also allow you to compute the key of a property</li>
-	<li>If you extract a method, it loses its connection with the object. On its own, the function is not a method anymore, and this has the value undefined. The method bind() that all functions have, creates a new function whose this always has the gives value</li>
-	<li>The language compatibility between JS engines used to be a problem , but isn't anymore, partly thanks to the test262 suite that checks engines for conformance to the ECMAScript specification. Browser and DOM differences are still a challenge. That's why it is normally best to rely on frameworks for hiding those differences</li>
-	<li></li>
-	<li></li>
-	<li></li>
-
-
-</ul>
-Aufgaben
-<p>If-else else statement as a statement or an expression </p>
-<p>define a function via expression</p>
-<p>Calling a method of an object</p>
-<p>Comparing two strictly unequal values</p>
-<p>Read object's property</p>
-<p>Test the type of the value "abc"</p>
-<p>Create a object factory, create an object check if it has been created by the same constructor</p>
-<p>Switch statement</p>
-<p>Call a function with an arbitrary amount of arguments, and return them</p>
-<p>demonstrate how too many or too few parameters are handled</p>
-<p>assign default values to parameters</p>
-<p>Enforce an arity - exactyle to parameters</p>
-<p>Convert arguments to an Array</p>
-<p>handle an exception</p>
-<p>demonstrate the scope of a var </p>
-<p>demonstrate that vars are hoisted but assignments that it makes stay put</p>
-<p>return a closure</p>
-<p>use an IIFE to receive a snapshot of the current value</p>
-<p>check whether a property exists with and without the in operator and remove the property</p><p>Use a string that is not an identifier as a key</p>
-<p>compute a key of a property</p>
-<p>Extract a method that uses this and bind it</p>
-<p>Use this inside a function inside a method correctly </p>
-<p>Use forEach and map to iterate over elements</p>
+<header class="Header">
+	<h1 class="Heading">ES5 - Speaking JS</h1>
+</header>
+<main class="Main">
+	<a href="http://speakingjs.com/es5/ch08.html">Link</a>
+	<h2>Fragen</h2>
+	<span class="Frage">Wie nutzt man functions die man als argumente bekommt?</span>
+	<span class="Frage">Was ist der unterschied zwischen postfix und prefix incrementors</span>
+	<span class="Frage">Was bedeutet floating point?</span>
+	<span class="Frage">Gibt es einen unterschied zwischen "invoke function" und "call function"</span>
+	<span class="Frage">Wie funktieniert der || operator?</span>
+	<span class="Frage">Was ist der Unterschied zwischen var, let, const</span>
+	<span class="Frage">Wie funktionieren Regular Expressions</span>
+	<span class="Frage">Was ist ein Object literal?</span>
+	<span class="Frage">Wenn jede Property einen Key und Value hat, wie greift man darauf zu? Oder was sind zum Beispiel die Namen und Values von einem String?</span>
+	<span class="Frage">Was ist der Unterschied zwischen Paramenter und Argument?</span>
+	<span class="Frage">Was ist der underschied zwischen == und ===?</span>
+	<span class="Frage">Kann man sich das Object Array.prototype ansehen?</span>
+	<h3>Intro</h3>
+	<ul>
+		<li>JavaScript stores the methods of Array instaces in the object Array.prototype</li>
+	</ul>
+	<h3>Basic Javascript</h3>
+	<ul>
+		<li>JavaScript often fails silently and converts values automatically, because initially it couldn't throw exceptions</li>
+		<li>JavaScript enables a programming style that is a mixture of funtional programming (higher-order functions; built-in map, reduce, etc) and object-oriented programming (pbjects, inheritance)</li>
+		<li>JavaScript has two major syntactic categories: statements and expressions: Statements do things and Expressions produce values. A function call is an expression</li>
+		<li>Statements cannot be used as function arguments</li>
+		<li>Expression produce values and can be written whereever a value is exprected - for example, as an argument in a function call or at the right side of an assignment</li>
+		<li>Variables are declared before they are used, they can be declared and assigned at the same time</li>
+		<li>Paramenters are part of the function declaration, arguments are passed with the function call</li>
+		<li>All values in JavaScript have properties (except the non-values undefined and null). Each property has a key(name) and a value</li>
+		<li>Primative values are booleans, number, strings, null and undefined, all other values are objects. Each object has a unique identity and is only (strictly) equal to itself</li>
+		<li>Primatives are compared by value, are always immutable(properties can't be changed added or removed)</li>
+		<li>undefined and null are two "nonvalues" that denote missing information. undefined means "no value". null means "no object"</li>
+		<li>typeof value returns the type of a value</li>
+		<li>value instanceof Constr returns true if an object has been created by the constructor Constr</li>
+		<li> || returns true if either operand can be converted to true</li>
+		<li>functions become constructors - factories for objects - if invoked via the new operator. By convention, the names of consturctors start with capital letters. The constructor has two parts, first the function Constr() sets up the instance data. Second the property Constr.prototype contains an object with the methods. The former data is specific to each instance, while the latter data is shared among all instances</li>
+		<li>The operand after case in a switch statement can be any expression, it is compared via the === with the paramenter in switch</li>
+		<li>Break; leaves a loop and continue; starts a new iteration</li> 
+		<li>A function expression produces a value and can be used to directly pass functions as arguments to other functions</li>
+		<li>"function expressions can be passed as arguments to other functions <br>someOtherFunction(function (p1, p2) { ... });"</li>
+		<li> Functions are first-class objects, that means you can create functions that accepts funtions as well as return functions. </li>
+		<li>Higher Order Functions are functions that accept a function and return a function</li>
+		<li>Function declarations are moved to the beginning of the current scope</li>
+		<li>Variable declarions are hoisted - assignments peformed by them are not</li>
+		<li>You can call any function in JavaScript with an arbitrary amount of arguments, all parameters are available via the special variable arguments</li>
+		<li>var scope is always the complete function</li>
+		<li>a closure is a function plus the connection to the variables of its surrounding scopes</li>
+		<li>An IIFE is a function expression that is called immediately after you define it. Inside the function, a new scope exists, preventing a variable from becoming global</li>
+		<li>If you want to use other keys than identifiers you have to quote them in a object literal and use square brackets to get and set the property. Square brackets also allow you to compute the key of a property</li>
+		<li>If you extract a method, it loses its connection with the object. On its own, the function is not a method anymore, and this has the value undefined. The method bind() that all functions have, creates a new function whose this always has the gives value</li>
+		<li>The language compatibility between JS engines used to be a problem , but isn't anymore, partly thanks to the test262 suite that checks engines for conformance to the ECMAScript specification. Browser and DOM differences are still a challenge. That's why it is normally best to rely on frameworks for hiding those differences</li>
+		<li>Two kings of expressions look like statements, they are ambiguous with regard to their syntactic category: object literals, and function expressions. In order to prevent ambiguity, JavaScript does not let you use object literals and function expressions as statements</li>
+		<li>named function expression look like function declarations. The former produces a function, the latter creates a variale and assigns a function to it</li>
+		<li>Functions must be declared at the top level of a scope, you can't put a function declaration inside a block. If you want to work around this you can create a variable declaration and a function expression</li>
+		<li>using the same parameter name twice is forbidden, as are local variables that have the same name as a parameter</li>
+		<li>The value of this in nonmethod functions is undefined. When you forget new an call it as a function you get a warning</li>
+		<li>chp 8 values</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	Aufgaben
+	<p>If-else else statement and an equivalent conditional operator</p>
+	<p>define a function via expression</p>
+	<p>delete a variable</p>
+	<p>create a function and assign a value to it</p>
+	<p>Calling a method of an object</p>
+	<p>Comparing two strictly unequal values</p>
+	<p>Read object's property</p>
+	<p>Test the type of the value "abc"</p>
+	<p>Create a object factory, create an object check if it has been created by the same constructor</p>
+	<p>Switch statement</p>
+	<p>Call a function with an arbitrary amount of arguments, and return them</p>
+	<p>demonstrate how too many or too few parameters are handled</p>
+	<p>assign default values to parameters</p>
+	<p>Enforce an arity - exactyle to parameters</p>
+	<p>Convert arguments to an Array</p>
+	<p>handle an exception</p>
+	<p>demonstrate the scope of a var </p>
+	<p>demonstrate that vars are hoisted but assignments that it makes stay put</p>
+	<p>return a closure</p>
+	<p>immediately invoke a function expression</p>
+	<p>use an IIFE to receive a snapshot of the current value</p>
+	<p>check whether a property exists with and without the in operator and remove the property</p><p>Use a string that is not an identifier as a key</p>
+	<p>compute a key of a property</p>
+	<p>Extract a method that uses this and bind it</p>
+	<p>Use this inside a function inside a method correctly </p>
+	<p>Use forEach and map to iterate over elements</p>
+	<p>Evaluate an object literal via eval()</p>
+	<p>Invoke a method on number literals</p>
+</main>
