@@ -1,4 +1,4 @@
-* {
+7* {
   box-sizing: border-box; }
 
 *:after, *:before {
@@ -137,3 +137,112 @@
 
 .Example17 .Box:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.3); }
+
+.Example18 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(7, 80px); }
+
+.Example18 .Box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 2rem; }
+
+.Example18 .Box:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.Example18 .Box2 {
+  grid-column: 3 /span 3;
+  grid-row: 2; }
+
+.Example19 {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-gap: 10px; }
+
+.Example19 .Box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 2rem; }
+
+.Example19 .Box1 {
+  grid-column: span 3; }
+
+.Example19 .Box2 {
+  grid-column: span 3; }
+
+.Example19 .Box4 {
+  grid-column: span 5; }
+
+.Example19 .Box5 {
+  grid-column: 1 / -1; }
+
+.Example20 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px; }
+
+.Example20 .Box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 2rem; }
+
+.Example20 .Box4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px; }
+
+.Example20 .Box4 .Box {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black; }
+
+.Example21 {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-areas: "header header header" "sidebar content content";
+  grid-gap: 10px;
+  border-radius: 10px; }
+
+.Example21 .Box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px; }
+
+.Example21 .Box2 {
+  background-color: red;
+  grid-column: content-start / header-end;
+  grid-row: header-start / content-end; }
+
+.Example21 .Box1 {
+  grid-area: header; }
+
+.Example21 .Box3 {
+  grid-area: sidebar; }
+
+.Example22 {
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  grid-gap: 10px; }
+
+.Example22 .Box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 2rem;
+  order: 1; }
+
+.Example22 .Box:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.Example22 .Box2 {
+  order: 2; }
+
+.Example22 .Box1 {
+  order: 3; }

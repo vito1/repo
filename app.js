@@ -28,6 +28,7 @@ var speakingjs = require('./routes/speakingjs')
 var gridexample = require('./routes/gridexample')
 var animationglossar = require('./routes/animationglossar')
 var jsglossar = require('./routes/jsglossar')
+var productdesign = require('./routes/productdesign')
 var app = express();
 
 // view engine setup
@@ -62,6 +63,7 @@ app.use('/speakingjs', speakingjs)
 app.use('/gridexample', gridexample)
 app.use('/animationglossar', animationglossar)
 app.use('/jsglossar', jsglossar)
+app.use('/productdesign', productdesign)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

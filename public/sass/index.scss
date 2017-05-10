@@ -9,10 +9,12 @@
 	display: flex;
 }
 .Section {
-	border: 1px solid black;
+	border: 1px solid rgba(0,0,0,.4);
 	flex: 1 1 200px;
 	padding: 10px;
-	border-right-width: 0;
+	margin: 5px;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.15);
 }
 h2 {
 	font-size: 1rem;
@@ -21,5 +23,4 @@ a {
 	text-decoration: none;
 	display: block;
 	color: black;
-	border-bottom: 1px solid silver;
 }

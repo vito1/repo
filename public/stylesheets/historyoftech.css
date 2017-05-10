@@ -5,6 +5,7 @@
   box-sizing: inherit; }
 
 .Body {
+  margin: 0;
   padding: 2rem; }
 
 .SubHeading {
@@ -55,6 +56,25 @@
 .Section h2 {
   grid-row: 1;
   grid-column: 2 / -1; }
+
+.SocialOrganizationSection {
+  position: relative; }
+
+.Triangle {
+  height: 20px;
+  background-color: black;
+  border-left: 20px solid black;
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.Wrapper {
+  width: 100%;
+  background-color: transparent;
+  height: 100%;
+  position: absolute; }
 
 .SocialOrganizationSection h2 {
   grid-row: 1;

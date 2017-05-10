@@ -8,17 +8,14 @@
   margin: 0; }
 
 .Header {
-  background-color: #0000c8;
-  padding: 1rem;
+  background-color: rgba(0, 0, 200, 0.8);
+  padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
 
 .Heading {
-  font-size: 1.5rem;
   color: white;
-  margin: 0 1.5rem; }
+  margin: 0; }
 
 .Main {
-  margin: 1rem 2rem; }
-
-.Frage {
-  display: block; }
+  width: 70%;
+  margin: 2rem 2rem; }
