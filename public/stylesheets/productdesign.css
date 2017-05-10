@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box; }
+
+*:after, *:before {
+  box-sizing: inherit; }
+
+.Body {
+  margin: 0; }
+
+.Header {
+  background-color: rgba(0, 0, 200, 0.8);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+
+.Heading {
+  color: white;
+  margin: 0; }
+
+.Main {
+  width: 70%;
+  margin: 2rem 2rem; }
