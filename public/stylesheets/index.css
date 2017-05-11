@@ -4,18 +4,6 @@
 *:before, *:after {
   box-sizing: inherit; }
 
-.Body {
-  margin: 0;
-  display: flex; }
-
-.Section {
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  flex: 1 1 200px;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); }
-
 h2 {
   font-size: 1rem; }
 
@@ -23,3 +11,34 @@ a {
   text-decoration: none;
   display: block;
   color: black; }
+
+.Body {
+  margin: 0; }
+
+.Header {
+  background-color: #0000c8;
+  padding: 1rem 2rem;
+  font-family: sans-serif; }
+
+.Heading {
+  margin: 0;
+  color: white;
+  font-size: 1.8rem; }
+
+.Main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin: 10px; }
+
+.Section {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); }
+
+.AppSection {
+  grid-row: span 2; }
+
+.ProductSection {
+  grid-row: span 2; }

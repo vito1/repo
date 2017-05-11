@@ -31,6 +31,9 @@
 .Rest {
   margin-left: auto; }
 
+#canvas {
+  position: absolute; }
+
 .Article {
   font-size: 1.1rem; }
 

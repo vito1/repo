@@ -13,43 +13,37 @@ var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 var running = false;
 
-var ball = {
-  x: 75,
-  y: 100,
-  vx: 5,
-  vy: 1,
-  radius: 25,
-  color: 'blue',
+var triangle = {
+  x: 10,
   draw: function() {
 
     ctx.beginPath();
-    ctx.moveTo(75, 50);
-    ctx.lineTo(100, 75);
-    ctx.lineTo(100, 25);
+    ctx.moveTo(25, this.x);
+    ctx.lineTo(50, this.x + 25);
+    ctx.lineTo(25, this.x + 50);
+    ctx.fillStyle = 'black';
     ctx.fill();
-
   }
 };
-
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  triangle.draw()
+}
 function clear() {
-  ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+  ctx.fillStyle = 'rgba(255, 255, 255, 1)';
   ctx.fillRect(0,0,canvas.width,canvas.height);
 }
 
-function draw() {
-  clear();
-  ball.draw();
-}
 
 wrapper.addEventListener('mousemove', function(e) {
   if (!running) {
     clear()
-    ball.x = e.offsetY;
-    ball.draw();
+    triangle.x = e.offsetY;
+    resizeCanvas();
+    console.log(e.offsetY);
   }
 
-}, true);
+}); 
 
-
-ball.draw()
-
+resizeCanvas()
