@@ -28,7 +28,8 @@ var speakingjs = require('./routes/speakingjs')
 var gridexample = require('./routes/gridexample')
 var cssglossar = require('./routes/cssglossar')
 var jsglossar = require('./routes/jsglossar')
-var htmlglossar = require('/.routes/httpglossar')
+var htmlglossar = require('./routes/htmlglossar')
+var domglossar = require('./routes/domglossar')
 var productdesign = require('./routes/productdesign')
 
 var app = express();
@@ -67,6 +68,7 @@ app.use('/cssglossar', cssglossar)
 app.use('/jsglossar', jsglossar)
 app.use('/productdesign', productdesign)
 app.use('/htmlglossar', htmlglossar)
+app.use('/domglossar', domglossar)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

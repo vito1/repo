@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box; }
+
+*:after, *:before {
+  box-sizing: inherit; }
+
+.Body {
+  margin: 0; }
+
+.Header {
+  background-color: #0000c8;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+
+.Heading {
+  margin: 0; }
+
+.Table {
+  width: 80%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+
+td:first-child {
+  width: 20%;
+  text-align: center; }
+
+td {
+  padding: .5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2); }
