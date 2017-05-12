@@ -1,0 +1,591 @@
+<header class="Header">
+	<h2 class="Heading">
+		DOM Glossar
+	</h2>
+</header>
+<main class="Main">
+	<table class="Table">
+		<tr>
+			<td>Ambient Light Events</td><td>The ambient light events are a handy way to make a web page or an application aware of any change in the light intensity.</td>
+		</tr>
+		<tr>
+			<td>Ambient Light Sensor API</td><td></td>
+		</tr>
+		<tr>
+			<td>AmbientLightSensor</td><td>The AmbientLightSensor interface of the the Ambient Light Sensor API returns an interface for accessing AmbientLightSensorReading.</td>
+		</tr>
+		<tr>
+			<td>AmbientLightSensor.reading</td><td>The reading read-only property of the AmbientLightSensor interface returns an AmbientLightSensorReading interface, containing the current light level.</td>
+		</tr>
+		<tr>
+			<td>AmbientLightSensorReading</td><td>The AmbientLightSensorReading interface of the the Ambient Light Sensor API returns an interface for reading the current light level.</td>
+		</tr>
+		<tr>
+			<td>AmbientLightSensorReading.illuminance</td><td>The illuminance property of the AmbientLightSensorReading interface returns a Number indicating the current light level.</td>
+		</tr>
+		<tr>
+			<td>DeviceLightEvent</td><td>provides web developers with information from photo sensors or similiar detectors about ambient light levels near the device</td>
+		</tr>
+		<tr>
+			<td>DeviceLightEvent.value</td><td>the value property provides the current level of the ambient light.</td>
+		</tr>
+		</table>
+		<table class="Table AnimationTable">
+		<tr>
+			<td>Animation</td><td>The Animation interface of the Web Animations API represents a single animation player and provides playback controls and a timeline for an animation node or source.</td>
+		</tr>
+		<tr>
+			<td>Animation.cancel</td><td>The Web Animations API's cancel() method of the Animation interface clears all KeyframeEffects caused by this animation and aborts its playback.</td>
+		</tr>
+		<tr>
+			<td>Animation.constructor</td><td>The Animation() constructor of the Web Animations API returns a new Animation object instance.</td>
+		</tr>
+		<tr>
+			<td>Animation.currentTime</td><td>The Animation.currentTime property of the Web Animations API returns and sets the current time value of the animation in milliseconds, whether running or paused.</td>
+		</tr>
+		<tr>
+			<td>Animation.effect</td><td>The Animation.effect property of the Web Animations API gets and sets the target effect of an animation.</td>
+		</tr>
+		<tr>
+			<td>Animation.finish</td><td>The finish() method of the Web Animations API's Animation Interface sets the current playback time to the end of the animation corresponding to the current playback direction.</td>
+		</tr>
+		<tr>
+			<td>Animation.finished</td><td>The Animation.finished read-only property of the Web Animations API returns a Promise which resolves once the animation has finished playing.</td>
+		</tr>
+		<tr>
+			<td>Animation.id</td><td>The Animation.id property of the Web Animations API returns or sets a string used to identify the animation.</td>
+		</tr>
+		<tr>
+			<td>Animation.oncancel</td><td>The oncancel property of the Web Animations API's Animation interface is the event handler for the cancel event.</td>
+		</tr>
+		<tr>
+			<td>Animation.onfinish</td><td>The Animation interface's onfinish property (from the Web Animations API) is the event handler for the finish event. This event is sent when the animation finishes playing.</td>
+		</tr>
+		<tr>
+			<td>Animation.pause</td><td>The pause() method of the Web Animations API's Animation interface suspends playback of the animation.</td>
+		</tr>
+		<tr>
+			<td>Animation.play</td><td>The play() method of the Web Animations API's Animation Interface starts or resumes playing of an animation. If the animation is finished, calling play() restarts the animation, playing it from the beginning.</td>
+		</tr>
+		<tr>
+			<td>Animation.playbackRate</td><td>The Animation.playbackRate property of the Web Animations API returns or sets the playback rate of the animation.</td>
+		</tr>
+		<tr>
+			<td>Animation.playState</td><td>The Animation.playState property of the Web Animations API returns and sets an enumerated value describing the playback state of an animation.</td>
+		</tr>
+		<tr>
+			<td>Animation.ready</td><td>The read-only Animation.ready property of the Web Animations API returns a Promise which resolves when the animation is ready to play</td>
+		</tr>
+		<tr>
+			<td>Animation.reverse</td><td>The Animation.reverse() method of the Animation Interface reverses the playback direction, meaning the animation ends at its beginning</td>
+		</tr>
+		<tr>
+			<td>Animation.startTime</td><td>The Animation.startTime property of the Animation interface is a double-precision floating-point value which indicates the scheduled time when an animation's playback should begin.</td>
+		</tr>
+		<tr>
+			<td>Animation.timeline</td><td>The Animation.timeline property of the Animation interface returns or sets the timeline associated with this animation. </td>
+		</tr>
+		<tr>
+			<td>AnimationEffectReadOnly</td><td>The AnimationEffectReadOnly interface of the Web Animations API defines current and future animation effects like KeyframeEffect, which can be passed to Animation objects for playing, and KeyframeEffectReadOnly </td>
+		</tr>
+		<tr>
+			<td>AnimationEffectReadOnly.getComputedTiming</td><td>The getComputedTiming() method of the AnimationEffectReadOnly interface returns the calculated timing properties for this animation effect.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectReadOnly.timing</td><td>The AnimationEffectReadOnly.timing read-only attribute of the AnimationEffectReadOnly interface returns an AnimationEffectTimingReadOnly object containing the timing properties for the Animation Effect.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTiming</td><td>The AnimationEffectTiming interface of the Web Animations API is comprised of timing properties. It is returned by the timing attribute of a KeyframeEffect.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingProperties</td><td>The AnimationEffectTimingProperties dictionary, part of the Web Animations API, is used by Element.animate(), KeyframeEffectReadOnly(), and KeyframeEffect() to describe timing properties for animation effects. These properties are all optional, although without setting a duration the animation will not play.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingProperties.delay</td><td>The AnimationEffectTimingProperties dictionary's delay property in the Web Animations API represents the number of milliseconds to delay the start of the animation.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingProperties.direction</td><td>The direction property of the Web Animations API dictionary AnimationEffectTimingProperties indicates an animation's playback direction along its timeline, as well as its behavior when it reaches the end of an interation</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingProperties.duration</td><td>The duration property of the dictionary AnimationEffectTimingProperties in the Web Animations API specifies the duration in milliseconds that a single iteration (from beginning to end) the animation should take to complete.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingProperties.easing</td><td>s easing property in the Web Animations API specifies the timing function used to scale the time to produce easing effects, where easing is the rate of the animation's change over time.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingProperties.endDelay</td><td>The endDelay property of the AnimationEffectTimingProperties dictionary (part of the Web Animations API) indicates the number of milliseconds to delay after the active period of an animation sequence</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingProperties.fill</td><td>The Web Animations API's AnimationEffectTimingProperties dictionary's fill property specifies a fill mode, which defines how the element to which the animation is applied should look when the animation sequence is not actively running, such as before the time specified by iterationStart or after animation's end time.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingProperties.iterations</td><td>The Web Animations API dictionary AnimationEffectTimingProperties's iterations property specifies the number of times the animation should repeat</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingProperties.iterationStart</td><td>Web Animations API's AnimationEffectTimingProperties dictionary's iterationStart property specifies the repetition number which repetition the animation begins at and its progress through it.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingReadOnly</td><td>The AnimationEffectTimingReadOnly interface of the Web Animations API is comprised of timing properties.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingReadOnly.delay</td><td>The delay property of the AnimationEffectTimingReadOnly object represents the number of milliseconds to delay the start of the animation.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingReadOnly.direction</td><td>The direction property of the AnimationEffectTimingReadOnly dictionary object represents the direction of the animation's playback along its timeline and its behavior after completing each iteration</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingReadOnly.duration</td><td>The duration property of AnimationEffectTimingReadOnly represents the duration in milliseconds to complete a single iteration of the animation.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingReadOnly.easing</td><td>The easing property of the AnimationEffectTimingReadOnly object represents the timing function used to scale the time to produce easing effects</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingReadOnly.endDelay</td><td>The endDelay property of AnimationEffectTimingReadOnly represents the number of milliseconds to delay after the end time of an animation</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingReadOnly.fill</td><td>The fill property of AnimationEffectTimingReadOnly dictates how and when the animation's effects should be reflected by the element(s) visual state.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingReadOnly.iterations</td><td>The iterations property of AnimationEffectTimingReadOnly represents the number of times the animation should repeat. It defaults to 1, and can also take a value of Infinity to make it loop infinitely.</td>
+		</tr>
+		<tr>
+			<td>AnimationEffectTimingReadOnly.iterationStart</td><td>The iterationStart property of AnimationEffectTimingReadOnly represents which repetition the animation begins at and its progress through it.</td>
+		</tr>
+		<tr>
+			<td>AnimationEvent</td><td>The AnimationEvent interface represents events providing information related to animations</td>
+		</tr>
+		<tr>
+			<td>AnimationEvent.animationName</td><td>The AnimationEvent.animationName read-only property is a DOMString containing the value of the animation-name CSS property associated with the transition.</td>
+		</tr>
+		<tr>
+			<td>AnimationEvent.constructor</td><td>The AnimationEvent() constructor returns a newly created AnimationEvent, representing an event in relation with an animation.</td>
+		</tr>
+		<tr>
+			<td>AnimationEvent.elapsedTime</td><td>The AnimationEvent.elapsedTime read-only property is a float giving the amount of time the animation has been running, in seconds, when this event fired, excluding any time the animation was paused</td>
+		</tr>
+		<tr>
+			<td>AnimationEvent.pseudoElement</td><td>The AnimationEvent.pseudoElement read-only property is a DOMString, starting with '::', containing the name of the pseudo-element the animation runs on</td>
+		</tr>
+		<tr>
+			<td>AnimationPlaybackEvent</td><td>The AnimationPlaybackEvent interface of the Web Animations API represents animation events.</td>
+		</tr>
+		<tr>
+			<td>AnimationPlaybackEvent.constructor</td><td>The AnimationPlaybackEvent() constructor of the Web Animations API returns a new AnimationPlaybackEvent object instance.</td>
+		</tr>
+		<tr>
+			<td>AnimationPlaybackEvent.currentTime</td><td>The currentTime read-only property of the AnimationPlaybackEvent interface represents the current time of the animation that generated the event at the moment the event is queued.</td>
+		</tr>
+		<tr>
+			<td>AnimationPlaybackEvent.timelineTime</td><td>The timelineTime read-only property of the AnimationPlaybackEvent interface represents the time value of the animation's timeline at the moment the event is queued</td>
+		</tr>
+		<tr>
+			<td>AnimationTimeline</td><td>The AnimationTimeline interface of the Web Animations API represents the timeline of an animation. This interface exists to define timeline features (inherited by DocumentTimeline and future timeline types) and is not itself directly used by developers.</td>
+		</tr>
+		<tr>
+			<td>AnimationTimeline.currentTime</td><td>The currentTime read-only property of the Web Animations API's AnimationTimeline interface returns the timeline's current time in milliseconds, or null if the timeline is inactive.</td>
+		</tr>
+		<tr>
+			<td>DocumentTimeline</td><td>The DocumentTimeline interface of the the Web Animations API represents animation timelines, including the default document timeline (accessed via Document.timeline).</td>
+		</tr>
+		<tr>
+			<td>DocumentTimeline.constructor</td><td>The DocumentTimeline() constructor of the Web Animations API creates a new instance of the DocumentTimeline object associated with the active document of the current browsing context.</td>
+		</tr>
+		<tr>
+			<td>KeyframeEffect</td><td>The KeyframeEffect interface of the Web Animations API lets us create sets of animatable properties and values, called keyframes</td>
+		</tr>
+		<tr>
+			<td>KeyframeEffect.constructor</td><td>The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.</td>
+		</tr>
+		<tr>
+			<td>KeyframeEffect.setKeyframes</td><td>The setKeyframes() method of the KeyframeEffect interface replaces the keyframes that make up the affected KeyframeEffect with a new set of keyframes</td>
+		</tr>
+		<tr>
+			<td>KeyframeEffectReadOnly</td><td>The KeyframeEffectReadOnly interface of the Web Animations API describes sets of animatable properties and values that can be played using the Animation.Animation() constructor, and which are inherited by KeyframeEffect.</td>
+		</tr>
+		<tr>
+			<td>KeyframeEffectReadOnly.composite</td><td>The composite property of a KeyframeEffectReadOnly or a KeyframeEffect resolves how an element's animation impacts its underlying property values.</td>
+		</tr>
+		<tr>
+			<td>KeyframeEffectReadOnly.constructor</td><td>The KeyframeEffectReadOnly() constructor of the Web Animations API returns a new KeyframeEffectReadOnly object instance, and also allows you to clone an existing keyframe effect object instance.</td>
+		</tr>
+		<tr>
+			<td>KeyframeEffectReadOnly.getKeyframes</td><td>The getKeyframes() method of a KeyframeEffectReadOnly or a KeyframeEffect returns an Array of the computed keyframes that make up this animation along with their computed offsets.</td>
+		</tr>
+		<tr>
+			<td>KeyframeEffectReadOnly.iterationComposite</td><td>The iterationComposite property of a KeyframeEffectReadOnly or a KeyframeEffect resolves how the the animation's property value changes accumulate or override each other upon each of the animation's iterations.</td>
+		</tr>
+		<tr>
+			<td>KeyframeEffectReadOnly.spacing</td><td>The spacing property of a KeyframeEffectReadOnly or a KeyframeEffect sets the temporal spacing of the animation's iterations.</td>
+		</tr>
+		<tr>
+			<td>KeyframeEffectReadOnly.target</td><td>The target property of a KeyframeEffectReadOnly or a KeyframeEffect interface represents the element or pseudo-element being animated. </td>
+		</tr>
+		<tr>
+			<td>SharedKeyframeList</td><td>The SharedKeyframeList interface of the Web Animations API represents a sequence of keyframes that can be shared between KeyframeEffect objects.</td>
+		</tr>
+		<tr>
+			<td>SharedKeyframeList.constructor</td><td>The SharedKeyframeList() constructor of the SharedKeyframeList interface creates a new SharedKeyframeList object which can be shared across multiple KeyframeEffect objects.</td>
+		</tr>
+		<tr>
+			<td></td><td></td>
+		</tr>
+	</table>
+	<table class="Table BatteryTable">
+		<tr>
+			<td>Battery Status API</td><td>The Battery Status API, more often referred to as the Battery API, provides information about the system's battery charge level and lets you be notified by events that are sent when the battery level or charging status change</td>
+		</tr>
+		<tr>
+			<td>BatteryManager</td><td>The BatteryManager interface provides ways to get information about the system's battery charge level.</td>
+		</tr>
+		<tr>
+			<td>BatteryManager.charging</td><td>A Boolean value indicating whether or not the device's battery is currently being charged.</td>
+		</tr>
+		<tr>
+			<td>BatteryManager.chargingTime</td><td>Indicates the amount of time, in seconds, that remain until the battery is fully charged.</td>
+		</tr>
+		<tr>
+			<td>BatteryManager.dischargingTime</td><td>Indicates the amount of time, in seconds, that remains until the battery is fully discharged.</td>
+		</tr>
+		<tr>
+			<td>BatteryManager.level</td><td>Indicates the current battery charge level as a value between 0.0 and 1.0.</td>
+		</tr>
+		<tr>
+			<td>BatteryManager.onchargingchange</td><td>Specifies an event listener to receive chargingchange events. These events occur when the battery charging state is updated.</td>
+		</tr>
+		<tr>
+			<td>BatteryManager.onchargingtimechange</td><td>Specifies an event listener to receive chargingtimechange events. These events occur when the battery chargingTime is updated.</td>
+		</tr>
+		<tr>
+			<td>BatteryManager.ondischargingtimechange</td><td>Specifies an event listener to receive dischargingtimechange events. These events occur when the battery dischargingTime is updated.</td>
+		</tr>
+		<tr>
+			<td>BatteryManager.onlevelchange</td><td>Specifies an event listener to receive levelchange events. These events occur when the battery level is updated.</td>
+		</tr>
+	</table>
+	<table class="Table BroadcastTable">
+		<tr>
+			<td>Broadcast Channel API</td><td>The Broadcast Channel API allows simple communication between browsing contexts (that is windows, tabs, frames, or iframes) with the same origin (usually pages from the same site).</td>
+		</tr>
+		<tr>
+			<td>BroadcastChannel</td><td>The BroadcastChannel interface represents a named channel that any browsing context of a given origin can subscribe to. It allows communication between different documents (in different windows, tabs, frames or iframes) of the same origin</td>
+		</tr>
+		<tr>
+			<td>BroadcastChannel.close</td><td>The BroadcastChannel.close() terminates the connection to the underlying channel, allowing the object to be garbage collected. This is a necessary step to perform as there is no other way for a browser to know that this channel is not needed anymore.</td>
+		</tr>
+		<tr>
+			<td>BroadcastChannel.constructor</td><td>The BroadcastChannel() constructor creates a new BroadcastChannel and connects it to the underlying channel.</td>
+		</tr>
+		<tr>
+			<td>BroadcastChannel.name</td><td>The read-only BroadcastChannel.name property returns a DOMString, which uniquely identifies the given channel with its name. This name is passed to the BroadcastChannel() constructor at creation time and is therefore read-only.</td>
+		</tr>
+		<tr>
+			<td>BroadcastChannel.onmessage</td><td>The BroadcastChannel.onmessage event handler is a property that specifies the function to execute when a message event, of type MessageEvent, is received by this BroadcastChannel.</td>
+		</tr>
+		<tr>
+			<td>BroadcastChannel.postMessage</td><td>The BroadcastChannel.postMessage() sends a message, which can be of any kind of Object, to each listener in any browser context with the same origin</td>
+		</tr>
+	</table>
+	<table class="Table CanvasTable">
+		<tr>
+			<td>CanvasCaptureMediaStream</td><td>The CanvasCaptureMediaStream interface represents a MediaStream capturing in real-time the surface of an HTMLCanvasElement.</td>
+		</tr>		<tr>
+			<td>ImageBitmapRenderingContext.transferFromImageBitmap</td><td>The ImageBitmapRenderingContext.transferFromImageBitmap() method displays the given ImageBitmap in the canvas associated with this rendering context. The ownership of the ImageBitmap is transferred to the canvas as well.</td>
+		</tr>
+	</table>
+	<table class="Table CanvasTable">
+		<tr>
+			<td>CanvasCaptureMediaStream</td><td>The CanvasCaptureMediaStream interface represents a MediaStream capturing in real-time the surface of an HTMLCanvasElement.</td>
+		</tr>
+		<tr>
+			<td>CanvasCaptureMediaStream.canvas</td><td>The CanvasCaptureMediaStream.canvas read-only property returns the HTMLCanvasElement associated with the stream.</td>
+		</tr>
+		<tr>
+			<td>CanvasCaptureMediaStream.requestFrame</td><td>The CanvasCaptureMediaStream.requestFrame() method forces a frame to be captured and sent to the stream. This allows to capture partially rendered frames.</td>
+		</tr>
+		<tr>
+			<td>CanvasGradient</td><td>The CanvasGradient interface represents an opaque object describing a gradient. It is returned by the methods CanvasRenderingContext2D.createLinearGradient() or CanvasRenderingContext2D.createRadialGradient().</td>
+		</tr>
+		<tr>
+			<td>CanvasGradient.addColorStop</td><td>The CanvasGradient.addColorStop() method adds a new stop, defined by an offset and a color, to the gradient. If the offset is not between 0 and 1, an INDEX_SIZE_ERR is raised, if the color can't be parsed as a CSS color, a SYNTAX_ERR is raised.</td>
+		</tr>
+		<tr>
+			<td>CanvasImageSource</td><td>CanvasImageSource is a helper type representing any objects of one of the following types: HTMLImageElement, HTMLVideoElement, HTMLCanvasElement, or ImageBitmap.</td>
+		</tr>
+		<tr>
+			<td>CanvasPattern</td><td>The CanvasPattern interface represents an opaque object describing a pattern, based on an image, a canvas or a video, created by the CanvasRenderingContext2D.createPattern() method.</td>
+		</tr>
+		<tr>
+			<td>CanvasPattern.setTransform</td><td>The CanvasPattern.setTransform() method uses an SVGMatrix object as the pattern's transformation matrix and invokes it on the pattern.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D</td><td>The CanvasRenderingContext2D interface is used for drawing rectangles, text, images and other objects onto the canvas element. It provides the 2D rendering context for the drawing surface of a canvas element.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.addHitRegion</td><td>The CanvasRenderingContext2D.addHitRegion() method of the Canvas 2D API adds a hit region to the bitmap. This allows you to make hit detection easier, lets you route events to DOM elements, and makes it possible for users to explore the canvas without seeing it.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.arc</td><td>The CanvasRenderingContext2D.arc() method of the Canvas 2D API adds an arc to the path which is centered at (x, y) position with radius r starting at startAngle and ending at endAngle going in the given direction by anticlockwise (defaulting to clockwise).</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.arcTo</td><td>The CanvasRenderingContext2D.arcTo() method of the Canvas 2D API adds an arc to the path with the given control points and radius, connected to the previous point by a straight line.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.beginPath</td><td>The CanvasRenderingContext2D.beginPath() method of the Canvas 2D API starts a new path by emptying the list of sub-paths. Call this method when you want to create a new path.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.bezierCurveTo</td><td>The CanvasRenderingContext2D.bezierCurveTo() method of the Canvas 2D API adds a cubic Bézier curve to the path. It requires three points. The first two points are control points and the third one is the end point. The starting point is the last point in the current path, which can be changed using moveTo() before creating the Bézier curve.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.canvas</td><td>he CanvasRenderingContext2D.canvas property is a read-only reference to the HTMLCanvasElement object that is associated with the context. It might be null if there is no association with an canvas element.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.clearHitRegions</td><td>The CanvasRenderingContext2D.clearHitRegions() method of the Canvas 2D API removes all hit regions from the canvas.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.clearRect</td><td>The CanvasRenderingContext2D.clearRect() method of the Canvas 2D API sets all pixels in the rectangle defined by starting point (x, y) and size (width, height) to transparent black, erasing any previously drawn content.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.clip</td><td>The CanvasRenderingContext2D.clip() method of the Canvas 2D API turns the path currently being built into the current clipping path.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.closePath</td><td>The CanvasRenderingContext2D.closePath() method of the Canvas 2D API causes the point of the pen to move back to the start of the current sub-path. It tries to add a straight line (but does not actually draw it) from the current point to the start. If the shape has already been closed or has only one point, this function does nothing.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.createImageData</td><td>The CanvasRenderingContext2D.createImageData() method of the Canvas 2D API creates a new, blank ImageData object with the specified dimensions. All of the pixels in the new object are transparent black.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.createLinearGradient</td><td>The CanvasRenderingContext2D.createLinearGradient() method of the Canvas 2D API creates a gradient along the line given by the coordinates represented by the parameters</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.createPattern</td><td>The CanvasRenderingContext2D.createPattern() method of the Canvas 2D API creates a pattern using the specified image (a CanvasImageSource). It repeats the source in the directions specified by the repetition argument. This method returns a CanvasPattern.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.createRadialGradient</td><td>The CanvasRenderingContext2D.createRadialGradient() method of the Canvas 2D API creates a radial gradient given by the coordinates of the two circles represented by the parameters. This method returns a CanvasGradient.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.currentTransform</td><td>The CanvasRenderingContext2D.currentTransform property of the Canvas 2D API returns or sets an SVGMatrix object for the current transformation matrix.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.direction</td><td>The CanvasRenderingContext2D.direction property of the Canvas 2D API specifies the current text direction used when drawing text.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.drawFocusIfNeeded</td><td>The CanvasRenderingContext2D.drawFocusIfNeeded() method of the Canvas 2D API draws a focus ring around the current path or given path, If a given element is focused.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.drawImage</td><td>The CanvasRenderingContext2D.drawImage() method of the Canvas 2D API provides different ways to draw an image onto the canvas.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.ellipse</td><td>The CanvasRenderingContext2D.ellipse() method of the Canvas 2D API adds an ellipse to the path which is centered at (x, y) position with the radii radiusX and radiusY starting at startAngle and ending at endAngle going in the given direction by anticlockwise (defaulting to clockwise).</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.fill</td><td>The CanvasRenderingContext2D.fill() method of the Canvas 2D API fills the current or given path with the current fill style using the non-zero or even-odd winding rule.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.fillRect</td><td>The CanvasRenderingContext2D.fillRect() method of the Canvas 2D API draws a filled rectangle whose starting point is at the coordinates (x, y) with the specified width and height and whose style is determined by the fillStyle attribute.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.fillStyle</td><td>The CanvasRenderingContext2D.fillStyle property of the Canvas 2D API specifies the color or style to use inside shapes. The default is #000 (black).</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.fillText</td><td>he CanvasRenderingContext2D.fillText() method of the Canvas 2D API fills a given text at the given (x, y) position. If the optional fourth parameter for a maximum width is provided, the text will be scaled to fit that width.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.filter</td><td>The CanvasRenderingContext2D.filter property of the Canvas 2D API provides filter effects like blurring or gray-scaling. It is similar to the CSS filter property and accepts the same functions.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.font</td><td>The CanvasRenderingContext2D.font property of the Canvas 2D API specifies the current text style being used when drawing text. This string uses the same syntax as the CSS font specifier. The default font is 10px sans-serif.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.getImageData</td><td>The CanvasRenderingContext2D.getImageData() method of the Canvas 2D API returns an ImageData object representing the underlying pixel data for the area of the canvas denoted by the rectangle which starts at (sx, sy) and has an sw width and sh height. This method is not affected by the canvas transformation matrix.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.getLineDash</td><td>The CanvasRenderingContext2D.getLineDash() method of the Canvas 2D API gets the current line dash pattern.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.globalAlpha</td><td>The CanvasRenderingContext2D.globalAlpha property of the Canvas 2D API specifies the alpha value that is applied to shapes and images before they are drawn onto the canvas. The value is in the range from 0.0 (fully transparent) to 1.0 (fully opaque).</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.globalCompositeOperation</td><td>The CanvasRenderingContext2D.globalCompositeOperation property of the Canvas 2D API sets the type of compositing operation to apply when drawing new shapes, where type is a string identifying which of the compositing or blending mode operations to use.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.imageSmoothingEnabled</td><td>The CanvasRenderingContext2D.imageSmoothingEnabled property of the Canvas 2D API can be set to change if images are smoothed (true, default) or not (false). On getting the imageSmoothingEnabled property, the last value it was set to, is returned.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.imageSmoothingQuality</td><td>The CanvasRenderingContext2D.imageSmoothingQuality property of the Canvas 2D API allows you to set the quality of image smoothing.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.isPointInPath</td><td>The CanvasRenderingContext2D.isPointInPath() method of the Canvas 2D API reports whether or not the specified point is contained in the current path.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.isPointInStroke</td><td>The CanvasRenderingContext2D.isPointInStroke() method of the Canvas 2D API reports whether or not the specified point is inside the area contained by the stroking of a path.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.lineCap</td><td>The CanvasRenderingContext2D.lineCap property of the Canvas 2D API determines how the end points of every line are drawn. There are three possible values for this property and those are: butt, round and square. By default this property is set to butt.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.lineDashOffset</td><td>The CanvasRenderingContext2D.lineDashOffset property of the Canvas 2D API sets the line dash pattern offset or "phase" to achieve a "marching ants" effect, for example.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.lineJoin</td><td>The CanvasRenderingContext2D.lineJoin property of the Canvas 2D API determines how two connecting segments (of lines, arcs or curves) with non-zero lengths in a shape are joined together (degenerate segments with zero lengths, whose specified endpoints and control points are exactly at the same position, are skipped).</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.lineTo</td><td>The CanvasRenderingContext2D.lineTo() method of the Canvas 2D API connects the last point in the sub-path to the x, y coordinates with a straight line (but does not actually draw it)</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.lineWidth</td><td>The CanvasRenderingContext2D.lineWidth property of the Canvas 2D API sets the thickness of lines in space units. When getting, it returns the current value (1.0 by default). When setting, zero, negative, Infinity and NaN values are ignored; otherwise the current value is set to the new value.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.measureText</td><td>The CanvasRenderingContext2D.measureText() method returns a TextMetrics object that contains information about the measured text (such as its width for example).</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.miterLimit</td><td>The CanvasRenderingContext2D.miterLimit property of the Canvas 2D API sets the miter limit ratio in space units. When getting, it returns the current value (10.0 by default). When setting, zero, negative, Infinity and NaN values are ignored; otherwise the current value is set to the new value.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.moveTo</td><td>The CanvasRenderingContext2D.moveTo() method of the Canvas 2D API moves the starting point of a new sub-path to the (x, y) coordinates.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.putImageData</td><td>The CanvasRenderingContext2D.putImageData() method of the Canvas 2D API paints data from the given ImageData object onto the bitmap. If a dirty rectangle is provided, only the pixels from that rectangle are painted. This method is not affected by the canvas transformation matrix.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.quadraticCurveTo</td><td>The CanvasRenderingContext2D.quadraticCurveTo() method of the Canvas 2D API adds a quadratic Bézier curve to the path. It requires two points. The first point is a control point and the second one is the end point. The starting point is the last point in the current path, which can be changed using moveTo() before creating the quadratic Bézier curve.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.rect</td><td>The CanvasRenderingContext2D.rect() method of the Canvas 2D API creates a path for a rectangle atposition (x, y) with a size that is determined by width and height. Those four points are connected by straight lines and the sub-path is marked as closed, so that you can fill or stroke this rectangle.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.removeHitRegion</td><td>The CanvasRenderingContext2D.removeHitRegion() method of the Canvas 2D API removes a given hit region from the canvas.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.resetTransform</td><td>The CanvasRenderingContext2D.resetTransform() method of the Canvas 2D API resets the current transform by the identity matrix.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.restore</td><td>The CanvasRenderingContext2D.restore() method of the Canvas 2D API restores the most recently saved canvas state by popping the top entry in the drawing state stack. If there is no saved state, this method does nothing.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.rotate</td><td>The CanvasRenderingContext2D.rotate() method of the Canvas 2D API adds a rotation to the transformation matrix. The angle argument represents a clockwise rotation angle and is expressed in radians.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.save</td><td>The CanvasRenderingContext2D.save() method of the Canvas 2D API saves the entire state of the canvas by pushing the current state onto a stack.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.scale</td><td>The CanvasRenderingContext2D.scale() method of the Canvas 2D API adds a scaling transformation to the canvas units by x horizontally and by y vertically.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.scrollPathIntoView</td><td>The CanvasRenderingContext2D.scrollPathIntoView() method of the Canvas 2D API scrolls the current or given path into the view. It is similar to Element.scrollIntoView().</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.setLineDash</td><td>The CanvasRenderingContext2D.setLineDash() method of the Canvas 2D API sets the line dash pattern.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.setTransform</td><td>The CanvasRenderingContext2D.setTransform() method of the Canvas 2D API resets (overrides) the current transformation to the identity matrix and then invokes a transformation described by the arguments of this method.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.shadowBlur</td><td>The CanvasRenderingContext2D.shadowBlur property of the Canvas 2D API specifies the level of the blurring effect; this value doesn't correspond to a number of pixels and is not affected by the current transformation matrix. The default value is 0.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.shadowColor</td><td>The CanvasRenderingContext2D.shadowColor property of the Canvas 2D API specifies the color of the shadow.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.shadowOffsetX</td><td>The CanvasRenderingContext2D.shadowOffsetX property of the Canvas 2D API specifies the distance that the shadow will be offset in horizontal distance.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.shadowOffsetY</td><td>The CanvasRenderingContext2D.shadowOffsetY property of the Canvas 2D API specifies the distance that the shadow will be offset in vertical distance.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.stroke</td><td>The CanvasRenderingContext2D.stroke() method of the Canvas 2D API strokes the current or given path with the current stroke style using the non-zero winding rule.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.strokeRect</td><td>The CanvasRenderingContext2D.strokeRect() method of the Canvas 2D API paints a rectangle which has a starting point at (x, y) and has a w width and an h height onto the canvas, using the current stroke style.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.strokeStyle</td><td>The CanvasRenderingContext2D.strokeStyle property of the Canvas 2D API specifies the color or style to use for the lines around shapes. The default is #000 (black).</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.strokeText</td><td>The CanvasRenderingContext2D.strokeText() method of the Canvas 2D API strokes a given text at the given (x, y) position. If the optional fourth parameter for a maximum width is provided, the text will be scaled to fit that width.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.textAlign</td><td>The CanvasRenderingContext2D.textAlign property of the Canvas 2D API specifies the current text alignment being used when drawing text. Beware that the alignment is base on the x value of the CanvasRenderingContext2D.fillText method. So if textAlign="center", then the text would be drawn at x-50%*width.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.textBaseline</td><td>The CanvasRenderingContext2D.textBaseline property of the Canvas 2D API specifies the current text baseline being used when drawing text.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.transform</td><td>The CanvasRenderingContext2D.transform() method of the Canvas 2D API multiplies the current transformation with the matrix described by the arguments of this method. You are able to scale, rotate, move and skew the context.</td>
+		</tr>
+		<tr>
+			<td>CanvasRenderingContext2D.translate</td><td>The CanvasRenderingContext2D.translate() method of the Canvas 2D API adds a translation transformation by moving the canvas and its origin x horizontally and y vertically on the grid.</td>
+		</tr>
+		<tr>
+			<td>ImageBitmap</td><td>The ImageBitmap interface represents a bitmap image which can be drawn to a canvas without undue latency</td>
+		</tr>
+		<tr>
+			<td>ImageBitmap.close</td><td>The ImageBitmap.close() method disposes of all graphical resources associated with an ImageBitmap.</td>
+		</tr>
+		<tr>
+			<td>ImageBitmap.height</td><td>The read-only ImageBitmap.height property returns the ImageBitmap object's height in CSS pixels</td>
+		</tr>
+		<tr>
+			<td>ImageBitmap.width</td><td>The read-only ImageBitmap.width property returns the ImageBitmap object's width in CSS pixels</td>
+		</tr>
+		<tr>
+			<td>ImageBitmapFactories</td><td>The ImageBitmapFactories mixin interface contains utility methods to create an ImageBitmap. There is no object of this type, but the two interfaces Window, available within the regular browsing scope, and the WorkerGlobalScope interface for workers, implement this interface.</td>
+		</tr>
+		<tr>
+			<td>ImageBitmapRenderingContext</td><td>The ImageBitmapRenderingContext interface is a canvas rendering context which only provides the functionality to replace the canvas's contents with the given ImageBitmap. Its context id (the first argument to HTMLCanvasElement.getContext() or OffscreenCanvas.getContext() is "bitmaprenderer".</td>
+		</tr>
+		<tr>
+			<td>ImageBitmapRenderingContext.transferFromImageBitmap</td><td>The ImageBitmapRenderingContext.transferFromImageBitmap() method displays the given ImageBitmap in the canvas associated with this rendering context. The ownership of the ImageBitmap is transferred to the canvas as well.</td>
+		</tr>
+		<tr>
+			<td>ImageData</td><td>The ImageData interface represents the underlying pixel data of an area of a canvas element. It is created using the ImageData() constructor or creator methods on the CanvasRenderingContext2D object associated with a canvas: createImageData() and getImageData(). It can also be used to set a part of the canvas by using putImageData().</td>
+		</tr>
+		<tr>
+			<td>ImageData.constructor</td><td>he ImageData() constructor returns a newly instantiated ImageData object build from the typed array given and having the specified width and height.</td>
+		</tr>
+		<tr>
+			<td>ImageData.data</td><td>he readonly ImageData.data property returns a Uint8ClampedArray representing a one-dimensional array containing the data in the RGBA order, with integer values between 0 and 255</td>
+		</tr>
+		<tr>
+			<td>ImageData.height</td><td>The readonly ImageData.height property returns the number of rows in the image data object.</td>
+		</tr>
+		<tr>
+			<td>ImageData.width</td><td>The readonly ImageData.width property returns the number of pixels per row in the image data object.</td>
+		</tr>
+		<tr>
+			<td>OffscreenCanvas</td><td>The OffscreenCanvas interface provides a canvas that can be rendered off screen. It is available in both the window and worker contexts.</td>
+		</tr>
+		<tr>
+			<td>OffscreenCanvas.constructor</td><td>The OffscreenCanvas() constructor returns a newly instantiated OffscreenCanvas object.</td>
+		</tr>
+		<tr>
+			<td>OffscreenCanvas.getContext</td><td>The OffscreenCanvas.getContext() method returns a drawing context for an offscreen canvas, or null if the context identifier is not supported.</td>
+		</tr>
+		<tr>
+			<td>OffscreenCanvas.height</td><td>The height property returns and sets the height of an OffscreenCanvas object.</td>
+		</tr>
+		<tr>
+			<td>OffscreenCanvas.toBlob</td><td>The OffscreenCanvas.toBlob() method creates a Blob object representing the image contained in the canvas.</td>
+		</tr>
+		<tr>
+			<td>OffScreenCanvas.transferToImageBitmap</td><td>The OffscreenCanvas.transferToImageBitmap() method creates an ImageBitmap object from the most recently rendered image of the OffscreenCanvas.</td>
+		</tr>
+		<tr>
+			<td>OffscreenCanvas.width</td><td>The width property returns and sets the width of an OffscreenCanvas object.</td>
+		</tr>
+		<tr>
+			<td>Path2D</td><td>The Path2D interface of the Canvas 2D API is used to declare paths that are then later used on CanvasRenderingContext2D objects. The path methods of the CanvasRenderingContext2D interface are present on this interface as well and are allowing you to create paths that you can retain and replay as required on a canvas.</td>
+		</tr>
+		<tr>
+			<td>Path2D.addPath</td><td>The Path2D.addPath() method of the Canvas 2D API adds to the path the path given by the argument.</td>
+		</tr>
+		<tr>
+			<td>Path2D.constructor</td><td>The Path2D() constructor returns a newly instantiated Path2D object, optionally with another path as an argument (creates a copy), or optionally with a string consisting of SVG path data.</td>
+		</tr>
+		<tr>
+			<td>TextMetrics</td><td>The TextMetrics interface represents the dimension of a text in the canvas, as created by the CanvasRenderingContext2D.measureText() method.</td>
+		</tr>
+		<tr>
+			<td>TextMetrics.width</td><td>The readonly TextMetrics.width property contains the text's advance width (the width of that inline box) in CSS pixels.</td>
+		</tr>
+	</table>
+</main>
