@@ -1,9 +1,9 @@
-'use strict'
+'use strict';
 var express = require('express');
-var router = express.Router()
+var router = express.Router();
 
 router.get('/', function(req, res, next) {
-	res.render('animation')
-})
+  res.render('htmlglossar', {title:'htmlglossar'});
+});
 
-module.exports = router
+module.exports = router;

@@ -28,7 +28,7 @@ var speakingjs = require('./routes/speakingjs')
 var gridexample = require('./routes/gridexample')
 var cssglossar = require('./routes/cssglossar')
 var jsglossar = require('./routes/jsglossar')
-var htmlglossar = require('/.routes/httpglossar')
+var htmlglossar = require('./routes/htmlglossar')
 var productdesign = require('./routes/productdesign')
 
 var app = express();
