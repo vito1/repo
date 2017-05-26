@@ -1,248 +1,25 @@
-7* {
-  box-sizing: border-box; }
-
+@font-face {
+  font-family: 'sa';
+  src: local('sans-serif');
+  unicode-range: U+26;
+}
+* {
+  box-sizing: border-box;
+}
 *:after, *:before {
-  box-sizing: inherit; }
-
-.Example13 {
-  width: 50%;
-  display: grid;
-  grid-gap: 2rem; }
-
-.Example13 > .Box {
-  background-color: silver;
-  font-size: 2rem;
-  border-radius: 5px;
-  padding: 2rem;
-  color: white; }
-
-.Add1 {
-  grid-row: 2; }
-
-.Add2 {
-  grid-row: 4; }
-
-.Example14 {
-  display: grid;
-  grid-template-columns: repeat(5, [col] 100px);
-  grid-template-rows: repeat(3, [row] auto);
-  grid-gap: 1rem;
-  margin: 20px; }
-
-.Example14 > .Box {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 2rem;
-  border-radius: 2px; }
-
-.Example14 > .Abox {
-  grid-column: 1 / 3; }
-
-.Example14 > .Bbox {
-  grid-column: 3 / -1; }
-
-.Example14 > .Cbox {
-  grid-column: 1 / 2; }
-
-.Example14 > .Dbox {
-  grid-column: 2 / 5;
-  grid-row: 2; }
-
-.Example14 > .Ebox {
-  grid-column: 1 / -1;
-  grid-row: 3; }
-
-.Example14 > .Fbox {
-  grid-column: 3 / -1;
-  grid-row: 2;
-  z-index: 2;
-  background-color: rgba(0, 0, 200, 0.3); }
-
-.Example15 {
-  width: 65%;
-  grid-gap: 10px;
-  display: grid;
-  grid-template-areas: "header header header" "sidebar content content" "footer footer footer"; }
-
-.Example15 > .Box {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  font-size: 1.5rem;
-  border-radius: 5px;
-  padding: 3rem; }
-
-.Example15 > .Header {
-  grid-area: header; }
-
-.Example15 > .Sidebar {
-  grid-area: sidebar;
-  background-color: rgba(0, 0, 0, 0.8); }
-
-.Example15 > .Content {
-  grid-area: content;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: relative; }
-
-.Example15 > .Footer {
-  grid-area: footer; }
-
-.Content > img {
-  position: absolute; }
-
-.topleft {
-  left: 0;
-  top: 0; }
-
-.topright {
-  right: 0;
-  top: 0; }
-
-.bottomleft {
-  left: 0;
-  bottom: 0; }
-
-.bottomright {
-  bottom: 0;
-  right: 0; }
-
-.Example16 {
-  margin: 20px;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(6, 80px); }
-
-.Example16 .Box {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  color: white;
-  font-size: 2rem;
-  padding: 20px; }
-
-.Example16 .Box:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.Example17 {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(5, 80px);
-  grid-template-rows: repeat(3, 80px);
-  grid-auto-flow: column; }
-
-.Example17 .Box {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 5px;
-  color: white;
-  font-size: 2rem; }
-
-.Example17 .Box:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.Example18 {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(7, 80px); }
-
-.Example18 .Box {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 5px;
-  color: white;
-  font-size: 2rem; }
-
-.Example18 .Box:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.Example18 .Box2 {
-  grid-column: 3 /span 3;
-  grid-row: 2; }
-
-.Example19 {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 100px);
-  grid-gap: 10px; }
-
-.Example19 .Box {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 5px;
-  color: white;
-  font-size: 2rem; }
-
-.Example19 .Box1 {
-  grid-column: span 3; }
-
-.Example19 .Box2 {
-  grid-column: span 3; }
-
-.Example19 .Box4 {
-  grid-column: span 5; }
-
-.Example19 .Box5 {
-  grid-column: 1 / -1; }
-
-.Example20 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px; }
-
-.Example20 .Box {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 5px;
-  color: white;
-  font-size: 2rem; }
-
-.Example20 .Box4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px; }
-
-.Example20 .Box4 .Box {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black; }
-
-.Example21 {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-areas: "header header header" "sidebar content content";
-  grid-gap: 10px;
-  border-radius: 10px; }
-
-.Example21 .Box {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px; }
-
-.Example21 .Box2 {
-  background-color: red;
-  grid-column: content-start / header-end;
-  grid-row: header-start / content-end; }
-
-.Example21 .Box1 {
-  grid-area: header; }
-
-.Example21 .Box3 {
-  grid-area: sidebar; }
-
-.Example22 {
-  display: grid;
-  grid-template-columns: repeat(6, 100px);
-  grid-gap: 10px; }
-
-.Example22 .Box {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 5px;
-  color: white;
-  font-size: 2rem;
-  order: 1; }
-
-.Example22 .Box:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0.8); }
-
-.Example22 .Box2 {
-  order: 2; }
-
-.Example22 .Box1 {
-  order: 3; }
+  box-sizing: inherit;
+}
+.Box {
+   background: linear-gradient(to bottom right, yellow, green);
+  box-shadow:
+    8px 8px 10px 0px deeppink, 
+    -5px -5px 5px 0px blue, 
+    5px 5px 15px 0px yellow;
+  padding: 0em 1em;
+  border-radius: 16px;
+  border-style: solid;
+  margin-left: 10px;
+  font: 24px sans-serif;
+  line-height: 2;
+  
+}
