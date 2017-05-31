@@ -30,206 +30,211 @@
 			<td>DeviceLightEvent.value</td><td>the value property provides the current level of the ambient light.</td>
 		</tr>
 		</table>
-		<table class="Table AnimationTable">
-		<tr>
-			<td>Animation</td><td>The Animation interface of the Web Animations API represents a single animation player and provides playback controls and a timeline for an animation node or source.</td>
-		</tr>
-		<tr>
-			<td>Animation.cancel</td><td>The Web Animations API's cancel() method of the Animation interface clears all KeyframeEffects caused by this animation and aborts its playback.</td>
-		</tr>
-		<tr>
-			<td>Animation.constructor</td><td>The Animation() constructor of the Web Animations API returns a new Animation object instance.</td>
-		</tr>
-		<tr>
-			<td>Animation.currentTime</td><td>The Animation.currentTime property of the Web Animations API returns and sets the current time value of the animation in milliseconds, whether running or paused.</td>
-		</tr>
-		<tr>
-			<td>Animation.effect</td><td>The Animation.effect property of the Web Animations API gets and sets the target effect of an animation.</td>
-		</tr>
-		<tr>
-			<td>Animation.finish</td><td>The finish() method of the Web Animations API's Animation Interface sets the current playback time to the end of the animation corresponding to the current playback direction.</td>
-		</tr>
-		<tr>
-			<td>Animation.finished</td><td>The Animation.finished read-only property of the Web Animations API returns a Promise which resolves once the animation has finished playing.</td>
-		</tr>
-		<tr>
-			<td>Animation.id</td><td>The Animation.id property of the Web Animations API returns or sets a string used to identify the animation.</td>
-		</tr>
-		<tr>
-			<td>Animation.oncancel</td><td>The oncancel property of the Web Animations API's Animation interface is the event handler for the cancel event.</td>
-		</tr>
-		<tr>
-			<td>Animation.onfinish</td><td>The Animation interface's onfinish property (from the Web Animations API) is the event handler for the finish event. This event is sent when the animation finishes playing.</td>
-		</tr>
-		<tr>
-			<td>Animation.pause</td><td>The pause() method of the Web Animations API's Animation interface suspends playback of the animation.</td>
-		</tr>
-		<tr>
-			<td>Animation.play</td><td>The play() method of the Web Animations API's Animation Interface starts or resumes playing of an animation. If the animation is finished, calling play() restarts the animation, playing it from the beginning.</td>
-		</tr>
-		<tr>
-			<td>Animation.playbackRate</td><td>The Animation.playbackRate property of the Web Animations API returns or sets the playback rate of the animation.</td>
-		</tr>
-		<tr>
-			<td>Animation.playState</td><td>The Animation.playState property of the Web Animations API returns and sets an enumerated value describing the playback state of an animation.</td>
-		</tr>
-		<tr>
-			<td>Animation.ready</td><td>The read-only Animation.ready property of the Web Animations API returns a Promise which resolves when the animation is ready to play</td>
-		</tr>
-		<tr>
-			<td>Animation.reverse</td><td>The Animation.reverse() method of the Animation Interface reverses the playback direction, meaning the animation ends at its beginning</td>
-		</tr>
-		<tr>
-			<td>Animation.startTime</td><td>The Animation.startTime property of the Animation interface is a double-precision floating-point value which indicates the scheduled time when an animation's playback should begin.</td>
-		</tr>
-		<tr>
-			<td>Animation.timeline</td><td>The Animation.timeline property of the Animation interface returns or sets the timeline associated with this animation. </td>
-		</tr>
-		<tr>
-			<td>AnimationEffectReadOnly</td><td>The AnimationEffectReadOnly interface of the Web Animations API defines current and future animation effects like KeyframeEffect, which can be passed to Animation objects for playing, and KeyframeEffectReadOnly </td>
-		</tr>
-		<tr>
-			<td>AnimationEffectReadOnly.getComputedTiming</td><td>The getComputedTiming() method of the AnimationEffectReadOnly interface returns the calculated timing properties for this animation effect.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectReadOnly.timing</td><td>The AnimationEffectReadOnly.timing read-only attribute of the AnimationEffectReadOnly interface returns an AnimationEffectTimingReadOnly object containing the timing properties for the Animation Effect.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTiming</td><td>The AnimationEffectTiming interface of the Web Animations API is comprised of timing properties. It is returned by the timing attribute of a KeyframeEffect.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingProperties</td><td>The AnimationEffectTimingProperties dictionary, part of the Web Animations API, is used by Element.animate(), KeyframeEffectReadOnly(), and KeyframeEffect() to describe timing properties for animation effects. These properties are all optional, although without setting a duration the animation will not play.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingProperties.delay</td><td>The AnimationEffectTimingProperties dictionary's delay property in the Web Animations API represents the number of milliseconds to delay the start of the animation.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingProperties.direction</td><td>The direction property of the Web Animations API dictionary AnimationEffectTimingProperties indicates an animation's playback direction along its timeline, as well as its behavior when it reaches the end of an interation</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingProperties.duration</td><td>The duration property of the dictionary AnimationEffectTimingProperties in the Web Animations API specifies the duration in milliseconds that a single iteration (from beginning to end) the animation should take to complete.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingProperties.easing</td><td>s easing property in the Web Animations API specifies the timing function used to scale the time to produce easing effects, where easing is the rate of the animation's change over time.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingProperties.endDelay</td><td>The endDelay property of the AnimationEffectTimingProperties dictionary (part of the Web Animations API) indicates the number of milliseconds to delay after the active period of an animation sequence</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingProperties.fill</td><td>The Web Animations API's AnimationEffectTimingProperties dictionary's fill property specifies a fill mode, which defines how the element to which the animation is applied should look when the animation sequence is not actively running, such as before the time specified by iterationStart or after animation's end time.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingProperties.iterations</td><td>The Web Animations API dictionary AnimationEffectTimingProperties's iterations property specifies the number of times the animation should repeat</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingProperties.iterationStart</td><td>Web Animations API's AnimationEffectTimingProperties dictionary's iterationStart property specifies the repetition number which repetition the animation begins at and its progress through it.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingReadOnly</td><td>The AnimationEffectTimingReadOnly interface of the Web Animations API is comprised of timing properties.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingReadOnly.delay</td><td>The delay property of the AnimationEffectTimingReadOnly object represents the number of milliseconds to delay the start of the animation.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingReadOnly.direction</td><td>The direction property of the AnimationEffectTimingReadOnly dictionary object represents the direction of the animation's playback along its timeline and its behavior after completing each iteration</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingReadOnly.duration</td><td>The duration property of AnimationEffectTimingReadOnly represents the duration in milliseconds to complete a single iteration of the animation.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingReadOnly.easing</td><td>The easing property of the AnimationEffectTimingReadOnly object represents the timing function used to scale the time to produce easing effects</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingReadOnly.endDelay</td><td>The endDelay property of AnimationEffectTimingReadOnly represents the number of milliseconds to delay after the end time of an animation</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingReadOnly.fill</td><td>The fill property of AnimationEffectTimingReadOnly dictates how and when the animation's effects should be reflected by the element(s) visual state.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingReadOnly.iterations</td><td>The iterations property of AnimationEffectTimingReadOnly represents the number of times the animation should repeat. It defaults to 1, and can also take a value of Infinity to make it loop infinitely.</td>
-		</tr>
-		<tr>
-			<td>AnimationEffectTimingReadOnly.iterationStart</td><td>The iterationStart property of AnimationEffectTimingReadOnly represents which repetition the animation begins at and its progress through it.</td>
-		</tr>
-		<tr>
-			<td>AnimationEvent</td><td>The AnimationEvent interface represents events providing information related to animations</td>
-		</tr>
-		<tr>
-			<td>AnimationEvent.animationName</td><td>The AnimationEvent.animationName read-only property is a DOMString containing the value of the animation-name CSS property associated with the transition.</td>
-		</tr>
-		<tr>
-			<td>AnimationEvent.constructor</td><td>The AnimationEvent() constructor returns a newly created AnimationEvent, representing an event in relation with an animation.</td>
-		</tr>
-		<tr>
-			<td>AnimationEvent.elapsedTime</td><td>The AnimationEvent.elapsedTime read-only property is a float giving the amount of time the animation has been running, in seconds, when this event fired, excluding any time the animation was paused</td>
-		</tr>
-		<tr>
-			<td>AnimationEvent.pseudoElement</td><td>The AnimationEvent.pseudoElement read-only property is a DOMString, starting with '::', containing the name of the pseudo-element the animation runs on</td>
-		</tr>
-		<tr>
-			<td>AnimationPlaybackEvent</td><td>The AnimationPlaybackEvent interface of the Web Animations API represents animation events.</td>
-		</tr>
-		<tr>
-			<td>AnimationPlaybackEvent.constructor</td><td>The AnimationPlaybackEvent() constructor of the Web Animations API returns a new AnimationPlaybackEvent object instance.</td>
-		</tr>
-		<tr>
-			<td>AnimationPlaybackEvent.currentTime</td><td>The currentTime read-only property of the AnimationPlaybackEvent interface represents the current time of the animation that generated the event at the moment the event is queued.</td>
-		</tr>
-		<tr>
-			<td>AnimationPlaybackEvent.timelineTime</td><td>The timelineTime read-only property of the AnimationPlaybackEvent interface represents the time value of the animation's timeline at the moment the event is queued</td>
-		</tr>
-		<tr>
-			<td>AnimationTimeline</td><td>The AnimationTimeline interface of the Web Animations API represents the timeline of an animation. This interface exists to define timeline features (inherited by DocumentTimeline and future timeline types) and is not itself directly used by developers.</td>
-		</tr>
-		<tr>
-			<td>AnimationTimeline.currentTime</td><td>The currentTime read-only property of the Web Animations API's AnimationTimeline interface returns the timeline's current time in milliseconds, or null if the timeline is inactive.</td>
-		</tr>
-		<tr>
-			<td>DocumentTimeline</td><td>The DocumentTimeline interface of the the Web Animations API represents animation timelines, including the default document timeline (accessed via Document.timeline).</td>
-		</tr>
-		<tr>
-			<td>DocumentTimeline.constructor</td><td>The DocumentTimeline() constructor of the Web Animations API creates a new instance of the DocumentTimeline object associated with the active document of the current browsing context.</td>
-		</tr>
-		<tr>
-			<td>KeyframeEffect</td><td>The KeyframeEffect interface of the Web Animations API lets us create sets of animatable properties and values, called keyframes</td>
-		</tr>
-		<tr>
-			<td>KeyframeEffect.constructor</td><td>The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.</td>
-		</tr>
-		<tr>
-			<td>KeyframeEffect.setKeyframes</td><td>The setKeyframes() method of the KeyframeEffect interface replaces the keyframes that make up the affected KeyframeEffect with a new set of keyframes</td>
-		</tr>
-		<tr>
-			<td>KeyframeEffectReadOnly</td><td>The KeyframeEffectReadOnly interface of the Web Animations API describes sets of animatable properties and values that can be played using the Animation.Animation() constructor, and which are inherited by KeyframeEffect.</td>
-		</tr>
-		<tr>
-			<td>KeyframeEffectReadOnly.composite</td><td>The composite property of a KeyframeEffectReadOnly or a KeyframeEffect resolves how an element's animation impacts its underlying property values.</td>
-		</tr>
-		<tr>
-			<td>KeyframeEffectReadOnly.constructor</td><td>The KeyframeEffectReadOnly() constructor of the Web Animations API returns a new KeyframeEffectReadOnly object instance, and also allows you to clone an existing keyframe effect object instance.</td>
-		</tr>
-		<tr>
-			<td>KeyframeEffectReadOnly.getKeyframes</td><td>The getKeyframes() method of a KeyframeEffectReadOnly or a KeyframeEffect returns an Array of the computed keyframes that make up this animation along with their computed offsets.</td>
-		</tr>
-		<tr>
-			<td>KeyframeEffectReadOnly.iterationComposite</td><td>The iterationComposite property of a KeyframeEffectReadOnly or a KeyframeEffect resolves how the the animation's property value changes accumulate or override each other upon each of the animation's iterations.</td>
-		</tr>
-		<tr>
-			<td>KeyframeEffectReadOnly.spacing</td><td>The spacing property of a KeyframeEffectReadOnly or a KeyframeEffect sets the temporal spacing of the animation's iterations.</td>
-		</tr>
-		<tr>
-			<td>KeyframeEffectReadOnly.target</td><td>The target property of a KeyframeEffectReadOnly or a KeyframeEffect interface represents the element or pseudo-element being animated. </td>
-		</tr>
-		<tr>
-			<td>SharedKeyframeList</td><td>The SharedKeyframeList interface of the Web Animations API represents a sequence of keyframes that can be shared between KeyframeEffect objects.</td>
-		</tr>
-		<tr>
-			<td>SharedKeyframeList.constructor</td><td>The SharedKeyframeList() constructor of the SharedKeyframeList interface creates a new SharedKeyframeList object which can be shared across multiple KeyframeEffect objects.</td>
-		</tr>
-		<tr>
-			<td></td><td></td>
-		</tr>
-	</table>
+		<section class="Section">
+		<h2>Animation</h2>
+			<table class="Table AnimationTable">
+			<tr>
+				<td>Animation</td><td>The Animation interface of the Web Animations API represents a single animation player and provides playback controls and a timeline for an animation node or source.</td>
+			</tr>
+			<tr>
+				<td>Animation.cancel</td><td>The Web Animations API's cancel() method of the Animation interface clears all KeyframeEffects caused by this animation and aborts its playback.</td>
+			</tr>
+			<tr>
+				<td>Animation.constructor</td><td>The Animation() constructor of the Web Animations API returns a new Animation object instance.</td>
+			</tr>
+			<tr>
+				<td>Animation.currentTime</td><td>The Animation.currentTime property of the Web Animations API returns and sets the current time value of the animation in milliseconds, whether running or paused.</td>
+			</tr>
+			<tr>
+				<td>Animation.effect</td><td>The Animation.effect property of the Web Animations API gets and sets the target effect of an animation.</td>
+			</tr>
+			<tr>
+				<td>Animation.finish</td><td>The finish() method of the Web Animations API's Animation Interface sets the current playback time to the end of the animation corresponding to the current playback direction.</td>
+			</tr>
+			<tr>
+				<td>Animation.finished</td><td>The Animation.finished read-only property of the Web Animations API returns a Promise which resolves once the animation has finished playing.</td>
+			</tr>
+			<tr>
+				<td>Animation.id</td><td>The Animation.id property of the Web Animations API returns or sets a string used to identify the animation.</td>
+			</tr>
+			<tr>
+				<td>Animation.oncancel</td><td>The oncancel property of the Web Animations API's Animation interface is the event handler for the cancel event.</td>
+			</tr>
+			<tr>
+				<td>Animation.onfinish</td><td>The Animation interface's onfinish property (from the Web Animations API) is the event handler for the finish event. This event is sent when the animation finishes playing.</td>
+			</tr>
+			<tr>
+				<td>Animation.pause</td><td>The pause() method of the Web Animations API's Animation interface suspends playback of the animation.</td>
+			</tr>
+			<tr>
+				<td>Animation.play</td><td>The play() method of the Web Animations API's Animation Interface starts or resumes playing of an animation. If the animation is finished, calling play() restarts the animation, playing it from the beginning.</td>
+			</tr>
+			<tr>
+				<td>Animation.playbackRate</td><td>The Animation.playbackRate property of the Web Animations API returns or sets the playback rate of the animation.</td>
+			</tr>
+			<tr>
+				<td>Animation.playState</td><td>The Animation.playState property of the Web Animations API returns and sets an enumerated value describing the playback state of an animation.</td>
+			</tr>
+			<tr>
+				<td>Animation.ready</td><td>The read-only Animation.ready property of the Web Animations API returns a Promise which resolves when the animation is ready to play</td>
+			</tr>
+			<tr>
+				<td>Animation.reverse</td><td>The Animation.reverse() method of the Animation Interface reverses the playback direction, meaning the animation ends at its beginning</td>
+			</tr>
+			<tr>
+				<td>Animation.startTime</td><td>The Animation.startTime property of the Animation interface is a double-precision floating-point value which indicates the scheduled time when an animation's playback should begin.</td>
+			</tr>
+			<tr>
+				<td>Animation.timeline</td><td>The Animation.timeline property of the Animation interface returns or sets the timeline associated with this animation. </td>
+			</tr>
+			<tr>
+				<td>AnimationEffectReadOnly</td><td>The AnimationEffectReadOnly interface of the Web Animations API defines current and future animation effects like KeyframeEffect, which can be passed to Animation objects for playing, and KeyframeEffectReadOnly </td>
+			</tr>
+			<tr>
+				<td>AnimationEffectReadOnly.getComputedTiming</td><td>The getComputedTiming() method of the AnimationEffectReadOnly interface returns the calculated timing properties for this animation effect.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectReadOnly.timing</td><td>The AnimationEffectReadOnly.timing read-only attribute of the AnimationEffectReadOnly interface returns an AnimationEffectTimingReadOnly object containing the timing properties for the Animation Effect.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTiming</td><td>The AnimationEffectTiming interface of the Web Animations API is comprised of timing properties. It is returned by the timing attribute of a KeyframeEffect.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingProperties</td><td>The AnimationEffectTimingProperties dictionary, part of the Web Animations API, is used by Element.animate(), KeyframeEffectReadOnly(), and KeyframeEffect() to describe timing properties for animation effects. These properties are all optional, although without setting a duration the animation will not play.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingProperties.delay</td><td>The AnimationEffectTimingProperties dictionary's delay property in the Web Animations API represents the number of milliseconds to delay the start of the animation.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingProperties.direction</td><td>The direction property of the Web Animations API dictionary AnimationEffectTimingProperties indicates an animation's playback direction along its timeline, as well as its behavior when it reaches the end of an interation</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingProperties.duration</td><td>The duration property of the dictionary AnimationEffectTimingProperties in the Web Animations API specifies the duration in milliseconds that a single iteration (from beginning to end) the animation should take to complete.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingProperties.easing</td><td>s easing property in the Web Animations API specifies the timing function used to scale the time to produce easing effects, where easing is the rate of the animation's change over time.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingProperties.endDelay</td><td>The endDelay property of the AnimationEffectTimingProperties dictionary (part of the Web Animations API) indicates the number of milliseconds to delay after the active period of an animation sequence</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingProperties.fill</td><td>The Web Animations API's AnimationEffectTimingProperties dictionary's fill property specifies a fill mode, which defines how the element to which the animation is applied should look when the animation sequence is not actively running, such as before the time specified by iterationStart or after animation's end time.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingProperties.iterations</td><td>The Web Animations API dictionary AnimationEffectTimingProperties's iterations property specifies the number of times the animation should repeat</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingProperties.iterationStart</td><td>Web Animations API's AnimationEffectTimingProperties dictionary's iterationStart property specifies the repetition number which repetition the animation begins at and its progress through it.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingReadOnly</td><td>The AnimationEffectTimingReadOnly interface of the Web Animations API is comprised of timing properties.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingReadOnly.delay</td><td>The delay property of the AnimationEffectTimingReadOnly object represents the number of milliseconds to delay the start of the animation.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingReadOnly.direction</td><td>The direction property of the AnimationEffectTimingReadOnly dictionary object represents the direction of the animation's playback along its timeline and its behavior after completing each iteration</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingReadOnly.duration</td><td>The duration property of AnimationEffectTimingReadOnly represents the duration in milliseconds to complete a single iteration of the animation.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingReadOnly.easing</td><td>The easing property of the AnimationEffectTimingReadOnly object represents the timing function used to scale the time to produce easing effects</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingReadOnly.endDelay</td><td>The endDelay property of AnimationEffectTimingReadOnly represents the number of milliseconds to delay after the end time of an animation</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingReadOnly.fill</td><td>The fill property of AnimationEffectTimingReadOnly dictates how and when the animation's effects should be reflected by the element(s) visual state.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingReadOnly.iterations</td><td>The iterations property of AnimationEffectTimingReadOnly represents the number of times the animation should repeat. It defaults to 1, and can also take a value of Infinity to make it loop infinitely.</td>
+			</tr>
+			<tr>
+				<td>AnimationEffectTimingReadOnly.iterationStart</td><td>The iterationStart property of AnimationEffectTimingReadOnly represents which repetition the animation begins at and its progress through it.</td>
+			</tr>
+			<tr>
+				<td>AnimationEvent</td><td>The AnimationEvent interface represents events providing information related to animations</td>
+			</tr>
+			<tr>
+				<td>AnimationEvent.animationName</td><td>The AnimationEvent.animationName read-only property is a DOMString containing the value of the animation-name CSS property associated with the transition.</td>
+			</tr>
+			<tr>
+				<td>AnimationEvent.constructor</td><td>The AnimationEvent() constructor returns a newly created AnimationEvent, representing an event in relation with an animation.</td>
+			</tr>
+			<tr>
+				<td>AnimationEvent.elapsedTime</td><td>The AnimationEvent.elapsedTime read-only property is a float giving the amount of time the animation has been running, in seconds, when this event fired, excluding any time the animation was paused</td>
+			</tr>
+			<tr>
+				<td>AnimationEvent.pseudoElement</td><td>The AnimationEvent.pseudoElement read-only property is a DOMString, starting with '::', containing the name of the pseudo-element the animation runs on</td>
+			</tr>
+			<tr>
+				<td>AnimationPlaybackEvent</td><td>The AnimationPlaybackEvent interface of the Web Animations API represents animation events.</td>
+			</tr>
+			<tr>
+				<td>AnimationPlaybackEvent.constructor</td><td>The AnimationPlaybackEvent() constructor of the Web Animations API returns a new AnimationPlaybackEvent object instance.</td>
+			</tr>
+			<tr>
+				<td>AnimationPlaybackEvent.currentTime</td><td>The currentTime read-only property of the AnimationPlaybackEvent interface represents the current time of the animation that generated the event at the moment the event is queued.</td>
+			</tr>
+			<tr>
+				<td>AnimationPlaybackEvent.timelineTime</td><td>The timelineTime read-only property of the AnimationPlaybackEvent interface represents the time value of the animation's timeline at the moment the event is queued</td>
+			</tr>
+			<tr>
+				<td>AnimationTimeline</td><td>The AnimationTimeline interface of the Web Animations API represents the timeline of an animation. This interface exists to define timeline features (inherited by DocumentTimeline and future timeline types) and is not itself directly used by developers.</td>
+			</tr>
+			<tr>
+				<td>AnimationTimeline.currentTime</td><td>The currentTime read-only property of the Web Animations API's AnimationTimeline interface returns the timeline's current time in milliseconds, or null if the timeline is inactive.</td>
+			</tr>
+			<tr>
+				<td>DocumentTimeline</td><td>The DocumentTimeline interface of the the Web Animations API represents animation timelines, including the default document timeline (accessed via Document.timeline).</td>
+			</tr>
+			<tr>
+				<td>DocumentTimeline.constructor</td><td>The DocumentTimeline() constructor of the Web Animations API creates a new instance of the DocumentTimeline object associated with the active document of the current browsing context.</td>
+			</tr>
+			<tr>
+				<td>KeyframeEffect</td><td>The KeyframeEffect interface of the Web Animations API lets us create sets of animatable properties and values, called keyframes</td>
+			</tr>
+			<tr>
+				<td>KeyframeEffect.constructor</td><td>The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.</td>
+			</tr>
+			<tr>
+				<td>KeyframeEffect.setKeyframes</td><td>The setKeyframes() method of the KeyframeEffect interface replaces the keyframes that make up the affected KeyframeEffect with a new set of keyframes</td>
+			</tr>
+			<tr>
+				<td>KeyframeEffectReadOnly</td><td>The KeyframeEffectReadOnly interface of the Web Animations API describes sets of animatable properties and values that can be played using the Animation.Animation() constructor, and which are inherited by KeyframeEffect.</td>
+			</tr>
+			<tr>
+				<td>KeyframeEffectReadOnly.composite</td><td>The composite property of a KeyframeEffectReadOnly or a KeyframeEffect resolves how an element's animation impacts its underlying property values.</td>
+			</tr>
+			<tr>
+				<td>KeyframeEffectReadOnly.constructor</td><td>The KeyframeEffectReadOnly() constructor of the Web Animations API returns a new KeyframeEffectReadOnly object instance, and also allows you to clone an existing keyframe effect object instance.</td>
+			</tr>
+			<tr>
+				<td>KeyframeEffectReadOnly.getKeyframes</td><td>The getKeyframes() method of a KeyframeEffectReadOnly or a KeyframeEffect returns an Array of the computed keyframes that make up this animation along with their computed offsets.</td>
+			</tr>
+			<tr>
+				<td>KeyframeEffectReadOnly.iterationComposite</td><td>The iterationComposite property of a KeyframeEffectReadOnly or a KeyframeEffect resolves how the the animation's property value changes accumulate or override each other upon each of the animation's iterations.</td>
+			</tr>
+			<tr>
+				<td>KeyframeEffectReadOnly.spacing</td><td>The spacing property of a KeyframeEffectReadOnly or a KeyframeEffect sets the temporal spacing of the animation's iterations.</td>
+			</tr>
+			<tr>
+				<td>KeyframeEffectReadOnly.target</td><td>The target property of a KeyframeEffectReadOnly or a KeyframeEffect interface represents the element or pseudo-element being animated. </td>
+			</tr>
+			<tr>
+				<td>SharedKeyframeList</td><td>The SharedKeyframeList interface of the Web Animations API represents a sequence of keyframes that can be shared between KeyframeEffect objects.</td>
+			</tr>
+			<tr>
+				<td>SharedKeyframeList.constructor</td><td>The SharedKeyframeList() constructor of the SharedKeyframeList interface creates a new SharedKeyframeList object which can be shared across multiple KeyframeEffect objects.</td>
+			</tr>
+		</table>
+		<div class="Patterns AnimationPatterns">
+			<h2>Pattern 1</h2>	
+			<div class="AnimationBox"></div>
+
+		</div>
+	</section>
 	<table class="Table BatteryTable">
 		<tr>
 			<td>Battery Status API</td><td>The Battery Status API, more often referred to as the Battery API, provides information about the system's battery charge level and lets you be notified by events that are sent when the battery level or charging status change</td>

@@ -2,41 +2,68 @@
 	<h2 class="Heading">Glossar</h2>
 </header>
 <main class="Main">
-	<table class="Table">
-		<tr>
-			<td>animation-timing-function</td><td>describes how an animation should progress over each cycle</td>
-		</tr>
-		<tr>
-			<td>cubic-bezier(x1, y1, x2, y2)</td><td>Was bedeuten die Werte?</td>
-		</tr>
-		<tr>
-			<td>steps(number of steps, direction)</td><td>dividing the domain of output values in equidistant steps.</td>
-		</tr>
-		<tr>
-			<td>animation</td><td>shorthand property</td>
-		</tr>
-		<tr>
-			<td>animation-delay</td><td>specifies when an animation should start</td>
-		</tr>
-		<tr>
-			<td>animation-direction</td><td>indicates whether the animation should play in reverse or alternate cycles</td>
-		</tr>
-		<tr>
-			<td>animation-duration</td><td>length of time the animation should take to complete a cycle</td>
-		</tr>
-		<tr>
-			<td>animation-fill-mode</td><td>specifies how a css animation should apply styles to its target before and after it is executing</td>
-		</tr>
-		<tr>
-			<td>animation-iteration-count</td><td>number of times an animation cycle should be played</td>
-		</tr>
-		<tr>
-			<td>animation-name</td><td>a list of animations that should be applied to the selected element</td>
-		</tr>
-		<tr>
-			<td>animation-play-state</td><td>determines whether an animation is running or paused</td>
-		</tr>
-	</table>
+	<section class="Section AnimationSection">
+		<h2 class="Heading">Animation</h2>
+		<table class="Table AnimationTable">
+			<tr>
+				<td>animation-timing-function</td><td>describes how an animation should progress over each cycle</td>
+			</tr>
+			<tr>
+				<td>cubic-bezier(x1, y1, x2, y2)</td><td></td>
+			</tr>
+			<tr>
+				<td>steps(number of steps, direction)</td><td>dividing the domain of output values in equidistant steps.</td>
+			</tr>
+			<tr>
+				<td>animation</td><td>shorthand property</td>
+			</tr>
+			<tr>
+				<td>animation-delay</td><td>specifies when an animation should start</td>
+			</tr>
+			<tr>
+				<td>animation-direction</td><td>indicates whether the animation should play in reverse or alternate cycles</td>
+			</tr>
+			<tr>
+				<td>animation-duration</td><td>length of time the animation should take to complete a cycle</td>
+			</tr>
+			<tr>
+				<td>animation-fill-mode</td><td>specifies how a css animation should apply styles to its target before and after it is executing</td>
+			</tr>
+			<tr>
+				<td>animation-iteration-count</td><td>number of times an animation cycle should be played</td>
+			</tr>
+			<tr>
+				<td>animation-name</td><td>a list of animations that should be applied to the selected element</td>
+			</tr>
+			<tr>
+				<td>animation-play-state</td><td>determines whether an animation is running or paused</td>
+			</tr>
+		</table>
+		<div class="Patterns AnimationPatterns">
+			<h2>Pattern 1</h2>
+			<span class="Frage">Warum kann man die Weite beim letzten Keyframe nicht auf initial setzten?</span>
+			<span class="Frage">Warum lässt sich die Weite nicht animieren?</span>
+			<div class="AnimationsBox0"></div>
+			<h2>Pattern 2</h2>
+			<div class="AnimationsBox1"></div>
+			<h2>Pattern 3</h2>
+			<div class="AnimationsBox3"></div>
+			<h2>Pattern 4</h2>
+			<div class="AnimationsBox4"></div>
+			<h2>Pattern 5</h2>
+			<div class="AnimationsBox5"></div>
+			<h2>Pattern 6</h2>
+			<div class="AnimationsBox6"></div>	
+			<div class="component">
+				<h2>Icons Transition</h2>
+			  <a href="#" class="Icon Icon-mono Facebook">facebook</a>
+		  	<a href="#" class="Icon Icon-mono Twitter">Twitter</a>
+		  	<a href="#" class="Icon Icon-mono GooglePlus">Google+</a>
+		  	<a href="#" class="Icon Icon-mono Github">Github</a>
+			  <a href="#" class="Icon Icon-mono RSS">RSS</a>
+			</div>
+		</div>
+	</section>
 	<table class="Table VisualFormatingTable">
 		<tr>
 			<td>left</td><td>specifies the distance between the left margin edge of the element and the left edge of it's containing block</td>
@@ -141,7 +168,7 @@
 			<td>border-image-slice</td><td>divides the image specified by border-image-source in nine regions</td>
 		</tr>
 		<tr>
-			<td>border-image-source</td><td> defines the <image> to use instead of the style of the border</td>
+			<td>border-image-source</td><td> defines the image to use instead of the style of the border</td>
 		</tr>
 		<tr>
 			<td>border-image-width</td><td>defines the width of the border image by defining inward offsets from the border edges</td>
@@ -279,11 +306,12 @@
 			<td>justify-self</td><td>defines the way of justifying a box inside its container along the appropriate axis.</td>
 		</tr>
 	</table>
+
 	<table class="Table CascadingTable">
 		<tr>
 			<td>all</td><td>shorthand property resets all properties</td>
 		</tr>
-		<tr>
+
 	</table>
 	<table class="Table ColorTable">
 		<tr>
@@ -301,6 +329,7 @@
 			<td>mix-blend-mode</td><td>property describes how an element's content should blend with the content of the element's direct parent and the element's background.</td>
 		</tr>
 	</table>
+
 	<table class="Table ConditionalTable">
 		<tr>
 			<td>@supports</td><td>gives CSS the ability to perform a feature query.</td>
@@ -376,6 +405,7 @@
 		<tr>
 			<td>speak-as</td><td>Describes how to read out the counter style in speech synthesizers, such as screen readers.</td>
 		</tr>
+
 	</table>	
 	<table class="Table DeviceTable">
 		<tr>
@@ -423,6 +453,7 @@
 			<td>filter</td><td>property provides graphical effects like blurring, sharpening, or color shifting an element</td>
 		</tr>
 	</table>
+
 	<table class="Table FlexBoxTable">
 		<tr>
 			<td>align-content</td><td>defines how the browser distributes space between and around content items along the main-axis of their container (for multiline flex-items)</td>
@@ -490,109 +521,453 @@
 			<td>unicode-range</td><td>The range of Unicode code points to be used from the font.</td>
 		</tr>
 	</table>
-	<table class="Table FragmentationTable">
-		<tr>
-			<td>box-decoration-break</td><td>property specifies how the background, padding, border, border-image, box-shadow, margin and clip of an element is applied when the box for the element is fragmented. </td>
-		</tr>
-		<tr>
-			<td>break-after</td><td>The break-after CSS property describes the page, column, or region break behavior (in other words, how and whether to break) after the generated box</td>
-		</tr>
-		<tr>
-			<td>break-before</td><td> describes the page, column or region break behavior before the generated box</td>
-		</tr>
-		<tr>
-			<td>break-inside</td><td> describes how the page, column or region break inside the generated box.</td>
-		</tr>
-		<tr>
-			<td>orphans</td><td>property refers to the minimum number of lines in a block container that must be left at the bottom of the page</td>
-		</tr>
-		<tr>
-			<td>widows</td><td>defines the minimum number of lines that must be left at the top of the second page</td>
-		</tr>
-	</table>
-	<table class="Table FullscreenTable">
-		<tr>
-			<td>::backdrop</td><td>The ::backdrop pseudo-element can be used to create a backdrop that hides the underlying document for an element in the top layer's stack,</td>
-		</tr>
-		<tr>
-			<td>:fullscreen</td><td>pseudo-class applies to any element that's currently being displayed in full-screen mode</td>
-		</tr>
-	</table>
-	<table class="Table GeneratedTable">
-		<tr>
-			<td>content</td><td>property is used with the ::before and ::after pseudo-elements to generate content in an elemen</td>
-		</tr>
-	</table>
-	<table class="Table GridTable">
-		<tr>
-			<td>grid</td><td> shorthand property that sets all of the explicit grid properties</td>
-		</tr>
-		<tr>
-			<td>grid-area</td><td>shorthand property specifying a grid item’s size and location within the grid row</td>
-		</tr>
-		<tr>
-			<td>grid-auto-columns</td><td>specifies the size of an implicitly-created grid column track</td>
-		</tr>
-		<tr>
-			<td>grid-auto-flow</td><td>controls how the auto-placement algorithm works</td>
-		</tr>
-		<tr>
-			<td>grid-auto-rows</td><td>specifies the size of an implicitly-created grid row track.</td>
-		</tr>
-		<tr>
-			<td>grid-column</td><td> shorthand property for grid-column-start and grid-column-end specifying a grid item’s size</td>
-		</tr>
-		<tr>
-			<td>grid-column-end</td><td>specifies a grid item’s end position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the block-end edge of its grid area</td>
-		</tr>
-		<tr>
-			<td>grid-column-gap</td><td> specifies the gutter between grid columns</td>
-		</tr>
-		<tr>
-			<td>grid-column-start</td><td> specifies a grid item’s start position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the block-start edge of its grid area</td>
-		</tr>
-		<tr>
-			<td>grid-gap</td><td>a shorthand property for grid-row-gap and grid-column-gap specifying the gutters between grid rows and columns.</td>
-		</tr>
-		<tr>
-			<td>grid-row</td><td> shorthand property for grid-row-start and grid-row-end</td>
-		</tr>
-		<tr>
-			<td>grid-row-end</td><td> property specifies a grid item’s end position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement</td>
-		</tr>
-		<tr>
-			<td>grid-row-gap</td><td> property specifies the gutter between grid rows.</td>
-		</tr>
-		<tr>
-			<td>grid-row-start</td><td> property specifies a grid item’s start position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start edge of its grid area.</td>
-		</tr>
-		<tr>
-			<td>grid-template</td><td>The grid-template CSS property is a shorthand property for defining grid columns, rows and areas</td>
-		</tr>
-		<tr>
-			<td>grid-template-areas</td><td> property specifies named grid areas</td>
-		</tr>
-		<tr>
-			<td>grid-template-columns</td><td> CSS property defines the line names and track sizing functions of the grid columns</td>
-		</tr>
-		<tr>
-			<td>grid-template-rows</td><td>CSS property defines the line names and track sizing functions of the grid rows.</td>
-		</tr>
-	</table>
-	<table class="Table ImageTable">
-		<tr>
-			<td>image-orientation</td><td>property describes how to correct the default orientation of an image.v</td>
-		</tr>
-		<tr>
-			<td>image-rendering</td><td> property provides a hint to the browser about the algorithm it should use to scale images</td>
-		</tr>
-		<tr>
-			<td>object-fit</td><td>property specifies how the contents of a replaced element should be fitted to the box established by its used height and width.</td>
-		</tr>
-		<tr>
-			<td>object-position</td><td>property determines the alignment of the replaced element inside its box.</td>
-		</tr>
-	</table>
+	<section class="Fragmentation">
+		<h2 class="Heading">Fragmentation</h2>
+		<table class="Table FragmentationTable">
+			<tr>
+				<td>box-decoration-break</td><td>property specifies how the background, padding, border, border-image, box-shadow, margin and clip of an element is applied when the box for the element is fragmented. </td>
+			</tr>
+			<tr>
+				<td>break-after</td><td>The break-after CSS property describes the page, column, or region break behavior (in other words, how and whether to break) after the generated box</td>
+			</tr>
+			<tr>
+				<td>break-before</td><td> describes the page, column or region break behavior before the generated box</td>
+			</tr>
+			<tr>
+				<td>break-inside</td><td> describes how the page, column or region break inside the generated box.</td>
+			</tr>
+			<tr>
+				<td>orphans</td><td>property refers to the minimum number of lines in a block container that must be left at the bottom of the page</td>
+			</tr>
+			<tr>
+				<td>widows</td><td>defines the minimum number of lines that must be left at the top of the second page - paged media only</td>
+			</tr>
+		</table>
+		<div class="Patterns FragmentationPatterns">
+			<h2>Pattern 1</h2>
+			<div class="FragmentBox">
+				The<br>quick<br>orange fox
+			</div>
+			<h2>Pattern 2</h2>
+			<div class="OrphansPattern">
+			  <p>This is the first paragraph containing some text.</p>
+			  <p>This is the second paragraph containing some more text than the first one. It is used to demonstrate how widows work.</p>
+			  <p>This is the third paragraph. It has a little bit more text than the first one.</p>
+			</div>
+		</div>
+	</section>
+	<section class="Section FullscreenSection">
+		<h2>Fullsreen</h2>
+		<table class="Table FullscreenTable">
+			<tr>
+				<td>::backdrop</td><td>The ::backdrop pseudo-element can be used to create a backdrop that hides the underlying document for an element in the top layer's stack,</td>
+			</tr>
+			<tr>
+				<td>:fullscreen</td><td>pseudo-class applies to any element that's currently being displayed in full-screen mode</td>
+			</tr>
+		</table>
+		<div class="Patterns FullscreenPatterns">
+			<h2>Pattern 1</h2>
+			<div class="FullscreenBox" onclick="this.webkitRequestFullscreen()">click</div>
+			
+			<h2>Pattern 2</h2>
+			<dialog>
+				<p>Dialog</p>
+			</dialog>
+			<p onclick="document.querySelector('dialog').showModal()">show dialog</p>
+			<p>Wie kann man den Hintergrud im Fullscreen modus für andere elemente als Dialog box ändern?</p></div>
+	</section>
+	<section class="Section ContentSection">
+		<h2>Content</h2>
+		<table class="Table GeneratedTable">
+			<tr>
+				<td>content</td><td>property is used with the ::before and ::after pseudo-elements to generate content in an elemen</td>
+			</tr>
+		</table>
+		<div class="Patterns ContentPattern">
+			<h2>Pattern 1</h2>
+			<p class="Text"> This is a Text</p>
+		</div>
+	</section>
+	<section class="Section GridSection">
+		<h2>Grid</h2>
+		<table class="Table GridTable">
+			<tr>
+				<td>grid</td><td> shorthand property that sets all of the explicit grid properties</td>
+			</tr>
+			<tr>
+				<td>grid-area</td><td>shorthand property specifying a grid item’s size and location within the grid row</td>
+			</tr>
+			<tr>
+				<td>grid-auto-columns</td><td>specifies the size of an implicitly-created grid column track</td>
+			</tr>
+			<tr>
+				<td>grid-auto-flow</td><td>controls how the auto-placement algorithm works</td>
+			</tr>
+			<tr>
+				<td>grid-auto-rows</td><td>specifies the size of an implicitly-created grid row track.</td>
+			</tr>
+			<tr>
+				<td>grid-column</td><td> shorthand property for grid-column-start and grid-column-end specifying a grid item’s size</td>
+			</tr>
+			<tr>
+				<td>grid-column-end</td><td>specifies a grid item’s end position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the block-end edge of its grid area</td>
+			</tr>
+			<tr>
+				<td>grid-column-gap</td><td> specifies the gutter between grid columns</td>
+			</tr>
+			<tr>
+				<td>grid-column-start</td><td> specifies a grid item’s start position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the block-start edge of its grid area</td>
+			</tr>
+			<tr>
+				<td>grid-gap</td><td>a shorthand property for grid-row-gap and grid-column-gap specifying the gutters between grid rows and columns.</td>
+			</tr>
+			<tr>
+				<td>grid-row</td><td> shorthand property for grid-row-start and grid-row-end</td>
+			</tr>
+			<tr>
+				<td>grid-row-end</td><td> property specifies a grid item’s end position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement</td>
+			</tr>
+			<tr>
+				<td>grid-row-gap</td><td> property specifies the gutter between grid rows.</td>
+			</tr>
+			<tr>
+				<td>grid-row-start</td><td> property specifies a grid item’s start position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start edge of its grid area.</td>
+			</tr>
+			<tr>
+				<td>grid-template</td><td>The grid-template CSS property is a shorthand property for defining grid columns, rows and areas</td>
+			</tr>
+			<tr>
+				<td>grid-template-areas</td><td> property specifies named grid areas</td>
+			</tr>
+			<tr>
+				<td>grid-template-columns</td><td> CSS property defines the line names and track sizing functions of the grid columns</td>
+			</tr>
+			<tr>
+				<td>grid-template-rows</td><td>CSS property defines the line names and track sizing functions of the grid rows.</td>
+			</tr>
+		</table>
+		<div class="Patterns GridPatterns">
+			<h2>Pattern 1</h2>
+			<div class="GridDistro">
+				<div class="GridItem">1</div>
+				<div class="GridItem">2</div>
+				<div class="GridItem">3</div>
+				<div class="GridItem">4</div>
+				<div class="GridItem">5</div>
+				<div class="GridItem">6</div>
+				<div class="GridItem">7</div>
+				<div class="GridItem">8</div>
+				<div class="GridItem">9</div>
+				<div class="GridItem">10</div>
+				<div class="GridItem">11</div>
+				<div class="GridItem">12</div>
+				<div class="GridItem">13</div>
+			</div>
+			<h2>Pattern 2</h2>
+				<div class="GridExample2">
+					<div class="GridItem">1</div>
+					<div class="GridItem">2</div>
+					<div class="GridItem">2</div>
+					<div class="GridItem">2</div>
+					<div class="GridItem">2</div>
+					<div class="GridItem">2</div>
+					<div class="GridItem">2</div>
+				</div>
+			<h2>Pattern 3</h2>
+			<div class="listing">
+			  <div class="box-title">
+			    <h1>This is a title</h1>
+			    <p>This is the introductory text for this section of the site.</p>
+			  </div>
+			  <div class="box-feature">
+			    <img class="box-image" src="http://placehold.it/900x450" alt="placeholder">
+			    <h2 class="box-feature-title">Featured Item</h2>
+			    <div class="box-content">
+			      <p>The first, therefore usually the latest but could be flagged as a feature, item is the feature. This item gets a big spot up next to the title of this section.</p>
+			      <p>It might have an image too. It's special like that.</p>
+			    </div>
+			  </div>
+			  <div class="box-newer">
+			    <h3>New Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a larger box. We can show additional content for these items.</p>
+
+			  </div>
+			  <div class="box-newer">
+			    <h3>New Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a larger box. We can show additional content for these items.</p>
+
+			  </div>
+			  <div class="box-newer">
+			    <h3>New Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a larger box. We can show additional content for these items.</p>
+
+			  </div>
+			  <div class="box-newer box-talk box-media">
+			    <img src="http://placehold.it/500x350" alt="placeholder" />
+			    <h3>New Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a larger box. We can show additional content for these items.</p>
+
+			  </div>
+			  <div class="box-newer">
+			    <h3>New Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a larger box. We can show additional content for these items.</p>
+
+			  </div>
+			  <div class="box-newer">
+			    <h3>New Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a larger box. We can show additional content for these items.</p>
+
+			  </div>
+			  <div class="box-older">
+			    <h3>Older Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a smaller box. We can show additional content for these items.</p>
+
+			  </div>
+			  <div class="box-older">
+			    <h3>Older Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a smaller box. We can show additional content for these items.</p>
+
+			  </div>
+			  <div class="box-older">
+			    <h3>Older Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a smaller box. We can show additional content for these items.</p>
+
+			  </div>
+			  <div class="box-older">
+			    <h3>Older Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a smaller box. We can show additional content for these items.</p>
+
+			  </div>
+			  <div class="box-older">
+			    <h3>Older Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a smaller box. We can show additional content for these items.</p>
+
+			  </div>
+			  <div class="box-older">
+			    <h3>Older Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a smaller box. We can show additional content for these items.</p>
+
+			  </div>
+			  <div class="box-older">
+			    <h3>Older Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a smaller box. We can show additional content for these items.</p>
+
+			  </div>
+			  <div class="box-older">
+			    <h3>Older Item</h3>
+			    <p>The newer items or next in priority after the feature are displayed in a smaller box. We can show additional content for these items.</p>
+			  </div>
+		</div>
+		<p>Pattern 4</p>
+			<div class="Example1">
+			<div class="Box Box1">A</div>
+			<div class="Box Box2">B</div>
+			<div class="Box Box3">C</div>
+			<div class="Box Box4">D</div>
+			<div class="Box Box5">E</div>
+			<div class="Box Box6">F</div>
+		</div>
+		<p>Pattern 5</p>
+		<div class="Example2">
+			<div class="Box Abox">A</div>
+			<div class="Box Bbox">B</div>
+			<div class="Box Cbox">C</div>
+			<div class="Box Dbox">D</div>
+			<div class="Box Ebox">E</div>
+			<div class="Box Fbox">F</div>
+		</div>
+		<p>Pattern 6</p>
+		<div class="Example3">
+			<div class="Box Abox">A</div>
+			<div class="Box Bbox">B</div>
+			<div class="Box Cbox">C</div>
+			<div class="Box Dbox">D</div>
+			<div class="Box Ebox">E</div>
+			<div class="Box Fbox">F</div>
+		</div>
+		<p>Pattern 7</p>
+		<div class="Example4">
+			<div class="Box Abox">A</div>
+			<div class="Box Bbox">B</div>
+			<div class="Box Cbox">C</div>
+			<div class="Box Dbox">D</div>
+		</div>
+		<p>Pattern 8</p>
+		<div class="Example6">
+			<div class="Box Abox">A</div>
+			<div class="Box Bbox">B</div>
+			<div class="Box Cbox">C</div>
+			<div class="Box Dbox">D</div>
+		</div>
+		<p>Pattern 9</p>
+		<div class="Example7">
+			<div class="Box Abox">A</div>
+			<div class="Box Bbox">B</div>
+			<div class="Box Cbox">C</div>
+			<div class="Box Dbox">D</div>
+			<div class="Box Ebox">E</div>
+		</div>
+		<p>Pattern 10</p>
+		<div class="Example8">
+			<div class="Box Abox">A</div>
+			<div class="Box Bbox">B</div>
+			<div class="Box Cbox">C</div>
+			<div class="Box Dbox">D</div>
+			<div class="Box Ebox">E</div>
+		</div>
+		<p>Pattern 11</p>
+		<div class="Example9">
+			<div class="Box Abox">A</div>
+			<div class="Box Bbox">B</div>
+			<div class="Box Cbox">C</div>
+			<div class="Box Dbox">D</div>
+			<div class="Box Ebox">E</div>
+		</div>
+		<p>Pattern 12</p>
+		<div class="Example11">
+			<div class="Box Abox">A</div>
+			<div class="Box Bbox">B</div>
+			<div class="Box Cbox">C</div>
+		</div>
+		<p>Pattern 13</p>
+		<div class="Example12">
+			<div class="Box Abox">A</div>
+			<div class="Box Bbox">B</div>
+			<div class="Box Cbox">C</div>
+			<div class="Box Dbox">D</div>
+			<div class="Box Ebox">E</div>
+		</div>
+		<h2>Pattern 14</h2>
+		<div class="Example13">
+			<div class="Abox">In our urban and suburban houses what should we do without cats? In our sitting or bedrooms, our libraries, in our kitchens and storerooms, our farms, barns, and rickyards, in our docks, our granaries, our ships, and our wharves, in our corn markets, meat markets, and other places too numerous to mention, how useful they are! In our ships, however, the rats oft set them at defiance; still they are of great service.</div>
+			<div class="Bbox">How wonderfully patient is the cat when watching for rats or mice, awaiting their egress from their place of refuge or that which is their home! How well Shakespeare in Pericles, Act iii., describes this keen attention of the cat to its natural pursuit!</div>
+			<div class="Cbox">A slight rustle, and the fugitive comes forth; a quick, sharp, resolute motion, and the cat has proved its usefulness. Let any one have a plague of rats and mice, as I once had, and let them be delivered therefrom by cats, as I was, and they will have a lasting and kind regard for them.</div>
+			<div class="Box Add1"> Advert!</div>
+			<div class="Box Add2"> Advert!</div>
+		</div>
+		<h2>Pattern 15</h2>
+		<p>Layering items</p>
+		<div class="Example14">
+			<div class="Box Abox">A</div>
+			<div class="Box Bbox">B</div>
+			<div class="Box Cbox">C</div>
+			<div class="Box Dbox">D</div>
+			<div class="Box Ebox">E</div>
+			<div class="Box Fbox">F</div>
+		</div>
+		<h2>Pattern 16</h2>
+		<div class="Example15">
+			<div class="Box Header">Header</div>
+			<div class="Box Sidebar">Sidebar</div>
+			<div class="Box Content">Content<br>The four arrows are inline images inside the content area.
+			<img src="http://gridbyexample.com/examples/code/arrow-top-left.png" alt="top left" class="topleft" />
+			<img src="http://gridbyexample.com/examples/code/arrow-top-right.png" alt="top right" class="topright" />
+		  <img src="http://gridbyexample.com/examples/code/arrow-bottom-left.png" alt="bottom left" class="bottomleft" />
+		  <img src="http://gridbyexample.com/examples/code/arrow-bottom-right.png" alt="bottom right" class="bottomright" /></div>
+			<div class="Box Footer">Footer</div>
+		</div>
+		<h2>Pattern 17</h2>
+		<div class="Example16">
+			<div class="Box">1</div>
+			<div class="Box">2</div>
+			<div class="Box">3</div>
+			<div class="Box">4</div>
+			<div class="Box">5</div>
+			<div class="Box">6</div>
+			<div class="Box">7</div>
+			<div class="Box">8</div>
+			<div class="Box">9</div>
+			<div class="Box">10</div>
+			<div class="Box">11</div>
+			<div class="Box">12</div>
+		</div>
+		<h2>Pattern 18</h2>
+		<div class="Example17">
+			<div class="Box">1</div>
+			<div class="Box">2</div>
+			<div class="Box">3</div>
+			<div class="Box">4</div>
+			<div class="Box">5</div>
+			<div class="Box">6</div>
+			<div class="Box">7</div>
+			<div class="Box">8</div>
+			<div class="Box">9</div>
+			<div class="Box">10</div>
+			<div class="Box">11</div>
+			<div class="Box">12</div>
+		</div>
+		<h2>Pattern 19</h2>
+		<div class="Example18">
+			<div class="Box">1</div>
+			<div class="Box Box2">2</div>
+			<div class="Box">3</div>
+			<div class="Box">4</div>
+			<div class="Box">5</div>
+			<div class="Box">6</div>
+			<div class="Box">7</div>
+			<div class="Box">8</div>
+			<div class="Box">9</div>
+			<div class="Box">10</div>
+			<div class="Box">11</div>
+			<div class="Box">12</div>
+		</div>
+		<h2>Pattern 20</h2>
+		<div class="Example19">
+			<div class="Box Box1">A</div>
+			<div class="Box Box2">B</div>
+			<div class="Box Box3">C</div>
+			<div class="Box Box4">D</div>
+			<div class="Box Box5">E</div>
+		</div>
+		<h2>Pattern 21</h2>
+		<div class="Example20">
+			<div class="Box Box1">A</div>
+			<div class="Box Box2">B</div>
+			<div class="Box Box3">C</div>
+			<div class="Box Box4">
+				<div class="Box Box5">E</div>
+				<div class="Box Box6">F</div>
+				<div class="Box Box7">G</div>
+			</div>
+		</div>
+		<h2>Pattern 22</h2>
+		<div class="Example21">
+			<div class="Box Box1">Header</div>
+			<div class="Box Box2">overlay</div>
+			<div class="Box Box3">Sidebar</div>
+		</div>
+		<h2>Pattern 23</h2>
+		<div class="Example22">
+			<div class="Box Box1">1</div>
+			<div class="Box Box2">2</div>
+			<div class="Box">3</div>
+			<div class="Box">4</div>
+			<div class="Box">5</div>
+			<div class="Box">6</div>
+			<div class="Box">7</div>
+			<div class="Box">8</div>
+			<div class="Box">9</div>
+			<div class="Box">10</div>
+			<div class="Box">11</div>
+			<div class="Box">12</div>
+		</div>
+	</div>
+	</section>
+		<table class="Table ImageTable">
+			<tr>
+				<td>image-orientation</td><td>property describes how to correct the default orientation of an image.v</td>
+			</tr>
+			<tr>
+				<td>image-rendering</td><td> property provides a hint to the browser about the algorithm it should use to scale images</td>
+			</tr>
+			<tr>
+				<td>object-fit</td><td>property specifies how the contents of a replaced element should be fitted to the box established by its used height and width.</td>
+			</tr>
+			<tr>
+				<td>object-position</td><td>property determines the alignment of the replaced element inside its box.</td>
+			</tr>
+		</table>
 	<table class="Table InlineValues">
 		<tr>
 			<td>initial-letter</td><td>property specifies styling for dropped, raised, and sunken initial letters.</td>

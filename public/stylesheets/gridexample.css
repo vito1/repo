@@ -15,7 +15,13 @@
   font-size: 2rem;
   padding: 20px;
   border-radius: 5px; }
-
+.Box0 {
+  background-color: silver;
+  color: white;
+  font-size: 2rem;
+  width: 30%;
+  padding: 20px;
+}
 .Example2 {
   display: grid;
   grid-gap: 10px;
@@ -153,12 +159,13 @@
 .Example11 {
   display: grid;
   grid-template-columns: 120px 120px 120px;
-  grid-template-areas: "..... header header" "sidebar content content";
+  grid-template-areas: "..... header header"
+ "sidebar content content";
   grid-gap: 20px;
   margin: 10px 0; }
 
 .Box {
-  height: 50px;
+  /*height: 50px;*/
   background-color: silver;
   padding: 1rem;
   border-radius: 5px; }
@@ -176,7 +183,11 @@
 .Example12 {
   display: grid;
   grid-gap: 1rem;
-  grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer"; }
+  grid-template-areas: "header"
+ "sidebar"
+ "content"
+ "sidebar2"
+ "footer"; }
 
 .Example12 .Abox {
   grid-area: header; }
@@ -196,12 +207,17 @@
 @media (min-width: 500px) {
   .Example12 {
     grid-template-columns: 20% auto;
-    grid-template-areas: "header header" "sidebar content" "sidebar2 sidebar2" "footer footer"; } }
+    grid-template-areas: "header header"
+ "sidebar content"
+ "sidebar2 sidebar2"
+ "footer footer"; } }
 
 @media (min-width: 700px) {
   .Example12 {
     grid-template-columns: 20% auto 20%;
-    grid-template-areas: "header header header" "sidebar content sidebar2" "footer footer footer"; } }
+    grid-template-areas: "header header header"
+ "sidebar content sidebar2"
+ "footer footer footer"; } }
 
 /*Example 13 */
 .Example13 {
@@ -262,7 +278,9 @@
   width: 65%;
   grid-gap: 10px;
   display: grid;
-  grid-template-areas: "header header header" "sidebar content content" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "sidebar content content"
+ "footer footer footer"; }
 
 .Example15 > .Box {
   background-color: rgba(0, 0, 0, 0.4);
@@ -406,7 +424,8 @@
 .Example21 {
   display: grid;
   grid-template-columns: 100px 100px 100px;
-  grid-template-areas: "header header header" "sidebar content content";
+  grid-template-areas: "header header header"
+ "sidebar content content";
   grid-gap: 10px;
   border-radius: 10px; }
 
