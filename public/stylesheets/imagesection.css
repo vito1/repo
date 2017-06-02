@@ -1,0 +1,22 @@
+.Image {
+	border: 1px solid black;
+	width: 150px;
+	height: 100px;
+}
+.fill {
+	object-fit: fill;
+}
+.contain {
+	object-fit: contain;
+}
+.cover {
+	object-fit: cover;
+}
+
+.Image0 {
+	height: 280px;
+	object-fit: none;
+	background-color: silver;
+	width: 290px;
+	object-position: 180% 0%;
+}

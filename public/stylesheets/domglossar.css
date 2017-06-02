@@ -27,3 +27,20 @@ td {
 .CanvasTable {
   word-wrap: break-word;
   table-layout: fixed; }
+.Section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.Section > Table {
+  grid-row: 2;
+  width: 100%;
+}
+.Section > .Patterns {
+  grid-row: 2;
+}
+.AnimationBox {
+  width: 50px;
+  height: 50px;
+  background-color: silver;
+}
