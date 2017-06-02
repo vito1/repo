@@ -1,3 +1,5 @@
+@import 'imagesection.css';
+@import 'inlinelayoutsection.css';
 * {
   box-sizing: border-box; }
 
@@ -886,3 +888,5 @@ dialog::backdrop {
 
 .Example22 .Box1 {
   order: 3; }
+
+

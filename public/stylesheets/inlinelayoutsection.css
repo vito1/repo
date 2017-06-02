@@ -1,0 +1,21 @@
+.Patterns {
+	counter-reset: section;
+}
+.Patterns .Heading {
+	counter-reset: subsection;
+	color: black ;
+}
+.Heading::before {
+	counter-increment: section;
+	content: counter(section) ' ';
+}
+p:before {
+	counter-increment: subsection;
+	content: counter(section) '.' counter(subsection) ' ';
+}
+.Pattern2 {
+	list-style: square;
+}
+.Pattern3 {
+	list-style-image: url(/images/x.svg);
+}

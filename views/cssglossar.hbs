@@ -954,9 +954,11 @@
 		</div>
 	</div>
 	</section>
+	<section class="Section ImageSection">
+		<h2>Image</h2>
 		<table class="Table ImageTable">
 			<tr>
-				<td>image-orientation</td><td>property describes how to correct the default orientation of an image.v</td>
+				<td>image-orientation</td><td>property describes how to correct the default orientation of an image.</td>
 			</tr>
 			<tr>
 				<td>image-rendering</td><td> property provides a hint to the browser about the algorithm it should use to scale images</td>
@@ -968,7 +970,20 @@
 				<td>object-position</td><td>property determines the alignment of the replaced element inside its box.</td>
 			</tr>
 		</table>
-	<table class="Table InlineValues">
+		<div class="Patterns ImagePatterns">
+			<h2>Pattern 1</h2>
+			<img class="fill Image" src="images/mdn_logo.png">
+			<h2>Pattern 2</h2>
+			<img class="contain Image"src="images/mdn_logo.png">
+			<h2>Pattern 3</h2>
+			<img class="cover Image" src="images/mdn_logo.png">
+			<h2>Pattern 4</h2>
+			<img class="Image0" src="https://mdn.mozillademos.org/files/12668/MDN.svg">
+		</div>
+	</section>
+	<section class="Section InlineLayoutSection">
+	<h2>Inline Layout</h2>
+	<table class="Table InlineLayoutTable">
 		<tr>
 			<td>initial-letter</td><td>property specifies styling for dropped, raised, and sunken initial letters.</td>
 		</tr>
@@ -976,29 +991,59 @@
 			<td>initial-letter</td><td>specifies the alignment of initial letters within a paragraph.</td>
 		</tr>
 	</table>
-	<table class="Table ListTable">
-		<tr>
-			<td>::marker</td><td>pseudo-element represents the marker box of a list item</td>
-		</tr>
-		<tr>
-			<td>counter-increment</td><td>property is used to increase the value of CSS Counters by a given value. </td>
-		</tr>
-		<tr>
-			<td>counter-reset</td><td> property is used to reset CSS Counters to a given value.</td>
-		</tr>
-		<tr>
-			<td>list-style</td><td> shorthand property for setting list-style-type, list-style-image and list-style-position.</td>
-		</tr>
-		<tr>
-			<td>list-style-image</td><td>property specifies an image to be used as the list item marker.</td>
-		</tr>
-		<tr>
-			<td>list-style-position</td><td> property specifies the position of the marker box in the principal block box.</td>
-		</tr>
-		<tr>
-			<td>list-style-type</td><td> property specifies the appearance of a list item element.</td>
-		</tr>
-	</table>
+	<div class="Patterns InlineLayoutPatterns">
+		<h2>Pattern 1</h2>
+		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+	</div>
+	</section>
+	<section class="Section ListSection">
+	<h2>Lists  &amp; Counters</h2>
+		<table class="Table ListTable">
+			<tr>
+				<td>::marker</td><td>pseudo-element represents the marker box of a list item</td>
+			</tr>
+			<tr>
+				<td>counter-increment</td><td>property is used to increase the value of CSS Counters by a given value. </td>
+			</tr>
+			<tr>
+				<td>counter-reset</td><td> property is used to reset CSS Counters to a given value.</td>
+			</tr>
+			<tr>
+				<td>list-style</td><td> shorthand property for setting list-style-type, list-style-image and list-style-position.</td>
+			</tr>
+			<tr>
+				<td>list-style-image</td><td>property specifies an image to be used as the list item marker.</td>
+			</tr>
+			<tr>
+				<td>list-style-position</td><td> property specifies the position of the marker box in the principal block box.</td>
+			</tr>
+			<tr>
+				<td>list-style-type</td><td> property specifies the appearance of a list item element.</td>
+			</tr>
+		</table>
+		<div class="Patterns">
+			<h2>Patterns 1</h2>
+			<h2 class="Heading">Heading</h1>
+			<p class="Paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+			<p class="Paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+			<p class="Paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+			<p class="Paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+			<h2 class="Heading">Heading</h1>
+			<p class="Paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+			<h2>Patter 2</h2>
+			<ul class="Pattern2">
+				<li>Listitem</li>
+				<li>Listitem</li>
+				<li>Listitem</li>
+			</ul>
+			<h2>Pattern 3</h2>
+			<ul class="Pattern3">
+				<li>Listitem</li>
+				<li>Listitem</li>
+				<li>Listitem</li>
+			</ul>
+		</div>
+	</section>
 	<table class="Table LogicalTable">
 		<tr>
 			<td>block-size</td><td>property defines the horizontal or vertical size of an element's block depending on its writing mode. It corresponds to the width or the height property depending on the value defined for writing-mode.</td>
@@ -1100,6 +1145,8 @@
 			<td>padding-inline-start</td><td>defines the logical inline start padding of an element</td>
 		</tr>
 	</table>
+	<section class="Section MaskingSection">
+	<h2>Masking Section</h2>
 	<table class="Table MaskingTable">
 		<tr>
 			<td>mask-clip</td><td>property determines the area, which is affected by a mask</td>
@@ -1129,6 +1176,11 @@
 			<td>mask-type</td><td>The CSS mask-type property defines if a mask defined by an SVG mask element is used as a luminance or an alpha mask</td>
 		</tr>
 	</table>
+	<div class="Patterns MaskingPatterns">
+		<h2>Pattern 1</h2>
+
+	</div>
+	</section>
 	<table class="Table MediaTable">
 		<tr>
 			<td>@media</td><td>associates a set of nested statements with a condition defined by a media query</td>

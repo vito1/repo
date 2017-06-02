@@ -4,9 +4,6 @@
 *:after, *:before {
   box-sizing: inherit;
 }
-p::after {
-  content: ' css injection';
-}
-p:before {
-  content: counter(chapter_counter);
+.Masked {
+	
 }
